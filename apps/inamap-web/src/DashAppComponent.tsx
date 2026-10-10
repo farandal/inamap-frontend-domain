@@ -206,7 +206,9 @@ injectTenantStyles();
 const DashAppComponent: React.FC = () => {
     return (
         <Provider store={store}>
-            <WebBootstrap />
+            <div className="inamap-app-shell">
+                <WebBootstrap />
+            </div>
         </Provider>
     );
 };

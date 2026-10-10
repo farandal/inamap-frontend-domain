@@ -70,6 +70,41 @@
     flex-direction: column;
 }
 
+/* Keep the drafting grid behind routed page content across the system app;
+   unlike a fixed overlay, this does not cover navigation or page controls. */
+html[data-theme='light'] {
+    --inamap-grid-line: rgba(100, 116, 139, 0.11);
+}
+
+html[data-theme='dark'] {
+    --inamap-grid-line: rgba(148, 163, 184, 0.075);
+}
+
+.dash-theme-content,
+.inamap-public-app {
+    background-color: var(--bodybg-primary, #f5f7fa);
+    background-image:
+        linear-gradient(to right, var(--inamap-grid-line, rgba(100, 116, 139, 0.11)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--inamap-grid-line, rgba(100, 116, 139, 0.11)) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+/* Authenticated tenant routes use DashAdmin's default DomainTheme, whose page
+   container is .dash-layout-content (not .dash-theme-content). The shell class
+   is attached around WebBootstrap so this LESS rule is app-scoped and stable. */
+.inamap-app-shell {
+    min-height: 100vh;
+}
+
+.inamap-app-shell #dash-app-layout > .dash-app-layout-content > .dash-layout-content {
+    min-height: calc(100vh - 16px);
+    background-color: var(--bodybg-primary, #f5f7fa);
+    background-image:
+        linear-gradient(to right, var(--inamap-grid-line, rgba(100, 116, 139, 0.11)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--inamap-grid-line, rgba(100, 116, 139, 0.11)) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
 .inamap-public-app .dash-app-layout {
     min-height: 100vh;
     display: flex;

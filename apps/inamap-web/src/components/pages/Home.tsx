@@ -60,22 +60,31 @@ export default function Home() {
     }
 
     return (
-        <Box sx={{  }}>
+        <Box
+            className="inamap-home-page"
+            sx={{
+                color: 'text.primary',
+                bgcolor: 'background.default',
+                backgroundImage: `linear-gradient(to right, var(--inamap-grid-line, rgba(100, 116, 139, 0.11)) 1px, transparent 1px), linear-gradient(to bottom, var(--inamap-grid-line, rgba(100, 116, 139, 0.11)) 1px, transparent 1px)`,
+                backgroundSize: '28px 28px',
+            }}
+        >
+            <Box className="inamap-home-hero" sx={{ color: 'text.primary' }}>
             <Container maxWidth="lg" sx={{ py: { xs: 8, md: 12 } }}>
                 <Grid container spacing={6} alignItems="center">
                     <Grid size={{ xs: 12, md: 6 }}>
-                        <Typography variant="h2" sx={{ fontWeight: 800, fontSize: { xs: 36, md: 52 }, lineHeight: 1.1 }}>
+                            <Typography variant="h2" sx={{ color: 'text.primary', fontWeight: 800, fontSize: { xs: 36, md: 52 }, lineHeight: 1.1 }}>
                             Que nadie se pierda en <Box component="span" sx={{ color: RED }}>tu recinto</Box>.
                         </Typography>
-                        <Typography sx={{ mt: 3, fontSize: 18, color: '#cbd5e1' }}>
-                            INAMAP convierte los planos de tu campus, feria, edificio o evento en mapas interactivos con búsqueda y rutas paso a paso,
+                        <Typography sx={{ mt: 3, fontSize: 18, color: 'text.secondary' }}>
+                                INAMAP convierte los planos de tu campus, feria, edificio o evento en mapas interactivos con búsqueda y rutas paso a paso,
                             listos para la web, el celular de tus visitantes y los kioscos del lugar.
                         </Typography>
                         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4 }}>
                             <Button size="large" variant="contained" sx={{ bgcolor: RED, '&:hover': { bgcolor: '#b91c1c' } }} onClick={() => navigate('/signup')}>
                                 {translate('ina_web.home.cta_signup', { _: 'Comenzar gratis' })}
                             </Button>
-                            <Button size="large" variant="outlined" sx={{ color: '#fff', borderColor: '#475569' }} onClick={() => navigate('/plans')}>
+                            <Button size="large" variant="outlined" sx={{ color: 'text.primary', borderColor: 'divider', '&:hover': { borderColor: 'text.secondary', bgcolor: 'action.hover' } }} onClick={() => navigate('/plans')}>
                                 {translate('ina_web.home.cta_plans', { _: 'Ver planes' })}
                             </Button>
                         </Stack>
@@ -85,8 +94,9 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </Container>
+            </Box>
 
-            <Box sx={{ bgcolor: '#fff', color: '#0f172a', py: { xs: 8, md: 10 } }}>
+            <Box sx={{ color: 'text.primary', py: { xs: 8, md: 10 } }}>
                 <Container maxWidth="lg">
                     <Typography variant="h4" sx={{ fontWeight: 800, textAlign: "center" }}>
                         Todo lo necesario para orientar a tus visitantes
@@ -94,12 +104,12 @@ export default function Home() {
                     <Grid container spacing={3} sx={{ mt: 4 }}>
                         {features.map((f) => (
                             <Grid key={f.title} size={{ xs: 12, sm: 6, md: 4 }}>
-                                <Box sx={{ p: 3, height: '100%', borderRadius: 3, border: '1px solid #e2e8f0' }}>
+                                <Box sx={{ p: 3, height: '100%', borderRadius: 3, bgcolor: 'background.paper', border: '1px solid', borderColor: 'divider' }}>
                                     <Box sx={{ width: 44, height: 44, borderRadius: 2, bgcolor: '#fee2e2', color: RED, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{f.icon}</Box>
                                     <Typography sx={{ fontWeight: 700, mt: 2 }}>
                                         {f.title}
                                     </Typography>
-                                    <Typography sx={{ mt: 1, color: '#475569' }}>{f.text}</Typography>
+                                    <Typography sx={{ mt: 1, color: 'text.secondary' }}>{f.text}</Typography>
                                 </Box>
                             </Grid>
                         ))}

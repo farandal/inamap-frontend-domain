@@ -66,9 +66,9 @@ export default function PreReleaseSignupForm() {
                     fontWeight: 600,
                     fontSize: '0.95rem',
                     whiteSpace: 'nowrap',
-                    backgroundColor: '#9bc13c',
+                    backgroundColor: '#E1251B',
                     textTransform: 'none',
-                    '&:hover': { backgroundColor: '#7faa00' },
+                    '&:hover': { backgroundColor: '#B91C1C' },
                 }}
             >
                 {translate('landing.prerelease.form.continue')}
