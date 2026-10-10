@@ -1,0 +1,2071 @@
+const customEn = {
+
+       
+    "Delivery Method": "Delivery Method",
+    "Table Number": "Table Number",
+    "Counter": "Counter",
+    "Table": "Table",
+    "Delivery": "Delivery",
+    "dash-auto-admin-tabs": {
+        "Productos": "Products",
+        "Actualizaciones": "Updates",
+        "Vouchers": "Vouchers",
+        "Datos": "Data",
+    },
+    
+
+    tab: {
+        attribute: {
+             note: "Note",
+        },
+        tabs: 'Tabs',
+        kitchen_tabs: 'Kitchen Orders',
+        action: {
+            cancel: 'Cancel',
+            confirm: 'Confirm',
+            print: 'Print',
+            pay: 'Pay',
+            close: 'Close',
+            confirmed: "Confirm",
+            in_preparation: "Start Preparation",
+            prepared: "Prepared",
+            delivered: "Delivered",
+            closed: "Close",
+            close_tab: "Close Tab",
+            print_tab: "Print Tab",
+            download: "Download Tab",
+            payment: "Register Payment",
+        },
+        status: {
+            created: 'Created',
+            confirmed: 'Confirmed',
+            preparing: 'Preparing',
+            ready: 'Ready',
+            delivered: 'Delivered',
+            completed: 'Completed',
+            cancelled: 'Cancelled',
+            in_preparation: "In Preparation",
+            prepared: "Prepared",
+            closed: "Closed",
+            label: "Status",
+            change_to: "Change status to %{status}",
+            error_updating: "Error updating status",
+        },
+        products: {
+            search: {
+                label: "Search",
+                clear: "Clear search",
+                local_active: "Local search active. Type %{count} more characters for server search.",
+                server_active: "Server search active",
+                local_search: "Local search: %{term}",
+                recent_searches: "Recent searches:",
+            },
+            cache: {
+                cached_results: "Cached results ({seconds}s ago)",
+                loading_fresh: "Loading fresh data...",
+                products_cached: "%{count} products cached",
+            },
+            infinite_scroll: {
+                end_of_results: "End of results",
+            },
+            no_products_category: "No products in this category",
+            loading: "Loading products...",
+            updating: "Updating...",
+            display: {
+                showing_results: "Showing %{displayed} of %{total} results",
+                showing_results_local: "Showing %{displayed} of %{total} results (local)",
+            },
+            buttons: {
+                show_more: "Show More (%{count} remaining)",
+                show_less: "Show Less",
+            },
+            no_results: "No products found for %{term}",
+            no_results_hint: "Try typing %{count} more characters to search the server",
+            modifier: {
+                dialog: {
+                    title: "%{productName} - Select Options",
+                    cancel: "Cancel",
+                    add: "Add to Order",
+                },
+            },
+            message: {
+                added: "Product added to order",
+                created_success: "Tab created successfully!",
+            },
+        },
+        order: {
+            no_products: "No products in order",
+            add_products_hint: "Start adding products to create your order",
+            products_list: "Order Products",
+            modifiers: "Modifiers",
+            note_placeholder: "Add a note for this item...",
+            quantity: "Quantity",
+            total: "Total",
+            summary: "Order Summary",
+            subtotal: "Subtotal:",
+            suggested_service: "Suggested service (%{percent}%):",
+            currency: "Currency: %{code} (%{symbol})",
+            discount: "Discount",
+            type: "Type",
+            value: "Value",
+            discount_reason: "Discount reason (optional)",
+            discount_reason_placeholder: "Ex: Chef's courtesy, Frequent customer, Promotion...",
+            no_discount: "No discount",
+            percentage: "Percentage",
+            fixed_amount: "Fixed Amount",
+            discount_applied: "Discount applied:",
+        },
+        modal: {
+            close_status: {
+                title: "Close Status",
+                message: "Please select a closing status for this tab",
+            },
+            close: "Close Tab",
+            cancel: "Cancel Tab",
+            payment: {
+                title: "Register Payment",
+                tip: "Tip",
+                method: "Method",
+                is_paid: "Is Paid",
+                closing_status: "Closing Status",
+                details: "Payment Details",
+            },
+            close_confirm: {
+                title: "Close Tab",
+                confirmation: "Are you sure you want to close this tab?",
+                status: "Closing Status",
+            },
+            assistance_dialog: {
+                title: "Assistance",
+                message: "Your assistance request has been received.",
+                staff_notified: "Staff has been notified",
+                store_label: "Store",
+                customer_label: "Customer",
+                table_label: "Table",
+                estimated_time_label: "Estimated time",
+                remaining_requests_label: "Remaining requests",
+                cooldown_remaining: "Cooldown remaining",
+                close_button: "Close",
+            },
+        },
+
+        list: {
+            timer: {
+                confirmed: "Confirmed",
+                in_preparation: "In Preparation",
+            },
+            item: {
+                note: "Note",
+                option: "Option",
+            },
+            total: "Total",
+        },
+        payment_method: {
+            cash: "Cash",
+            card: "Card",
+            transfer: "Transfer",
+        },
+        queue: {
+            download: "Tab #{id} queued for download",
+            print: "Tab #{id} queued for printing",
+            payment_update: "Tab #{id} queued for payment update",
+            status_update: "Tab #{id} queued for status update to %{status}",
+        },
+        download: {
+            success: "Tab #{id} downloaded successfully",
+            error: "Error downloading Tab #{id}: %{error}",
+        },
+        print: {
+            success: "Tab #{id} sent to printer",
+            error: "Error printing Tab #{id}: %{error}",
+        },
+        payment_update: {
+            success: "Tab #{id} payment updated successfully",
+            error: "Error updating payment for Tab #{id}: %{error}",
+        },
+        status_update: {
+            success: "Tab #{id} status updated to %{status}",
+            error: "Error updating status for Tab #{id}: %{error}",
+        },
+        status_change_notification: "Order status changed from %{old} to %{new}",
+        paid: "Paid",
+        total: "Total",
+        item: {
+            note: "Note",
+            option: "Option",
+        },
+        assistance: {
+            request_help: "Request Assistance",
+            requesting: "Requesting Assistance...",
+            help_description: "Need help? Tap to request assistance from staff.",
+            success_message: "Assistance request sent successfully.",
+            error_message: "Failed to send assistance request.",
+            not_available: "Assistance not available at the moment.",
+            cooldown_remaining: "Wait %{time}",
+        },
+        product: {
+            add: "Add",
+        },
+        store: {
+            featured_products: "Featured Products",
+            no_products: "No featured products available.",
+        },
+        debug: {
+            title: "Debug Info",
+            recording_state: "Recording State",
+            processing_state: "Processing State",
+            recording_attempts: "Recording Attempts",
+            audio_chunks: "Audio Chunks",
+            session_id: "Session ID",
+            tab_id: "Tab ID",
+            has_tab_data: "Has Tab Data",
+            last_transcription: "Last Transcription",
+            active: "Active",
+            inactive: "Inactive",
+            yes: "Yes",
+            no: "No",
+        },
+        context: {
+            title: "Tab Context",
+            table: "Table",
+            status: "Status",
+            items: "Items",
+            current_order: "Current Order",
+            more_items: "... and %{count} more items",
+        },
+        resource: {
+            tabs_admin: 'Admin Tabs',
+            filter: {
+                status: 'Status',
+            },
+            tabs: 'Tabs',
+            kitchen: 'Kitchen',
+            menu: {
+                list: 'List',
+                kitchen_active: 'Active Orders',
+            },
+            action: {
+                create: 'Create',
+            },
+        },
+        view_order: {
+            title: "Order #%{id}",
+            no_data: "No order data available",
+            products_title: "Products",
+            product_default: "Product",
+            option_default: "Option",
+            unit_price_suffix: "unit price",
+            subtotal: "Subtotal",
+            discount: "Discount",
+            total: "Total",
+            paid: "Paid",
+            order_note: "Order Note",
+            marketplace_info: "Marketplace: %{name}",
+            type: "Type",
+            payment_info: "Payment Information",
+            payment_status: "Payment Status",
+            pending: "Pending",
+            broker_status: "Broker Status",
+            receipt: "Receipt",
+            invoice: "Invoice",
+            view_document: "View Document",
+            dates_times: "Dates & Times",
+            created_at: "Created at",
+            confirmed_at: "Confirmed at",
+            preparing_at: "Started at",
+            prepared_at: "Prepared at",
+            delivered_at: "Delivered at",
+            closed_at: "Closed at",
+            cancelled_at: "Cancelled at",
+            tenant_info: "Store Information",
+            name: "Name",
+            address: "Address",
+            phone: "Phone",
+            email: "Email"
+        },
+    },
+    kiosk: {
+        // Header
+        total: 'Total',
+        clear_cart: 'Clear Cart',
+        view_order: 'View Order',
+        add_items_to_start: 'Add items to start',
+
+        // Navigation
+        prev: 'Prev',
+        next: 'Next',
+        page_of: 'Page %{current} of %{total} • %{items} items',
+        products: 'Products',
+
+        // Product Card
+        customizable: 'Customizable',
+
+        // Product Grid
+        no_products_found: 'No products found in this category',
+
+        // Cart View
+        your_order: 'Your Order',
+        cart_empty: 'Your cart is empty',
+        browse_menu: 'Browse Menu',
+        note: 'Note',
+        order_options: 'Order Options',
+        delivery_method: 'Delivery Method',
+        table_number: 'Table Number',
+        your_name: 'Your Name (Optional)',
+        special_instructions: 'Special Instructions (Optional)',
+        cancel_order: 'Cancel Order',
+        confirm_order: 'Confirm Order',
+        submitting: 'Submitting...',
+
+        // Modifier Modal
+        select_multiple: 'Select multiple',
+        required: '*Required',
+        cancel: 'Cancel',
+        add_to_order: 'Add to Order',
+
+        // Confirmation View
+        order_confirmed: 'Order Confirmed!',
+        thank_you: 'Thank you for your order. Please wait for your number to be called.',
+        your_order_number: 'Your Order Number',
+        status: 'Status',
+        start_new_order: 'Start New Order',
+        auto_reset_notice: 'This screen will reset automatically in 30 seconds',
+        loading: 'Loading...',
+    },
+    // Resource labels for admin panel
+    resource: {
+        tabs_admin: "Tabs Admin",
+        tabs: "Tabs",
+        kitchen: "Kitchen",
+        menu: {
+            list: "List",
+        },
+        action: {
+            create: "⊕ Create tab",
+        },
+        filter: {
+            status: "Status",
+        },
+        layout: {
+            products: "Products",
+            order: "Order",
+        },
+        // Groups
+        groups: {
+            reports: 'Reports',
+            system_resources: 'System Resources',
+            products: 'Products',
+            integrations: 'Integrations',
+            configuration: 'Configuration',
+            campaigns: 'Campaigns',
+            import_export: 'Import/Export',
+            cashier: 'Cashier',
+            ai_agent: 'AI Agent',
+            devices: 'Devices',
+        },
+        reports: {
+            label: 'Reports',
+            menu_list: 'Reports',
+        },
+        ai: {
+            usage: {
+                label: 'AI Usage',
+                menu_list: 'Usage Report',
+                field_tenancy: 'Tenancy Account',
+                field_tenant: 'Client',
+                field_agent: 'Agent',
+                field_kind: 'Kind',
+                field_provider: 'Provider',
+                field_model: 'Model',
+                field_input_tokens: 'Input Tokens',
+                field_output_tokens: 'Output Tokens',
+                field_total_tokens: 'Total Tokens',
+                field_duration_ms: 'Duration (ms)',
+                field_iterations: 'Iterations',
+                field_succeeded: 'Succeeded',
+                field_error: 'Error',
+                field_created_at: 'Date',
+                field_date_from: 'From',
+                field_date_to: 'To',
+                field_cache_read_tokens: 'Cache Read Tokens',
+                field_cache_write_tokens: 'Cache Write Tokens',
+                field_provider_latency_ms: 'Provider Latency (ms)',
+                field_rag_results: 'Retrieval Results',
+                field_rag_top_k: 'Retrieval Top K',
+                field_rag_documents: 'Retrieval Documents',
+                field_session_id: 'Session',
+                field_run_id: 'Run',
+                field_source: 'Source',
+                succeeded_yes: 'Succeeded',
+                succeeded_no: 'Failed',
+            },
+        },
+        // System resources
+        system: {
+            tenants: {
+                label: 'Clients',
+                menu_list: 'Clients',
+                menu_trash: 'Trash',
+                main_action: 'Add Client',
+                filter_name: 'Name',
+            },
+            roles: {
+                label: 'Roles',
+                menu_list: 'Roles',
+                main_action: 'Add Role',
+                filter_name: 'Name',
+            },
+            users: {
+                label: 'Users',
+                menu_list: 'Users',
+                menu_trash: 'Trash',
+                main_action: 'Create User',
+                filter_search: 'Search',
+            },
+        },
+        // E-commerce resources
+        ecommerce: {
+            products: {
+                label: 'Products',
+                menu_list: 'Products',
+                menu_trash: 'Trash',
+                main_action: 'Create Product',
+                filter_name: 'Name',
+                filter_description: 'Description',
+                filter_sku: 'SKU',
+                filter_categories: 'Categories',
+                filter_status: 'Status',
+                filter_is_pack: 'Is Pack',
+                tabs: {
+                    product: 'Product',
+                    category_modifiers: 'Category/Modifiers',
+                    prices: 'Prices',
+                    stocks: 'Stocks',
+                    brand: 'Brand',
+                    metadata: 'Metadata',
+                    gallery: 'Gallery',
+                    history: 'History',
+                    tenants: 'Tenants',
+                },
+                fields: {
+                    image: 'Image',
+                    name: 'Name',
+                    description: 'Description',
+                    is_enabled: 'Available',
+                    featured: 'Featured',
+                    mall_listed: 'Listed in Mall',
+                    keywords: 'Keywords',
+                    terms: 'Phonetic terms (voice)',
+                    sku: 'SKU',
+                    display_order: 'Order',
+                    display_order_helper: 'Display order (1 = first, 0 = last)',
+                    categories: 'Categories',
+                    modifier_groups: 'Modifier Groups',
+                    prices: 'Prices',
+                    stocks: 'Stocks',
+                    infinite_stock: 'Permanent Stock',
+                    brand: 'Brand',
+                    metadata: 'Metadata',
+                    gallery: 'Gallery',
+                    history: 'History',
+                    tenants: 'Tenants',
+                },
+                view: {
+                    active: 'Active',
+                    inactive: 'Inactive',
+                    pack: 'Pack',
+                    sku: 'SKU',
+                    primary_price: 'Primary Price',
+                    stock_status: 'Stock Status',
+                    categories_count: 'Categories (%{count})',
+                    edit: 'Edit',
+                    edit_product: 'Edit Product',
+                    deactivate: 'Deactivate',
+                    activate: 'Activate',
+                    edit_gallery: 'Edit Gallery',
+                    primary_image: 'Primary Image',
+                    images_count: 'Images (%{count})',
+                    no_images: 'No images',
+                    quick_summary: 'Quick Summary',
+                    pricelists_stat: 'Pricelists',
+                    stock_types_stat: 'Stock Types',
+                    platforms_stat: 'Platforms',
+                    categories_stat: 'Categories',
+                    stock: 'Stock',
+                    infinite_stock_enabled: 'This product has infinite stock enabled',
+                    stock_level: 'Stock level: %{percentage}%',
+                    no_stock_types: 'This product has no stock types configured',
+                    primary: 'Primary',
+                    basic_info: 'Basic Information',
+                    description: 'Description',
+                    keywords: 'Keywords',
+                    brand: 'Brand',
+                    no_categories: 'This product has no categories assigned',
+                    category_order: 'Order: %{order}',
+                    prices: 'Prices',
+                    no_prices: 'This product has no prices configured',
+                    active_platforms: 'Active Platforms',
+                    no_platforms: 'This product is not active on any platform',
+                    modifier_groups: 'Modifier Groups',
+                    modifier_type: 'Type: %{type}',
+                    required: 'Required',
+                    optional: 'Optional',
+                    min_label: 'Min: %{min}',
+                    max_label: 'Max: %{max}',
+                    options_count: 'Options (%{count})',
+                    default_option: 'Default',
+                    characteristics: 'Product Characteristics',
+                    metadata_fallback: 'Metadata',
+                    pack_contents: 'Pack Contents',
+                    quantity: 'Quantity',
+                    pack_sku: 'SKU: %{sku}',
+                    product_urls: 'Product URLs',
+                    url_fallback: 'URL',
+                    stock_infinite: 'Infinite Stock',
+                    stock_out: 'Out of Stock',
+                    stock_low: 'Low Stock',
+                    stock_good: 'In Stock',
+                },
+            },
+            categories: {
+                label: 'Categories',
+                menu_list: 'Category List',
+                main_action: 'Create Category',
+                filter_name: 'Name',
+            },
+            brands: {
+                label: 'Brands',
+                menu_list: 'Brand List',
+                main_action: 'Create Brand',
+            },
+            galleries: {
+                label: 'Galleries',
+                menu_list: 'Gallery List',
+                main_action: 'Create Gallery',
+                filter_name: 'Name',
+            },
+            currencies: {
+                label: 'Currencies',
+                menu_list: 'Currency List',
+                main_action: 'Create Currency',
+            },
+            pricelists: {
+                label: 'Price List',
+                menu_list: 'Price Lists',
+                main_action: 'Create Price List',
+            },
+            modifiers: {
+                label: 'Modifier Groups',
+                menu_list: 'Modifier List',
+                main_action: 'Create Modifier Group',
+                filter_name: 'Name',
+                filter_selection_mode: 'Selection Mode',
+                filter_is_active: 'Active',
+            },
+            stock_types: {
+                label: 'Stock Type',
+                menu_list: 'Stock Types',
+                main_action: 'Create Stock Type',
+            },
+            marketplaces: {
+                label: 'Marketplaces',
+                menu_list: 'View Marketplaces',
+                main_action: 'Add Marketplace',
+            },
+            point_of_sale: {
+                label: 'Points of Sale',
+                menu_list: 'View Points of Sale',
+                main_action: 'Add Point of Sale',
+            },
+            tenant_data: {
+                label: 'Data',
+                menu_list: 'Ecommerce Client Module',
+            },
+            users: {
+                label: 'Users',
+            },
+        },
+        // Campaigns
+        campaigns: {
+            label: 'Campaigns',
+            menu_list: 'Campaign List',
+            main_action: 'Create',
+            filter_name: 'Name',
+        },
+        // Import/Export
+        import: {
+            templates: {
+                label: 'Import Templates',
+                menu_list: 'Templates',
+                main_action: 'Create Template',
+            },
+            instances: {
+                label: 'Import Products',
+                menu_list: 'Imports',
+                main_action: 'Import Products',
+                tabs: {
+                    datos: 'Data',
+                    extraction: 'AI Extraction',
+                    preview: 'Preview',
+                    import: 'Import',
+                    logs: 'Logs',
+                },
+                fields: {
+                    import_type: 'Import Type',
+                    template: 'Template',
+                    file: 'File',
+                    menu_source: 'Menu Source',
+                    extraction: 'AI Extraction',
+                    options: 'Import Options',
+                    status: 'Status',
+                    preview: 'Preview',
+                    import_action: 'Import',
+                    logs: 'Logs',
+                    created_at: 'Created',
+                    updated_at: 'Updated',
+                },
+                types: {
+                    normalized: {
+                        title: 'Normalized Import (Recommended)',
+                        desc: 'Use standard normalized format with predefined columns',
+                    },
+                    template: {
+                        title: 'Template Import',
+                        desc: 'Use a custom template to map columns',
+                    },
+                    ai_menu: {
+                        title: 'AI Menu Import',
+                        desc: 'Upload a menu as PDF or images; AI extracts the products for your review',
+                    },
+                },
+                options: {
+                    advanced_config: 'Advanced Configuration',
+                    no_options: 'No configurable options for this import type.',
+                    view_title: 'Import Options (%{type})',
+                },
+                alerts: {
+                    select_template: 'You must select a template before uploading the file',
+                    normalized_format_title: 'Normalized Format:',
+                    normalized_format_desc: 'Your file must follow the standard format with columns like: sku, name, description, price_*, stock_*, category_name, brand_name, images, etc.',
+                },
+                messages: {
+                    delete_file_confirm: 'Are you sure you want to delete this record?',
+                    file_removed: 'File removed!',
+                    delete_file_title: 'Delete file',
+                    delete_file_content: '%{title} will be deleted',
+                    only_excel: 'You can only upload Excel files!',
+                    max_size: 'File must be smaller than 2MB!',
+                    no_file: 'No file uploaded!',
+                    unknown_format: 'Unknown file format. Only Excel files are supported!',
+                    no_data: 'No data found in file!',
+                    read_error: 'Error reading excel file',
+                },
+                progress: {
+                    title_preview: 'Preview Progress',
+                    title_import: 'Import Progress',
+                    processed_count: '%{processed} of %{total} products processed',
+                    currently_processing: 'Currently processing:',
+                    last_updated: 'Last updated: %{time}',
+                },
+                stats: {
+                    to_create: 'To Create',
+                    to_update: 'To Update',
+                    categories_to_create: 'Categories to Create',
+                    brands_to_create: 'Brands to Create',
+                    created: 'Created',
+                    updated: 'Updated',
+                    categories_created: 'Categories Created',
+                    galleries_created: 'Galleries Created',
+                    errors: 'Errors',
+                    skipped: 'Skipped',
+                },
+                dialog: {
+                    already_completed: {
+                        title: '%{mode} Already Completed',
+                        message: 'This %{mode} was already completed previously.',
+                        status: 'Current status: %{status}',
+                        footer: 'If you need to run it again, please refresh the page or create a new import instance.',
+                    },
+                    already_running: {
+                        title: '%{mode} Already Running',
+                        message: '%{message}',
+                        status: 'Current status: %{status}',
+                        footer: 'Please wait for the current process to complete or refresh the page to see the latest status.',
+                    },
+                },
+                headers: {
+                    preview_title: 'Mass Import Preview',
+                    preview_normalized_sub: 'Preview with normalized format',
+                    preview_template_sub: 'Preview with custom template',
+                    import_title: 'Mass Import',
+                    import_normalized_sub: 'Import with normalized format',
+                    import_template_sub: 'Import with custom template',
+                },
+                actions: {
+                    preview_in_progress: 'Preview in Progress...',
+                    preview_start: 'Preview Import',
+                    import_in_progress: 'Import in Progress...',
+                    import_start: 'Start Import',
+                },
+                results: {
+                    title: '%{mode} Results',
+                },
+                logs: {
+                    placeholder: 'Preview log here...',
+                    preview: 'Preview',
+                    download: 'Download',
+                },
+                select_template: 'Select Template',
+                no_template: {
+                    normalized: 'Normalized import does not require a template. The standard format will be used.',
+                    ai_menu: 'AI menu import does not require a template. Products are extracted from the menu you upload.',
+                },
+                ai: {
+                    upload_title: 'Upload the Menu',
+                    upload_help: 'Upload a menu PDF, or one image per menu page. An AI model reads each page and extracts dishes, prices and option groups for you to review.',
+                    kind_pdf: 'PDF',
+                    kind_images: 'Images',
+                    drop_pdf: 'Drag a PDF here or click to upload',
+                    drop_images: 'Drag page images here or click to upload',
+                    pdf_hint: 'PDF only — max %{limit} MB',
+                    images_hint: 'JPG, PNG, WEBP — max %{limit} MB each',
+                    pages_queued: 'Pages to process',
+                    page_order_hint: 'Pages are processed in upload order.',
+                    page: 'page',
+                    pages: 'pages',
+                    file_too_large: '"%{name}" exceeds the %{limit} MB limit',
+                    extract: 'Extract with AI',
+                    re_extract: 'Re-extract',
+                    extracting: 'Extracting…',
+                    extraction_queued: 'Extraction queued. Progress will appear here.',
+                    extraction_started: 'AI extraction started',
+                    extraction_completed: 'AI extraction completed — review the result',
+                    extraction_failed: 'AI extraction failed',
+                    save: 'Save Changes',
+                    saved: 'Changes saved. Confirm to enable the import.',
+                    download: 'Download .xlsx',
+                    confirm: 'Confirm & Generate',
+                    confirmed: 'Extraction confirmed — %{rows} rows generated. You can now preview and import.',
+                    confirmed_title: 'Extraction confirmed',
+                    confirmed_help: 'The import file has been generated. Go to the Preview tab to continue.',
+                    review_required_title: 'Review required',
+                    review_required_help: 'AI extraction is not always exact. Check every product and price, then confirm — preview and import stay disabled until you do.',
+                    confirm_before_import: 'Confirm the AI extraction before running the preview or import.',
+                    warnings_title: '%{count} thing(s) worth checking',
+                    view_warnings: 'View warnings',
+                    close: 'Close',
+                    empty: 'Nothing extracted yet. Run the extraction to begin.',
+                    not_applicable: 'This tab only applies to AI menu imports.',
+                    unsaved: 'You have unsaved changes.',
+                    unnamed: '(unnamed)',
+                    product_name: 'Name',
+                    category: 'Category',
+                    category_hint: 'Comma-separate for several',
+                    base_price: 'Base Price',
+                    sku: 'SKU',
+                    sku_hint: 'Matches existing products',
+                    description: 'Description',
+                    modifier_groups: 'Modifier Groups',
+                    add_group: 'Add Modifier Group',
+                    delete_group: 'Delete group',
+                    delete_option: 'Delete option',
+                    price_column: 'Price / Adjustment',
+                    delete_product: 'Delete Product',
+                    group_name: 'Group Name',
+                    group_type: 'Type',
+                    min_selections: 'Min',
+                    max_selections: 'Max',
+                    max_blank: 'Blank = unlimited',
+                    required: 'Required',
+                    option_name: 'Option',
+                    price_adjustment: 'Price +/-',
+                    is_default: 'Default',
+                    add_option: 'Add Option',
+                    options: 'options',
+                    model: 'Model',
+                    tokens: 'Tokens',
+                    cost: 'Est. cost',
+                    cost_unknown: 'no rate configured',
+                    rows: 'Rows',
+                },
+                statuses: {
+                    NOT_INITIATED: 'Not Initiated',
+                    EXTRACTION_INITIATED: 'Extracting…',
+                    EXTRACTION_COMPLETED: 'Extraction Completed',
+                    EXTRACTION_FAILED: 'Extraction Failed',
+                    PREVIEW_INITIATED: 'Preview Started',
+                    PREVIEW_COMPLETED: 'Preview Completed',
+                    PREVIEW_FAILED: 'Preview Failed',
+                    IMPORT_INITIATED: 'Import Started',
+                    IMPORT_COMPLETED: 'Import Completed',
+                    IMPORT_FAILED: 'Import Failed',
+                }
+            },
+        },
+        // Mall resources
+        mall: {
+            label: 'Mall',
+            menu_list: 'List',
+            main_action: 'Create Mall',
+        },
+        // Cash Count resources
+        cashcount: {
+            label: 'Cash Counts',
+            menu_list: 'Cash Counts',
+            main_action: 'New Cash Count',
+            filter_status: 'Status',
+            filter_period_start: 'Period Start (From)',
+            filter_period_end: 'Period End (To)',
+        },
+        qr_generator: {
+            title_self_service: "Self-Service QR Generator",
+            title_mall: "Mall Service QR Generator",
+            welcome_title: "Welcome to our self service module",
+            welcome_subtitle: "Order from your phone",
+            print: {
+                title: "📱 Order from your phone",
+                subtitle: "Scan the QR code to view the menu",
+                instructions: "Point your camera at the QR code",
+            }
+        },
+        // Tenancy resources
+        tenancy: {
+            groups: {
+                account: "Account",
+                billing: "Billing",
+                system: "System"
+            },
+            account: {
+                label: "Account",
+            },
+            subscription: {
+                label: "Subscription",
+            },
+            invoices: {
+                label: "Invoices",
+            },
+            payment_methods: {
+                label: "Payment Methods",
+            },
+            tenants: {
+                label: "Tenants",
+                menu_all: "All Tenants",
+                main_action: "Add Tenant",
+            },
+        },
+    },
+    // Verification
+    verify: {
+        title: "Account Verification",
+        verifying: "Verifying your account...",
+        invalidLink: "Invalid or expired verification link. Redirecting...",
+        success: "Account verified successfully! Redirecting...",
+        alreadyVerified: "Account is already verified. Redirecting...",
+        error: "An error occurred during verification. Redirecting...",
+    },
+    // Profile
+    profile: {
+        title: "Profile",
+        subtitle: "Profile configuration",
+        validation: {
+            required: "This field is required",
+            passwords_dont_match: "Passwords do not match",
+        },
+        success: "User updated successfully",
+        error_prefix: "Error updating user,",
+        error_default: "Error updating user",
+        sections: {
+            info_title: "Info",
+            passwords_title: "Passwords",
+        },
+        fields: {
+            name: "Name",
+            lastname: "Last Name",
+            email: "Email",
+            current_password: "Current password",
+            new_password: "New password",
+            repeat_password: "Repeat new password",
+        },
+        actions: {
+            save: "Save",
+            saving: "Saving...",
+            save_passwords: "Save Passwords",
+            saving_passwords: "Saving Passwords...",
+        }
+    },
+    // Dashboard
+    dashboard: {
+        title: "Dashboard",
+        welcome: "Welcome to the Tenancy Admin Dashboard",
+    },
+    // Subscription module
+    subscription: {
+        fetch_error: "Error fetching subscription plans: %{message}",
+        unsupported_plans: "%{count} plan(s) not available with your current payment method. To access all plans, consider changing your payment method.",
+        no_compatible_plans: "No compatible plans available with your current payment method (%{gateway}). Please contact your system administrator.",
+        management: {
+            title: "Subscription Management",
+            subtitle: "Manage your subscription plan and billing settings.",
+        },
+        current: {
+            title: "Subscription",
+            subtitle: "Manage your subscription and add-ons.",
+        },
+        available_plans: {
+            title: "Available Plans",
+            subtitle: "Choose a plan that fits your needs. You can upgrade or downgrade at any time.",
+        },
+        renews: "Renews",
+        no_active: "You don't have an active subscription. Choose a plan below to get started.",
+        current_plan: "Current Plan",
+        select_plan: "Select Plan",
+        trial_days: "%{days} day trial",
+        // Feature translations
+        features: {
+            basic_features: "Basic features",
+            email_support: "Email support",
+            one_store: "1 store included",
+            three_users: "3 users",
+            fifty_products: "50 products",
+            unlimited_products: "Unlimited products",
+            unlimited_users: "Unlimited users",
+            priority_support: "Priority support",
+            advanced_analytics: "Advanced analytics",
+            api_access: "API access",
+        },
+        // Plan change notifications
+        pending_change_title: "Plan Change Pending",
+        pending_change_message: "Your plan change to %{plan} is pending payment confirmation. You will receive an email once the payment is processed.",
+        confirm_upgrade_title: "Confirm Plan Upgrade",
+        confirm_upgrade: "Are you sure you want to upgrade to %{plan}?",
+        confirm_downgrade_title: "Confirm Plan Change",
+        confirm_downgrade: "Are you sure you want to change to %{plan}?",
+        confirm_change_title: "Confirm Plan Change",
+        confirm_change: "Are you sure you want to change to %{plan}?",
+        upgrade_success: "Successfully upgraded to %{plan}",
+        downgrade_success: "Successfully changed to %{plan}",
+        change_success: "Successfully changed to %{plan}",
+        upgrade_error: "Failed to upgrade plan",
+        downgrade_error: "Failed to change plan",
+        change_error: "Failed to change plan",
+        downgrade_not_allowed: "Downgrade to %{plan} is not allowed",
+        // Unsubscribe
+        unsubscribe: {
+            button: "Cancel Subscription",
+            processing: "Cancelling...",
+            confirm_title: "Cancel Subscription",
+            confirm_message: "Are you sure you want to cancel your subscription?",
+            confirm_button: "Cancel Subscription",
+            access_until: "Access until:",
+            days_remaining: "Days remaining:",
+            what_happens_title: "What happens when you unsubscribe:",
+            success: "Subscription cancelled. Access until %{date}.",
+            error: "Failed to cancel subscription",
+            preview_error: "Failed to load cancellation details",
+        },
+        // Subscription management actions
+        manage: "Manage",
+        choose_plan: "Choose a plan",
+        cancel_plan: "Cancel plan",
+        cancel_success: "Subscription cancelled successfully",
+        cancel_error: "Error cancelling subscription",
+        // Subscription details labels
+        active: "Subscription Active",
+        status_label: "Status:",
+        billing_cycle_label: "Billing Cycle:",
+        current_period_label: "Current Period:",
+        trial_ends_label: "Trial Ends:",
+        next_billing_label: "Next Billing:",
+        pending_change: "Pending Change",
+        switching_to: "Switching to:",
+        effective_date: "Effective:",
+    },
+    // Billing & Payment Gateways
+    billing: {
+        // Gateway Selector
+        selectPaymentMethod: "Select a Payment Provider",
+        selectPaymentMethodDesc: "Choose how you want to pay for your subscription",
+        noGatewaysAvailable: "No payment methods available for your account",
+        supportedCurrencies: "Currencies",
+        connecting: "Connecting...",
+        addCard: "Add Card",
+        
+        // Add Payment Method Prompt
+        addPaymentRequired: "Payment Method Required",
+        trialEndsIn: "Your trial ends in %{days} day(s)",
+        trialEnded: "Your trial has ended",
+        planContinue: "Add a payment method to continue using %{plan}",
+        
+        // Gateway Callback
+        callback: {
+            processing: "Processing your card...",
+            pleaseWait: "Please wait while we complete your registration.",
+            success: "Payment method added successfully!",
+            successTitle: "Success!",
+            redirecting: "Redirecting you back...",
+            noToken: "No registration token received",
+            error: "Failed to complete registration",
+            errorTitle: "Something went wrong",
+            tryAgain: "Try Again",
+        },
+        
+        // Payment Methods
+        paymentMethods: {
+            title: "Payment Methods",
+            description: "Manage your payment methods for subscription billing.",
+            noPaymentMethod: "No Payment Method",
+            addPaymentMethodToSubscribe: "Add a payment method to subscribe to a paid plan.",
+            addNew: "Add Payment Method",
+            setDefault: "Set as Default",
+            remove: "Remove",
+            default: "Default",
+            expiresOn: "Expires %{date}",
+            noMethods: "No payment methods added yet",
+            connected: "Connected",
+            paymentCard: "Payment Card",
+            removePaymentMethod: "Remove Payment Method",
+            removePaymentMethodTooltip: "Remove payment method",
+            confirmRemovePaymentMethod: "Are you sure you want to remove this payment method? You will need to add a new one to continue using paid features.",
+            paymentMethodRemoved: "Payment method removed",
+            errorRemovingPaymentMethod: "Failed to remove payment method",
+            addedOn: "Added on",
+        },
+        
+        // Invoices
+        invoices: {
+            title: "Payment Document",
+            document: "Document",
+            preview: "Document Preview",
+            view: "View",
+            download: "Download",
+            downloadAll: "Download All",
+            close: "Close",
+            loading: "Loading document...",
+            loadError: "Error loading document",
+            downloadSuccess: "Document downloaded successfully",
+            downloadError: "Error downloading document",
+            notAvailable: "Document not available",
+            browserNotSupported: "Your browser cannot display PDFs. Please download the document.",
+            // Document types
+            documentType: {
+                receipt: "Receipt",
+                invoice: "Invoice",
+                document: "Document",
+            },
+            // Status labels
+            status: {
+                succeeded: "Paid",
+                paid: "Paid",
+                pending: "Pending",
+                failed: "Failed",
+                refunded: "Refunded",
+            },
+        },
+    },
+    mall: {
+        // Orders
+        no_active_orders: "You have no active orders. You can create a new order using the menu.",
+        
+        // Store Selector
+        all_stores: 'All Stores',
+        select_store: 'Select a store',
+        all: 'All',
+
+        // Assistance
+        request_assistance: 'Request Assistance',
+        assistance_sent: 'Assistance request sent',
+        assistance_error: 'Failed to send assistance request',
+
+        // Search
+        search_products: 'Search products...',
+
+        // Product Grid
+        no_products_found: 'No products found',
+        try_different_store_or_search: 'Try selecting a different store or adjusting your search',
+        featured: 'Featured',
+        add: 'Add',
+
+        // Pagination
+        display_mode: 'Display',
+        horizontal_pagination: 'Show products in pages',
+        infinite_scroll: 'Show all products in a scroll',
+        pages: 'Pages',
+        scroll: 'Scroll',
+        prev: 'Prev',
+        next: 'Next',
+        swipe_for_more: 'Swipe for more',
+        products: 'products',
+        scroll_for_more: 'Scroll for more',
+
+        // Cart Summary
+        cart_empty: 'Your cart is empty',
+        view_cart: 'View Cart',
+        item: 'item',
+        items: 'items',
+        stores: 'stores',
+
+        // Cart Drawer
+        your_order: 'Your Order',
+        add_products_to_continue: 'Add some products to continue',
+        unknown_store: 'Unknown Store',
+        clear_cart: 'Clear Cart',
+        total: 'Total',
+        confirm_order: 'Confirm Order',
+        submit_order: 'Submit Order',
+        submitting_order: 'Submitting...',
+        continue_shopping: 'Continue Shopping',
+        product_added: 'Product added to cart',
+        product_added_with_name: '%{name} added to cart',
+        special_instructions: 'Special Instructions',
+        special_instructions_placeholder: 'Add notes (e.g. extra napkins)...',
+        modifiers: 'Modifiers',
+        add_to_cart: 'Add to Cart',
+        required: 'Required',
+
+        // Product Grid
+        all_products: 'All Products',
+        has_modifiers: 'Customizable',
+        no_more_products: 'No more products',
+        errors: {
+            sessionIdRequired: "Mall session ID is required",
+            validationDefault: "An error occurred while validating the session",
+            sessionExpired: "Session has expired. Sessions are valid for 10 hours from activation.",
+            sessionNotFound: "Session not found. Please check the session ID.",
+            accessDenied: "Access denied to this session.",
+            serverError: "Server error occurred. Please try again later.",
+            unableToValidate: "Unable to validate session. Please try again.",
+        },
+        session: {
+            no_hash: "No mall session hash found. Unable to track order progress.",
+            order_status: {
+                created: "Created",
+                created_text: "Your order has been created. Please wait for staff to confirm your order.",
+                confirmed: "Confirmed",
+                confirmed_text: "Your order has been confirmed.",
+                in_progress: "In Progress",
+                in_progress_text: "Your order is being processed. Please wait.",
+                in_preparation: "Preparing",
+                in_preparation_text: "Your order is being prepared.",
+                prepared: "Ready",
+                prepared_text: "Your order is ready for pickup.",
+                delivered: "Ready for Pickup",
+                delivered_text: "Your order is ready for pickup. Please collect it from the designated area.",
+                shipped: "Completed",
+                shipped_text: "Your order has been shipped. Thank you for your purchase!",
+                picked_up: "Picked Up",
+                picked_up_text: "Your order has been picked up. Thank you for your purchase!",
+                closed: "Completed",
+                closed_text: "Your order has been completed. Thank you for your purchase!",
+                returned: "Completed",
+                returned_text: "Your order has been returned. Thank you for your purchase!",
+                cancelled: "Cancelled",
+                cancelled_text: "Your order has been cancelled. If you have any questions, please contact support.",
+                not_shipped: "Cancelled",
+                not_shipped_text: "Your order has not been shipped. If you have any questions, please contact support.",
+            },
+            no_notifications: "No notifications",
+            notifications: "Notifications",
+            products_count: "Products (%{count})",
+            product: {
+                unknown: "Unknown Product",
+                quantity: "Qty: %{quantity}",
+                pending: "Pending",
+            },
+            order_status_overall: "Overall Order Status",
+            stores_progress: "Store Progress",
+            items: "items",
+        },
+    },
+
+    selfservice: {
+        welcome: {
+            title: "Welcome!",
+            subtitle: "Please enter your details to start your order",
+            name_label: "Your name",
+            name_placeholder: "Enter your name",
+            delivery_method_label: "How would you like to receive your order?",
+            table_service: "At my table",
+            counter_pickup: "At counter",
+            table_label: "Table number",
+            counter_info: "Your order will be ready for pickup at the counter. We will notify you when it's ready.",
+            continue_button: "Continue with my order",
+            start_button: "Start ordering",
+            session_info: "Secure session • Your data is protected",
+        },
+        menu: {
+            your_orders: "Your Orders",
+            new_order: "New Order",
+            order_here: "Order Here!",
+            place_order: "Place Order",
+            checkout: "Checkout",
+        },
+        timeline: {
+            title: "Order Status",
+        },
+        voucher: {
+            title: "Voucher",
+            dialog_title: "Voucher",
+            load_error: "Error loading voucher",
+            loading: "Generating voucher...",
+        },
+        notifications: {
+            title: "Notifications",
+            new_update: "New update on your order",
+            mark_all_read: "Mark all as read",
+            empty: "You have no recent notifications.",
+            empty_hint: "Order updates will appear here.",
+        },
+        settings: {
+            title: "Settings",
+            save_button: "Save Changes",
+        }
+    },
+
+
+    common: {
+        cancel: "Cancel",
+        keep: "Keep Subscription",
+        view: "View",
+        edit: "Edit",
+        login: "Login",
+        signup: "Sign Up",
+        unknown_error: "Unknown error",
+    },
+    cashcount: {
+        sales_count: "%{count} sales",
+        sales_count_short: "Sales",
+        amount: "Amount",
+        tips: "Tips",
+        system_totals: "System Totals",
+        final_totals: "Final Totals",
+        corrected: "Corrected",
+        modified: "Modified",
+        system: "System",
+        location: "Location",
+        status: "Status",
+        unknown_location: "Unknown Location",
+        system_values: "System: %{sales} sales, %{amount}, %{tips} tips",
+        was_value: "was %{value}",
+        pos_breakdown: "Point of Sale Breakdown",
+        system_calculated_totals: "System Calculated Totals",
+        status_closed: "✅ This cash count is finalized and cannot be modified.",
+        status_draft: "⚠️ Ready to close: Saving will finalize this cash count permanently.",
+        status_preview: "💡 Review and adjust individual location totals below. Final totals will be calculated automatically.",
+        pos_breakdown_description: "Adjust individual location totals. Main totals will be recalculated automatically.",
+        final_values: "Final Values",
+        totals: "TOTALS",
+        notes: "Notes",
+        notes_placeholder: "Add any notes about corrections or observations...",
+        notes_corrections_help: "Please explain the reason for the corrections above.",
+        notes_help: "Optional notes about this cash count.",
+        invalid_date: "Invalid date",
+        duration_label: "Duration: %{duration}",
+        cash_count_period: "Cash Count Period",
+        cash_count_period_readonly: "Cash Count Period (Read Only)",
+        period_start: "Period Start",
+        period_end: "Period End",
+        duration: "Duration",
+        period_auto_calculated: "Period dates will be calculated automatically",
+        automatic_calculation: "Automatic Period Calculation:",
+        automatic_calculation_description: "The cash count will start from where your last one ended and continue until now, ensuring no gaps in your records.",
+        current_period_sales: "Current Period Sales",
+        refresh: "Refresh",
+        first_period_message: "This is your first cash count period. Showing sales from %{start} (%{days} days ago) to now.",
+        period_since_last: "Showing sales since last cash count closed on %{lastEnd} (%{days} days ago).",
+        total_sales: "Total Sales",
+        total_amount: "Total Amount",
+        total_tips: "Total Tips",
+        daily_average: "Avg: %{avg}/day",
+        growth_comparison: "Growth Comparison",
+        daily_average_comparison: "Daily averages compared to last closed period",
+        sales: "Sales",
+        percentage: "% of Total",
+        top_products: "Top Products",
+        product: "Product",
+        quantity_sold: "Qty Sold",
+        avg_price: "Avg Price",
+        recent_orders: "Recent Orders",
+        order_id: "Order ID",
+        date_time: "Date & Time",
+        items: "Items",
+        current_period_error: "Failed to load current period data",
+    },
+    mission: {
+        title: "Mission",
+        description: "Mission Description",
+        start: "Start",
+        end: "End",
+        status: "Status",
+        completed: "Completed",
+        failed: "Failed",
+        in_progress: "In Progress",
+        not_started: "Not Started",
+    },
+    voice: {
+        recording: "Recording...",
+        processing: "Processing...",
+        processing_ai: "Processing with AI...",
+        processing_voice: "Processing voice...",
+        processing_image: "Processing image...",
+        capturing: "Capturing...",
+        capturing_countdown: "Capturing in %{countdown}...",
+        applying: "Applying...",
+        stop: "Stop",
+        record: "Record",
+        stop_recording: "Stop recording",
+        start_recording: "Start recording",
+        stop_recording_full: "Stop Recording",
+        start_recording_full: "Start Recording",
+        recording_disabled: "Recording disabled",
+        recording_disabled_full: "Voice recording disabled",
+        ready_to_record: "Ready to record",
+        actions_detected: "%{count} action(s) detected",
+        error_processing: "Error processing voice command",
+        error_connection: "Connection error. Check your internet.",
+        error_file_too_large: "Audio file is too large",
+        error_invalid_format: "Invalid audio format",
+        applying_commands: "Applying voice commands...",
+        error_enhanced: "Error processing enhanced voice commands",
+        ai_label: "AI",
+        auto_label: "Auto",
+        auto_apply_info: "Actions will be applied automatically",
+        view_ai_analysis: "View AI analysis",
+        analysis: {
+            title: "Voice AI Analysis",
+            transcription: "Transcription",
+            processing_steps: "Processing Steps",
+            actions_detected: "Actions Detected (%{count})",
+            no_data: "No analysis available",
+            record_command: "Record a voice command to see analysis",
+            view: "View AI analysis",
+            steps: {
+                extraction: "1. Extraction",
+                products: "2. Products",
+                enhanced: "3. Enhanced AI",
+            },
+            enhanced_results: "Enhanced Results",
+            actions_count: "%{count} actions",
+            products_count: "%{count} products",
+            modifiers_ai: "%{count} AI modifiers",
+            auto_added: "%{count} auto-added",
+            products_found: "✓ %{count} product(s) found",
+            modifiers_ai_label: "🤖 AI Modifiers: %{modifiers}",
+            modifiers_detected: "📝 Modifiers detected: %{modifiers}",
+            note: "📝 Note: %{note}",
+            ai_analysis: "💭 %{analysis}",
+            resolved: "✓ Resolved: %{products}",
+            metrics: {
+                actions: "Actions",
+                products: "Products",
+                modifiers_ai: "AI Modifiers",
+                auto_added: "Auto-added",
+            },
+        },
+        examples: {
+            title: "Command examples",
+            add_two_burgers: "Add two cheeseburgers",
+            large_coffee: "I want a large coffee to go",
+            remove_pizza: "Remove the pizza from the order",
+            change_quantity: "Change the quantity of tacos to three",
+            add_note: "Add note: no onions to the burrito",
+            remove_second: "Remove the second ramen",
+            modify_quantity: "Change the steak to quantity 1",
+            add_note_no_spicy: "Add note no spicy to the ceviche",
+        },
+        assistant: {
+            title: "Voice AI Assistant",
+        },
+    },
+    category: {
+        all: "All",
+        all_plural: "All",
+    },
+    payment: {
+        default: "★",
+    },
+    tabs: {
+        mall_notifications: {
+            // Status titles
+            order_in_preparation: 'Order in preparation',
+            order_ready: 'Order ready!',
+            order_ready_pickup: 'Ready for pickup',
+            order_completed: 'Order completed',
+            order_cancelled: 'Order cancelled',
+            order_confirmed: 'Order confirmed',
+            order_status_updated: ':store updated your order to :status',
+
+            // Status messages
+            order_in_preparation_message: ':store is preparing your order',
+            order_prepared_message: ':store has :count items ready',
+            order_delivered_message: ':store has delivered your order',
+            order_status_message: ':store: Order is now :status',
+
+            // Tab creation
+            new_order_created: 'New order created',
+            new_order_at_store: 'New order at :store',
+            new_order_message: 'Order from :customer at table :table',
+            new_order_message_no_table: 'Order from :customer',
+            new_order_with_items: ':customer at table :table ordered :count items',
+
+            // Assistance
+            assistance_requested: 'Assistance requested!',
+            assistance_message: ':customer at table :table needs help',
+        },
+    },
+    dash: {
+        resource: {
+            created: 'Resource Created',
+            created_message: 'The resource %{label} has been created',
+            updated: 'Resource Updated',
+            updated_message: 'The resource %{label} has been updated',
+            edited: 'Resource Edited',
+            error: '%{label} Error',
+        },
+        action: {
+            cancel: 'Cancel',
+            confirm: 'Confirm',
+            continue: 'Continue',
+            edit: 'Edit',
+            save: 'Save',
+            delete: 'Delete',
+        }
+    },
+    tenant: {
+        tests: {
+            title: 'System Tests',
+            subtitle: 'Verify notification and printing functionalities',
+            run: 'Run',
+            running: 'Running...',
+            success: 'Test successful',
+            error: 'Test failed',
+            electron_only: 'Only available in desktop app',
+            categories: {
+                notifications: 'Notifications',
+                notifications_desc: 'Test notification delivery mechanisms',
+                printing: 'Printing',
+                printing_desc: 'Test printing functionality',
+            },
+            items: {
+                fcm_notification: 'Test FCM Notification',
+                fcm_notification_desc: 'Send a push notification to all tenant users with FCM tokens',
+                audio_notification: 'Test Audio Notification',
+                audio_notification_desc: 'Play the alarm sound with saved settings',
+                tts_notification: 'Test TTS Notification',
+                tts_notification_desc: 'Test text-to-speech notification (Electron only)',
+                local_print: 'Local Print',
+                local_print_desc: 'Print test page directly via IPC (Electron only)',
+                network_print: 'Network Print',
+                network_print_desc: 'Send print command via WebSocket to kt_service',
+            },
+            messages: {
+                no_tenant: 'No tenant context available',
+                test_completed: 'Test completed successfully',
+                test_executed: 'Test executed successfully',
+            },
+        },
+        alarm_settings: {
+            title: 'Alarm Settings',
+            subtitle: 'Configure notification alarm sounds',
+            test_alarm: 'Test Alarm',
+            playing: 'Playing...',
+            reset: 'Reset',
+            save: 'Save Settings',
+            saving: 'Saving...',
+            saved: 'Alarm settings saved',
+            save_error: 'Failed to save settings',
+            test_completed: 'Alarm test completed',
+            test_error: 'Failed to play alarm',
+            create_first: 'Alarm settings can be configured after the tenant is created.',
+            settings: {
+                alarm_duration: 'Alarm Duration',
+                alarm_duration_desc: 'How long the alarm plays (max 10 seconds)',
+                high_frequency: 'High Frequency',
+                high_frequency_desc: 'High pitch beep frequency',
+                low_frequency: 'Low Frequency',
+                low_frequency_desc: 'Low pitch beep frequency',
+                beep_duration: 'Beep Duration',
+                beep_duration_desc: 'Duration of each beep',
+                beep_gap: 'Beep Gap',
+                beep_gap_desc: 'Gap between beeps in a pattern',
+                pattern_gap: 'Pattern Gap',
+                pattern_gap_desc: 'Gap between beep patterns',
+            },
+            units: {
+                seconds: 's',
+                hertz: 'Hz',
+                milliseconds: 'ms',
+            },
+            
+        },
+        store_schedule: {
+            title: 'Store Schedule',
+            subtitle: 'Configure automated opening availability for this store',
+            enable_schedule: 'Enable Scheduled Availability',
+            enabled: 'Active',
+            disabled: 'Disabled (Manual Mode)',
+            disabled_warning: 'Schedule is disabled. Store status must be managed manually via the Status tab.',
+            day: 'Day',
+            active: 'Active',
+            hours: 'Opening Hours',
+            add: 'Add',
+            open: 'Open',
+            close: 'Close',
+            save_success: 'Schedule saved successfully',
+            save_error: 'Failed to save schedule',
+            fetch_error: 'Failed to load schedule',
+        },
+        store_status: {
+            title: 'Store Status',
+            subtitle: 'Current operational status and manual controls',
+            current_status: 'Current Status',
+            open: 'OPEN',
+            closed: 'CLOSED',
+            open_store: 'Open Store',
+            close_store: 'Close Store',
+            schedule_active: 'Schedule Active',
+            manual_close_warning: 'Store is manually closed. It will automatically reopen at the next scheduled start time.',
+            manual_open_warning: 'Store is manually opened. It will automatically close when the schedule dictates (e.g. entering a closed period).',
+            following_schedule: 'Store is operating according to schedule (Timezone: %{timezone}).',
+            manual_mode_info: 'Schedule is disabled. You must manually open and close the store.',
+        },
+        marketplaces: {
+            title: 'Marketplace Integration',
+            subtitle: 'Connect and manage marketplace relationships',
+            nombre: 'Name',
+            clase: 'Class',
+            select: 'Select',
+            select_marketplaces: 'Select Marketplaces',
+            delete_selected: 'Delete Selected',
+        },
+        point_of_sales: {
+            title: 'Point of Sale Integration',
+            subtitle: 'Connect and manage POS relationships',
+            nombre: 'Name',
+            clase: 'Class',
+            select: 'Select',
+            select_pos: 'Select Points of Sale',
+            delete_selected: 'Delete Selected',
+        },
+    },
+    // Landing Page Content
+    landing: {
+        login : {
+            title: 'Login',
+            email: 'Email',
+            password: 'Password',
+            submit: 'Submit',
+            resetPassword: 'Reset password',
+            invalidCredentials: 'Invalid credentials',
+            invalidEmail: 'Invalid email address',
+            invalidPassword: 'Invalid password',
+            loading: 'Loading...',
+            alreadyLoggedIn: 'You are already logged in',
+            goHome: 'Go to Home'
+        },
+        hero: {
+            title: "INAMAP",
+            subtitle: "Interactive maps with search and routes to guide people through your venue.",
+            description: "INAMAP is an interactive mapping platform that guides people inside venues — campuses, buildings, fairs and events — with search and step-by-step routes.",
+            cta: "Get Started",
+            learnMore: "Learn More",
+            trialTitle: "Join INAMAP now for free!",
+            trialSubtitle: "Start your 30-day free trial. No credit card required.",
+            emailPlaceholder: "Enter your email",
+            createStore: "CREATE STORE"
+        },
+        prerelease: {
+            title: "🚀 The revolution in AI Kiosks is coming!",
+            description: "INAMAP is in its alpha phase, and we are putting the final touches on the best tool for your business.",
+            callToAction: "Interactive maps with search and routes to guide people through your venue.",
+            form: {
+                name: "Name",
+                nameRequired: "Name is required",
+                email: "Email",
+                emailRequired: "Email is required",
+                emailInvalid: "Email is not valid",
+                contactPhone: "Contact Phone (optional)",
+                businessWebsite: "Business Website (optional)",
+                businessInstagram: "Business Instagram (optional)",
+                continue: "Continue",
+                send: "Send",
+                error: "We could not register your details. Please try again."
+            },
+            success: {
+                title: "Thank you for your interest! 🎉",
+                message: "Interactive maps with search and routes to guide people through your venue."
+            }
+        },
+        what: {
+            title: "What is INAMAP?",
+            description: "INAMAP is an interactive mapping platform that guides people inside venues — campuses, buildings, fairs and events — with search and step-by-step routes.",
+        },
+        features: {
+            title: "Key Features",
+            subtitle: "Interactive maps with search and routes to guide people through your venue.",
+            digitalOrders: {
+                icon: "📲",
+                title: "Digitize Order Taking",
+                description: "Allows recording orders from mobile devices, reducing errors and service times."
+            },
+            optimizeKitchen: {
+                icon: "🍳",
+                title: "Optimize Kitchen Operations",
+                description: "The kitchen receives clear, ordered, real-time orders, with visual states and preparation times."
+            },
+            syncTeam: {
+                icon: "🔄",
+                title: "Synchronize the Entire Team",
+                description: "Waiters, kitchen, and administration work on the same information, without duplications or confusion."
+            },
+            independence: {
+                icon: "🧩",
+                title: "Respect Each Store's Independence",
+                description: "Interactive maps with search and routes to guide people through your venue."
+            },
+            unifiedExperience: {
+                icon: "🏬",
+                title: "Interactive maps with search and routes to guide people through your venue.",
+                description: "Customers can, in later stages, order from their phone to different stores in a single flow."
+            },
+            visibility: {
+                icon: "📊",
+                title: "Deliver Visibility and Control",
+                description: "Allows viewing active orders, preparation times and order status in real time."
+            },
+            onlineSales: {
+                icon: "🌐",
+                title: "Prepare the Path for Online Sales",
+                description: "Interactive maps with search and routes to guide people through your venue."
+            },
+            scalable: {
+                icon: "🚀",
+                title: "Interactive maps with search and routes to guide people through your venue.",
+                description: "The platform progressively incorporates new functionalities such as digital payments, marketplace integration, inventory control and logistics."
+            }
+        },
+        videoPromo: {
+            title: "Introductory video"
+        },
+        vision: {
+            title: "Our Vision",
+            subtitle: "Interactive maps with search and routes to guide people through your venue.",
+            description: "Interactive maps with search and routes to guide people through your venue.",
+            goals: {
+                title: "We are building toward a future where:",
+                items: [
+                    "Interactive maps with search and routes to guide people through your venue.",
+                    "Orders, payments, inventory, and dispatch flow without friction",
+                    "System intelligence improves by learning from millions of kitchens simultaneously",
+                    "Interactive maps with search and routes to guide people through your venue."
+                ]
+            },
+            statement: "Interactive maps with search and routes to guide people through your venue."
+        },
+        benefits: {
+            title: "Interactive maps with search and routes to guide people through your venue.",
+            fasterProcessing: {
+                icon: "🚀",
+                title: "Faster Order Processing",
+                description: "Streamlined interface reduces preparation time"
+            },
+            improvedCommunication: {
+                icon: "📱",
+                title: "Improved Communication",
+                description: "Real-time updates between front-of-house and kitchen"
+            },
+            reducedErrors: {
+                icon: "🎯",
+                title: "Reduced Errors",
+                description: "Visual product displays minimize mistakes"
+            },
+            betterTiming: {
+                icon: "⏱️",
+                title: "Better Timing",
+                description: "Built-in timers help maintain consistent service standards"
+            },
+            insights: {
+                icon: "📊",
+                title: "Performance Insights",
+                description: "Data on preparation times and bottlenecks"
+            },
+            coordination: {
+                icon: "👥",
+                title: "Team Coordination",
+                description: "Role-based access ensures proper workflow management"
+            }
+        },
+        dashboard: {
+            title: "Centralized Control Panel",
+            description: "INAMAP is an interactive mapping platform that guides people inside venues — campuses, buildings, fairs and events — with search and step-by-step routes.",
+            features: {
+                realtime: "📋 View active and completed orders in real time",
+                statusChange: "🔄 Change order status throughout the operational flow",
+                payments: "💳 Manage payments and account closures from the same system",
+                closings: "🧾 Record operational closures in an orderly and traceable way"
+            },
+            sync: "Each action is instantly synchronized with the rest of the team thanks to a real-time notification system, ensuring that kitchen, cashier and customer service are always aligned."
+        },
+        future: {
+            title: "Interactive maps with search and routes to guide people through your venue.",
+            description: "Interactive maps with search and routes to guide people through your venue."
+        },
+        contact: {
+            title: "Contact With Us",
+            description: "It's very easy to get in touch with us. Just use the contact form or send us an email.",
+            formTitle: "Reach us quickly",
+            name: "Enter name",
+            email: "Enter email",
+            phone: "Your Phone",
+            company: "Your Company",
+            message: "Message",
+            submit: "Send Message",
+            office: "Head Office",
+            contactEmail: "Email"
+        },
+        newsletter: {
+            placeholder: "Enter your email",
+            subscribe: "Subscribe",
+            title: "Stay Updated",
+            description: "Subscribe to our newsletter for the latest updates"
+        },
+        cta: {
+            title: "Start your journey with us!",
+            subtitle: "Start your free 30-day trial. No credit card required."
+        },
+        footer: {
+            description: "Interactive AI Kiosks",
+            contact: "Contact",
+            terms: "Terms",
+            security: "Security",
+            privacy: "Privacy",
+            copyright: "© KitchTabs, All rights reserved"
+        },
+        download: {
+            title: "Download INAMAP",
+            subtitle: "Interactive maps with search and routes to guide people through your venue.",
+            what_is_title: "What is INAMAP?",
+            what_is_description: "INAMAP is an interactive mapping platform that guides people inside venues — campuses, buildings, fairs and events — with search and step-by-step routes.",
+            download_title: "Download the App",
+            download_subtitle: "Interactive maps with search and routes to guide people through your venue.",
+            admin_panel_text: "Already have an account? Access the admin panel",
+            admin_panel_button: "Access Admin Panel",
+            features: {
+                digitize: {
+                    title: "Digitize Order Taking",
+                    description: "Record orders from mobile devices, reducing errors and service times."
+                },
+                kitchen: {
+                    title: "Optimize Kitchen Operations",
+                    description: "The kitchen receives clear, ordered, real-time orders with visual states and preparation times."
+                },
+                sync: {
+                    title: "Synchronize the Entire Team",
+                    description: "Waiters, kitchen, and administration work on the same information, without duplications."
+                },
+                independence: {
+                    title: "Each Store's Independence",
+                    description: "Interactive maps with search and routes to guide people through your venue."
+                },
+                visibility: {
+                    title: "Visibility and Control",
+                    description: "View active orders, preparation times and order status in real time."
+                },
+                scale: {
+                    title: "Scale with Growth",
+                    description: "Progressively incorporates digital payments, marketplace integration, inventory control and logistics."
+                }
+            }
+        }
+    },
+    signup: {
+        title: "Create Your Account",
+        accountInformation: "Account Information",
+
+        // Pre-release invitation gate
+        invitation: {
+            title: "Invitation access",
+            description: "INAMAP is an interactive mapping platform that guides people inside venues — campuses, buildings, fairs and events — with search and step-by-step routes.",
+            codeLabel: "Invitation code",
+            submit: "Continue",
+            invalidCode: "The invitation code is not valid.",
+            back: "Back to home"
+        },
+        
+        // Form fields
+        email: "Email",
+        businessName: "Business Name",
+        firstName: "First Name",
+        lastName: "Last Name",
+        password: "Password",
+        confirmPassword: "Confirm Password",
+        contactPhone: "Contact Phone",
+        rut: "RUT",
+        preferredLanguage: "Preferred Language",
+        preferredCurrency: "Preferred Currency",
+        preferredTimezone: "Timezone",
+        
+        // Buttons and actions
+        continueWithGoogle: "Continue with Google",
+        connecting: "Connecting...",
+        createAccountStartTrial: "Create Account & Start Trial",
+        creatingAccount: "Creating Account...",
+        cancel: "Cancel",
+        
+        // Messages
+        orSignUpWithEmail: "or sign up with email",
+        termsOfService: "Terms of Service",
+        privacyPolicy: "Privacy Policy",
+        byCreatingAccount: "By creating an account, you agree to our",
+        and: "and",
+        
+        // Validation messages
+        emailRequired: "Email is required",
+        invalidEmail: "Invalid email address",
+        businessNameRequired: "Business name is required",
+        rutRequired: "RUT is required",
+        publicIdLabel: "Tax ID",
+        invalidRut: "Invalid RUT",
+        firstNameRequired: "First name is required",
+        lastNameRequired: "Last name is required",
+        passwordRequired: "Password is required",
+        passwordMinLength: "Password must be at least 8 characters",
+        confirmPasswordRequired: "Please confirm your password",
+        passwordsDoNotMatch: "Passwords do not match",
+        phoneRequired: "Phone number is required",
+        
+        // Success and error messages
+        accountCreatedSuccess: "Welcome! You have subscribed to INAMAP 30-day free trial. Please check your email to verify your account.",
+        errorOccurred: "An error occurred, please try again",
+        registrationError: "An error occurred during registration",
+        googleSignupDisabled: "Google signup is currently disabled",
+        googleAuthError: "Error with Google authentication",
+        
+        // Dialog titles
+        error: "Error",
+        
+        success: {
+            title: "Account Created Successfully!",
+            welcome: "Welcome! Your account has been created and you have subscribed to the %{planName} plan.",
+            verificationSent: "We have sent a verification email to %{email}. Please check your inbox and click on the verification link to activate your account.",
+            noVerificationNeeded: "Your account is being set up and will be ready shortly. No email verification is required - you can sign in once setup finishes.",
+            description: "Now you can log in to your account and start using all the features included in your plan.",
+            loginButton: "Go to Login",
+            homeButton: "Back to Home",
+            home_button: "Back to Home"
+        },
+        
+        verify: {
+            title: "Account Verification",
+            verifying: "Verifying account...",
+            invalidLink: "Invalid verification link.",
+            success: "Account verified successfully. Redirecting to login...",
+            alreadyVerified: "Account already verified. Redirecting to login...",
+            error: "Error verifying account. Please try again.",
+            redirecting: "Redirecting to login..."
+        },
+        
+        login: {
+            title: "Login",
+            email: "Email",
+            password: "Password",
+            submit: "Login",
+            resetPassword: "Reset password",
+            invalidCredentials: "Invalid credentials",
+            invalidEmail: "Invalid email address",
+            invalidPassword: "Invalid password",
+            loading: "Loading...",
+            alreadyLoggedIn: "You are already logged in",
+            goHome: "Go to Home"
+        }
+    },
+
+    // Menu Items
+    menu: {
+        home: "Home",
+        plans: "Plans",
+        about: "About",
+        contact: "Contact",
+        download: "Download",
+        features: "Features"
+    },
+
+    // Plans Page
+    plans: {
+        title: "Choose Your Plan",
+        subtitle: "Start your free trial today. No credit card required.",
+        getStarted: "Get Started",
+        footer: "All plans include a free trial period. Cancel anytime.",
+        loading: "Loading plans...",
+        error: "Failed to load subscription plans. Please try again later.",
+        noPlans: "No plans available at this time.",
+        
+        // Plan names by slug
+        planNames: {
+            "free-trial": "Free Trial",
+            "basic-plan": "Basic Plan",
+            "professional-plan": "Professional Plan",
+            "enterprise-plan": "Enterprise Plan"
+        },
+        
+        // Plan descriptions by slug
+        planDescriptions: {
+            "free-trial": "30-day free trial with basic features",
+            "basic-plan": "Perfect for individuals and small teams",
+            "professional-plan": "Advanced features for growing businesses",
+            "enterprise-plan": "Complete solution for large organizations"
+        },
+        
+        // Feature translations
+        features: {
+            basic_features: "Basic features",
+            email_support: "Email support",
+            one_store: "1 store",
+            three_users: "3 users",
+            fifty_products: "50 products",
+            unlimited_stores: "Unlimited stores",
+            unlimited_users: "Unlimited users",
+            unlimited_products: "Unlimited products",
+            priority_support: "Priority support",
+            advanced_analytics: "Advanced analytics",
+            custom_domain: "Custom domain",
+            api_access: "API access",
+            white_label: "White label"
+        },
+        
+        // Billing cycles
+        billingCycle: {
+            daily: "per day",
+            weekly: "per week",
+            monthly: "per month",
+            yearly: "per year",
+            daily_short: "/day",
+            weekly_short: "/wk",
+            monthly_short: "/mo",
+            yearly_short: "/yr"
+        },
+        
+        // Trial badge
+        trialDays: "%{days}-day free trial",
+        
+        // Badges
+        popular: "Popular",
+        selected: "Selected"
+    },
+
+    // Tenancy Account Management
+    tenancy_account: {
+        management: {
+            title: "Account Management",
+            delete: {
+                title: "Delete Account",
+                description: "Permanently delete your account and all associated data. This action cannot be undone.",
+                button: "Delete Account",
+                dialog: {
+                    title: "Delete Account",
+                    warning_title: "Warning: This action is irreversible",
+                    warning_content: "Deleting your account will:",
+                    warning_items: {
+                        disable: "Immediately disable your account",
+                        schedule: "Schedule permanent deletion after %{days} days",
+                        delete_users: "Delete all users associated with this account",
+                        delete_tenants: "Delete all stores/tenants you manage",
+                        delete_products: "Delete all products and inventory",
+                        delete_subscriptions: "Cancel all active subscriptions",
+                        delete_data: "Permanently erase all your data"
+                    },
+                    confirm_instruction: "Type DELETE to confirm:",
+                    confirm_word: "DELETE",
+                    cancel: "Cancel",
+                    confirm: "Delete My Account"
+                },
+                success: "Account deletion initiated. You will receive an email confirmation.",
+                error: "Failed to initiate account deletion. Please try again.",
+                cannot_delete: "Cannot delete account at this time. Please contact support."
+            },
+            pending_deletion: {
+                title: "Account Pending Deletion",
+                description: "Your account is scheduled for permanent deletion on %{date}.",
+                cancel_button: "Cancel Deletion",
+                cancel_success: "Account deletion has been cancelled.",
+                cancel_error: "Failed to cancel deletion. Please try again."
+            },
+            export: {
+                title: "Export Your Data",
+                description: "Download a copy of all your account data in a portable format.",
+                button: "Request Data Export",
+                requesting: "Requesting export...",
+                success: "Data export requested. You will receive an email when it's ready.",
+                error: "Failed to request data export. Please try again.",
+                history: {
+                    title: "Export History",
+                    no_exports: "No data exports yet.",
+                    status: {
+                        pending: "Pending",
+                        processing: "Processing",
+                        completed: "Completed",
+                        failed: "Failed",
+                        expired: "Expired"
+                    },
+                    download: "Download",
+                    expires: "Expires: %{date}",
+                    expired_message: "This export has expired"
+                }
+            }
+        }
+    },
+
+    // Account list translations
+    account: {
+        no_accounts: "No accounts",
+        email_label: "Email",
+        created_label: "Created",
+        updated_label: "Updated",
+        trial_ends_label: "Trial ends",
+        plan_label: "Plan",
+        trial_days_left: "Trial days left",
+        deletion_scheduled: "Account scheduled for deletion on %{date}",
+        deletion_days_remaining: "Account deletion in %{days} days",
+    },
+
+    // kt-devices — Kiosks only (INAMAP has no Printers/Terminals resource;
+    // kt-kiosk-agent is the only edge terminal it has, and it reports no
+    // attached hardware of its own — see device_agent.py's register(), which
+    // always sends devices: []).
+    devices: {
+        kiosk: {
+            label: "Kiosks",
+            menu_list: "Kiosks",
+        },
+        tabs: {
+            general: "General",
+            hardware: "Hardware",
+            sessions: "Sessions",
+            tail: "Live log",
+        },
+        fields: {
+            terminal_name: "Kiosk",
+            online: "Online",
+            hostname: "Host",
+            tenant: "Tenant",
+            last_seen_at: "Last seen",
+            last_login_at: "Last registered",
+            agent_uid: "Agent ID",
+            platform: "Platform",
+            arch: "Architecture",
+            agent_version: "Agent version",
+            last_auth_user: "Last signed in as",
+            metadata: "Metadata",
+        },
+        tail: {
+            title: "Live log (last ~30s of activity)",
+            error: "Could not reach the kiosk right now.",
+            waiting: "Waiting for activity…",
+        },
+        filters: {
+            search: "Search",
+        },
+    },
+
+};
+
+export default customEn;
