@@ -1,0 +1,52 @@
+{
+	"name": "ina-maps",
+	"version": "1.0.0",
+	"description": "INAMAP \u2014 gesti\u00f3n de mapas sobre DashAdmin: recursos, editor de mapas e i18n. Equivalente de vx-lab.",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"typecheck": "tsc --noEmit --skipLibCheck --skipDefaultLibCheck",
+		"build": "tsup"
+	},
+	"dependencies": {
+		"@mui/icons-material": "^9.3.0",
+		"@mui/material": "^9.3.0",
+		"ina-viewer": "workspace:*",
+		"qrcode.react": "^4.2.0",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"react-admin": "5.15.1",
+		"react-arborist": "^3.4.3",
+		"react-hook-form": "^7.54.0",
+		"react-redux": "latest",
+		"react-router-dom": "7.17.0",
+		"mobile-drag-drop": "^3.0.0-rc.0"
+	},
+	"devDependencies": {
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"typescript": "^5.9.3"
+	},
+	"module": "dist/index.js",
+	"types": "./src/index.ts",
+	"typesVersions": {
+		"*": {
+			"src/*": [
+				"src/*",
+				"src/*/index"
+			],
+			"*": [
+				"src/*",
+				"src/*/index"
+			]
+		}
+	},
+	"exports": {
+		".": "./dist/index.js",
+		"./*": "./dist/*.js",
+		"./src/*": "./dist/*.js"
+	},
+	"files": [
+		"dist"
+	]
+}

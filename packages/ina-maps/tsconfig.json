@@ -1,0 +1,14 @@
+{
+    "extends": "dash-tsconfig/react-library.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "noEmit": true,
+        "types": []
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
