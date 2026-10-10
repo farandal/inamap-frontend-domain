@@ -51,9 +51,9 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
 
     return (
         <div style={{ position: 'relative' }}>
-            <label style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#fff', border: '1px solid #d1d5db', borderRadius: 10, padding: '8px 10px' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--viewer-input, #fff)', color: 'var(--viewer-text, #111827)', border: '1px solid var(--viewer-border, #d1d5db)', borderRadius: 10, padding: '8px 10px' }}>
                 <span style={{ width: 20, height: 20, borderRadius: '50%', background: marker, flexShrink: 0 }} aria-hidden />
-                <span style={{ fontSize: 12, color: '#6b7280', width: 52, flexShrink: 0 }}>{label}</span>
+                <span style={{ fontSize: 12, color: 'var(--viewer-muted, #6b7280)', width: 52, flexShrink: 0 }}>{label}</span>
                 <input
                     value={query}
                     placeholder={strings.searchPlaceholder}
@@ -63,7 +63,7 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
                         setQuery(e.target.value);
                         if (value) onChange(null);
                     }}
-                    style={{ border: 'none', outline: 'none', fontSize: 15, flex: 1, minWidth: 0, background: 'transparent' }}
+                    style={{ border: 'none', outline: 'none', fontSize: 15, flex: 1, minWidth: 0, background: 'transparent', color: 'var(--viewer-text, #111827)' }}
                 />
                 {value && (
                     <button type="button" onClick={() => onChange(null)} aria-label={strings.clear} style={{ border: 'none', background: 'none', cursor: 'pointer', fontSize: 16, color: '#9ca3af' }}>
@@ -83,15 +83,17 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
                         marginTop: 4,
                         listStyle: 'none',
                         padding: 4,
-                        background: '#fff',
+                        background: 'var(--viewer-panel, #fff)',
+                        color: 'var(--viewer-text, #111827)',
+                        border: '1px solid var(--viewer-border, #d1d5db)',
                         borderRadius: 10,
                         boxShadow: '0 8px 24px rgba(0,0,0,.15)',
                         maxHeight: 280,
                         overflowY: 'auto',
                     }}
                 >
-                    {loading && hits.length === 0 && <li style={{ padding: 10, color: '#6b7280', fontSize: 14 }}>{strings.loading}</li>}
-                    {!loading && hits.length === 0 && <li style={{ padding: 10, color: '#6b7280', fontSize: 14 }}>{strings.noResults}</li>}
+                    {loading && hits.length === 0 && <li style={{ padding: 10, color: 'var(--viewer-muted, #6b7280)', fontSize: 14 }}>{strings.loading}</li>}
+                    {!loading && hits.length === 0 && <li style={{ padding: 10, color: 'var(--viewer-muted, #6b7280)', fontSize: 14 }}>{strings.noResults}</li>}
                     {hits.map((hit) => (
                         <li
                             key={`${hit.type}:${hit.id}`}
@@ -103,13 +105,13 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
                                 setOpen(false);
                             }}
                             style={{ padding: '8px 10px', borderRadius: 8, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 10 }}
-                            onMouseEnter={(e) => (e.currentTarget.style.background = '#f3f4f6')}
+                            onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--viewer-hover, #f3f4f6)')}
                             onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
                         >
                             <span style={{ width: 8, height: 8, borderRadius: '50%', background: TYPE_COLOR[hit.type] }} />
                             <span style={{ flex: 1, minWidth: 0 }}>
-                                <span style={{ display: 'block', fontSize: 14, fontWeight: 600, color: '#111827' }}>{hit.label}</span>
-                                <span style={{ fontSize: 12, color: '#6b7280' }}>
+                                <span style={{ display: 'block', fontSize: 14, fontWeight: 600, color: 'var(--viewer-text, #111827)' }}>{hit.label}</span>
+                                <span style={{ fontSize: 12, color: 'var(--viewer-muted, #6b7280)' }}>
                                     {strings.types[hit.type]}
                                     {hit.code ? ` · ${hit.code}` : ''}
                                     {layoutNames[hit.layout_id] ? ` · ${layoutNames[hit.layout_id]}` : ''}

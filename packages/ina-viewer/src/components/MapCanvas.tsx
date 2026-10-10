@@ -75,6 +75,8 @@ export interface MapCanvasProps {
     cursor?: string;
     height?: number | string;
     showControls?: boolean;
+    controlsBottom?: number;
+    scaleBarBottom?: number;
     onElementClick?: (selection: Selection, event: React.PointerEvent, world: Point) => void;
     onDoubleClickWorld?: (world: Point, event: React.MouseEvent) => void;
     onBackgroundPointerDown?: (world: Point, event: React.PointerEvent) => void;
@@ -126,6 +128,8 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
         cursor,
         height = '100%',
         showControls = true,
+        controlsBottom = 14,
+        scaleBarBottom = 14,
         onElementClick,
         onDoubleClickWorld,
         onBackgroundPointerDown,
@@ -518,7 +522,7 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
     return (
         <div
             ref={containerRef}
-            style={{ position: 'relative', width: '100%', height, overflow: 'hidden', background: '#eef1f5', touchAction: 'none', userSelect: 'none' }}
+            style={{ position: 'relative', width: '100%', height, overflow: 'hidden', background: 'transparent', touchAction: 'none', userSelect: 'none' }}
             onContextMenu={(e) => e.preventDefault()}
         >
             <style>{`@keyframes ina-route-dash { to { stroke-dashoffset: -24; } }`}</style>
@@ -598,7 +602,7 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
             </svg>
 
             {/* Barra de escala y norte */}
-            <div style={{ position: 'absolute', left: 16, bottom: 14, fontFamily: FONT, fontSize: 11, color: '#334155', pointerEvents: 'none' }}>
+            <div style={{ position: 'absolute', left: 16, bottom: scaleBarBottom, fontFamily: FONT, fontSize: 11, color: '#334155', pointerEvents: 'none' }}>
                 <div style={{ width: scaleBar.width, borderBottom: '3px solid #334155', borderLeft: '2px solid #334155', borderRight: '2px solid #334155', height: 6 }} />
                 <div style={{ display: 'flex', justifyContent: 'space-between', width: scaleBar.width }}>
                     <span>0</span>
@@ -609,15 +613,17 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
             </div>
 
             {showControls && (
-                <div style={{ position: 'absolute', right: 14, bottom: 14, display: 'flex', alignItems: 'flex-end', gap: 10 }}>
+                <div style={{ position: 'absolute', right: 14, bottom: controlsBottom, display: 'flex', alignItems: 'flex-end', gap: 10 }}>
                     <div
                         title="N"
                         style={{
                             width: 44,
                             height: 44,
                             borderRadius: '50%',
-                            background: '#fff',
-                            boxShadow: '0 1px 4px rgba(0,0,0,.2)',
+                            background: 'var(--module-bg, rgba(255,255,255,.96))',
+                            color: 'var(--text-color, #334155)',
+                            boxShadow: '0 3px 12px rgba(15,23,42,.16)',
+                            border: '1px solid var(--module-border, #E2E8F0)',
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
@@ -629,10 +635,10 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
                     >
                         <span>N</span>
                         <svg width="14" height="16" viewBox="0 0 14 16">
-                            <path d="M7 0 L14 16 L7 12 L0 16 Z" fill="#1f2937" />
+                            <path d="M7 0 L14 16 L7 12 L0 16 Z" fill="currentColor" />
                         </svg>
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', background: '#fff', borderRadius: 8, boxShadow: '0 1px 4px rgba(0,0,0,.2)', overflow: 'hidden' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', background: 'var(--module-bg, rgba(255,255,255,.97))', color: 'var(--text-color, #334155)', borderRadius: 10, boxShadow: '0 3px 12px rgba(15,23,42,.16)', border: '1px solid var(--module-border, #E2E8F0)', overflow: 'hidden' }}>
                         {[
                             { t: '+', title: labels.zoomIn ?? 'Acercar', fn: () => zoomAt(1.25, size.width / 2, size.height / 2) },
                             { t: '−', title: labels.zoomOut ?? 'Alejar', fn: () => zoomAt(0.8, size.width / 2, size.height / 2) },
@@ -643,7 +649,7 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
                                 type="button"
                                 title={b.title}
                                 onClick={b.fn}
-                                style={{ width: 38, height: 36, border: 'none', borderBottom: '1px solid #e5e7eb', background: '#fff', fontSize: 18, cursor: 'pointer' }}
+                                style={{ width: 38, height: 36, border: 'none', borderBottom: '1px solid var(--module-border, #E2E8F0)', background: 'transparent', color: 'var(--text-color, #334155)', fontSize: 18, cursor: 'pointer' }}
                             >
                                 {b.t}
                             </button>
