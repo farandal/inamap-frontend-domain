@@ -1,0 +1,50 @@
+{
+	"name": "ina-common",
+	"version": "1.0.0",
+	"description": "INAMAP \u2014 piezas de plataforma reutilizadas por las apps (providers, uploader de im\u00e1genes del tenant, p\u00e1ginas de cuenta, \u00edcono).",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"typecheck": "tsc --noEmit --skipLibCheck --skipDefaultLibCheck",
+		"build": "tsup"
+	},
+	"dependencies": {
+		"@mui/icons-material": "^9.3.0",
+		"@mui/material": "^9.3.0",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"react-admin": "5.15.1",
+		"react-hook-form": "^7.54.0",
+		"react-redux": "latest",
+		"react-router-dom": "7.17.0",
+		"react-google-recaptcha": "^3.1.0",
+		"react-intersection-observer": "^10.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"typescript": "^5.9.3"
+	},
+	"module": "dist/index.js",
+	"types": "./src/index.ts",
+	"typesVersions": {
+		"*": {
+			"src/*": [
+				"src/*",
+				"src/*/index"
+			],
+			"*": [
+				"src/*",
+				"src/*/index"
+			]
+		}
+	},
+	"exports": {
+		".": "./dist/index.js",
+		"./*": "./dist/*.js",
+		"./src/*": "./dist/*.js"
+	},
+	"files": [
+		"dist"
+	]
+}
