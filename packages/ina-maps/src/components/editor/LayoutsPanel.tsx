@@ -34,7 +34,7 @@ export const LayoutSwitcher: React.FC<{ layouts: Layout[]; currentId: string | n
 }) => {
     const translate = useTranslate();
     return (
-        <Card elevation={3} sx={{ position: 'absolute', top: 12, left: 12, zIndex: 4, width: 160, borderRadius: 2 }}>
+        <Card elevation={3} sx={{ position: 'absolute', top: 100, left: 68, zIndex: 4, width: 160, borderRadius: 2 }}>
             <Stack direction="row" sx={{ alignItems: "center", justifyContent: "space-between", px: 1.5, pt: 1 }}>
                 <Typography variant="body2" sx={{ fontWeight: 600 }}>
                     {translate('ina_maps.editor.layouts.title')}

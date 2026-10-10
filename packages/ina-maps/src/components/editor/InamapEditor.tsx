@@ -708,13 +708,48 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
     const propertiesOpen = Boolean(selection && selectedItem && panel === 'editor' && !draft.length);
 
     const toolbarButton = (label: string, icon: React.ReactNode, onClick: () => void, active = false, disabled = false) => (
-        <Button size="small" startIcon={icon} onClick={onClick} disabled={disabled} variant={active ? 'outlined' : 'text'} color={active ? 'error' : 'inherit'} sx={{ textTransform: 'none', whiteSpace: 'nowrap' }}>
-            {label}
-        </Button>
+        <Tooltip key={label} title={label}>
+            <span>
+                <IconButton
+                    size="small"
+                    aria-label={label}
+                    onClick={onClick}
+                    disabled={disabled}
+                    sx={{
+                        width: 30,
+                        height: 30,
+                        border: '1px solid',
+                        borderColor: active ? 'error.main' : 'divider',
+                        borderRadius: 1,
+                        color: active ? 'error.main' : 'text.primary',
+                        bgcolor: active ? 'action.selected' : 'transparent',
+                        '&:hover': { bgcolor: 'action.hover' },
+                    }}
+                >
+                    {icon}
+                </IconButton>
+            </span>
+        </Tooltip>
     );
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 96px)', minHeight: 520, gap: 1.5 }}>
+        <Box
+            sx={{
+                position: 'relative',
+                height: 'calc(100dvh - 96px)',
+                minHeight: 520,
+                minWidth: 0,
+                overflow: 'hidden',
+                color: '#1E293B',
+                fontSize: 13,
+                '& .MuiButton-root': { minHeight: 28, px: 1, py: 0.35, fontSize: 12, lineHeight: 1.2 },
+                '& .MuiIconButton-root': { p: 0.5 },
+                '& .MuiChip-root': { height: 23, fontSize: 11 },
+                '& .MuiInputBase-root': { fontSize: 12 },
+                '& .MuiSelect-select': { py: 0.5, fontSize: 12 },
+                '& .MuiSvgIcon-root': { fontSize: 18 },
+            }}
+        >
             <EditorSidebar
                 panel={panel}
                 onPanel={(p) => {
@@ -735,9 +770,9 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
             />
 
             {/* Barra superior: miga de pan, estado, deshacer, vista, guardar, publicar */}
-            <Stack direction="row" spacing={1.5} sx={{ alignItems: "center", flexWrap: 'wrap', rowGap: 1 }}>
-                <Breadcrumbs separator="›" sx={{ flex: 1, minWidth: 220 }}>
-                    <Typography sx={{ fontWeight: 700 }}>{inamap.name}</Typography>
+            <Stack direction="row" spacing={1} sx={{ position: 'absolute', zIndex: 4, top: 8, left: 8, right: 8, minHeight: 40, alignItems: "center", flexWrap: 'wrap', rowGap: 0.5, px: 1, py: 0.5, color: 'text.primary', bgcolor: 'background.paper', border: '1px solid', borderColor: 'divider', borderRadius: 1.5, boxShadow: '0 4px 14px rgba(15,23,42,0.24)', backdropFilter: 'blur(12px)', '& .MuiTypography-root': { color: 'text.primary', fontSize: 13 }, '& .MuiSelect-select': { color: 'text.primary' }, '& .MuiIconButton-root': { color: 'text.primary' }, '& .MuiButton-root:not(.MuiButton-containedError)': { color: 'text.primary' }, '& .Mui-disabled': { opacity: 0.65, color: 'text.secondary' } }}>
+                <Breadcrumbs separator="›" sx={{ flex: 1, minWidth: 220, color: 'text.primary' }}>
+                    <Typography sx={{ fontWeight: 700, color: 'text.primary' }}>{inamap.name}</Typography>
                     {layouts.length > 0 && (
                         <Select size="small" variant="standard" value={layoutId ?? ''} onChange={(e) => switchLayout(e.target.value as string)} disableUnderline sx={{ fontWeight: 700 }}>
                             {layouts.map((l) => (
@@ -748,38 +783,38 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                         </Select>
                     )}
                 </Breadcrumbs>
-                <Chip size="small" label={translate(`ina_maps.editor.status.${published ? 'published' : 'draft'}`)} color={published ? 'success' : 'default'} />
-                {dirty && <Chip size="small" color="warning" variant="outlined" label={translate('ina_maps.editor.status.unsaved')} />}
+                <Chip size="small" label={translate(`ina_maps.editor.status.${published ? 'published' : 'draft'}`)} color={published ? 'success' : 'default'} sx={{ fontWeight: 600 }} />
+                {dirty && <Chip size="small" color="warning" variant="outlined" label={translate('ina_maps.editor.status.unsaved')} sx={{ fontWeight: 600 }} />}
                 <Tooltip title={translate('ina_maps.editor.actions.undo')}>
                     <span>
-                        <IconButton size="small" onClick={undo} disabled={!canUndo}>
+                        <IconButton size="small" onClick={undo} disabled={!canUndo} sx={{ color: '#475569', border: '1px solid #E2E8F0', borderRadius: 1.25 }}>
                             <UndoIcon />
                         </IconButton>
                     </span>
                 </Tooltip>
                 <Tooltip title={translate('ina_maps.editor.actions.redo')}>
                     <span>
-                        <IconButton size="small" onClick={redo} disabled={!canRedo}>
+                        <IconButton size="small" onClick={redo} disabled={!canRedo} sx={{ color: '#475569', border: '1px solid #E2E8F0', borderRadius: 1.25 }}>
                             <RedoIcon />
                         </IconButton>
                     </span>
                 </Tooltip>
-                <Select size="small" value={preview ? 'preview' : 'edit'} onChange={(e) => setPreview(e.target.value === 'preview')} sx={{ minWidth: 120 }}>
+                <Select size="small" value={preview ? 'preview' : 'edit'} onChange={(e) => setPreview(e.target.value === 'preview')} sx={{ minWidth: 120, bgcolor: 'background.default', color: 'text.primary', borderRadius: 1, '& .MuiSelect-select': { color: 'text.primary' }, '& .MuiSvgIcon-root': { color: 'text.secondary' } }}>
                     <MenuItem value="edit">{translate('ina_maps.editor.view.edit')}</MenuItem>
                     <MenuItem value="preview">{translate('ina_maps.editor.view.preview')}</MenuItem>
                 </Select>
-                <Button variant="outlined" color="inherit" startIcon={saving ? <CircularProgress size={16} /> : <SaveOutlinedIcon />} onClick={save} disabled={saving || !layoutId}>
+                <Button variant="outlined" color="inherit" startIcon={saving ? <CircularProgress size={16} /> : <SaveOutlinedIcon />} onClick={save} disabled={saving || !layoutId} sx={{ color: '#334155', borderColor: '#CBD5E1', textTransform: 'none', '&:hover': { borderColor: '#94A3B8', bgcolor: '#F8FAFC' } }}>
                     {translate('ina_maps.editor.actions.save')}
                 </Button>
-                <Button variant="contained" color="error" startIcon={published ? <UnpublishedOutlinedIcon /> : <PublishIcon />} onClick={togglePublish}>
+                <Button variant="contained" color="error" startIcon={published ? <UnpublishedOutlinedIcon /> : <PublishIcon />} onClick={togglePublish} sx={{ textTransform: 'none', boxShadow: 'none', '&:hover': { bgcolor: '#B91C1C', boxShadow: 'none' } }}>
                     {translate(`ina_maps.editor.actions.${published ? 'unpublish' : 'publish'}`)}
                 </Button>
             </Stack>
 
             {/* Barra contextual de la herramienta */}
             {!preview && layout && (
-                <Stack direction="row" spacing={1} sx={{ alignItems: "center", px: 1.5, py: 0.75, bgcolor: 'background.paper', borderRadius: 2, boxShadow: 1, overflowX: 'auto' }}>
-                    <Chip color="error" variant="outlined" label={translate(`ina_maps.editor.tools.${tool}`)} />
+                <Stack direction="row" spacing={0.75} sx={{ position: 'absolute', zIndex: 4, top: 52, left: 8, right: 8, alignItems: "center", minHeight: 36, px: 1, py: 0.35, bgcolor: 'background.paper', color: 'text.primary', border: '1px solid', borderColor: 'divider', borderRadius: 1.5, boxShadow: '0 4px 14px rgba(15,23,42,0.24)', backdropFilter: 'blur(12px)', overflowX: 'auto', '& .MuiTypography-root': { color: 'text.primary', fontSize: 12 }, '& .MuiButton-root': { color: 'text.primary' }, '& .MuiIconButton-root': { color: 'text.primary' }, '& .MuiSelect-select': { color: 'text.primary' }, '& .Mui-disabled': { opacity: 0.65, color: 'text.secondary' } }}>
+                        <Chip color="error" variant="outlined" label={translate(`ina_maps.editor.tools.${tool}`)} sx={{ fontWeight: 700, bgcolor: '#FEF2F2' }} />
                     {(tool === 'select' && (selectedPolygon || selection?.type === 'path')) && (
                         <>
                             {toolbarButton(translate('ina_maps.editor.toolbar.add_vertex'), <AddCircleOutlineIcon />, () => setSubMode(subMode === 'add_vertex' ? 'none' : 'add_vertex'), subMode === 'add_vertex')}
@@ -809,14 +844,14 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                                 value={selectedPolygon.color ?? DEFAULT_COLORS[selection!.type as 'zone'].fill}
                                 onFocus={beginChange}
                                 onChange={(e) => patchItem(collectionOf(selection!.type)!, selectedPolygon.id, { color: e.target.value.toUpperCase() })}
-                                style={{ width: 28, height: 28, border: 'none', background: 'none', cursor: 'pointer' }}
+                                style={{ width: 24, height: 24, border: 'none', background: 'none', cursor: 'pointer' }}
                             />
                             <Typography variant="body2" sx={{ whiteSpace: 'nowrap' }}>
                                 {translate('ina_maps.editor.toolbar.opacity')}
                             </Typography>
                             <Slider
                                 size="small"
-                                sx={{ width: 110 }}
+                                sx={{ width: 84 }}
                                 color="error"
                                 min={5}
                                 max={100}
@@ -830,14 +865,14 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                             />
                         </>
                     )}
-                    <Typography variant="body2" color="text.secondary" sx={{ pl: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    <Typography variant="body2" color="text.secondary" sx={{ pl: 0.5, flex: 1, minWidth: 100, fontSize: 11, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                         {translate(`ina_maps.editor.hints.${hintKey}`)}
                     </Typography>
                 </Stack>
             )}
 
             {/* Canvas */}
-            <Box sx={{ position: 'relative', flex: 1, minHeight: 0, borderRadius: 2, overflow: 'hidden', boxShadow: 1 }}>
+            <Box sx={{ position: 'absolute', zIndex: 1, inset: 0, overflow: 'hidden', bgcolor: 'transparent' }}>
                 {layout ? (
                     <MapCanvas
                         ref={canvasRef}
@@ -864,10 +899,12 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                             setFitScale((f) => f ?? v.scale);
                         }}
                         renderOverlay={renderOverlay}
+                        controlsBottom={76}
+                        scaleBarBottom={66}
                         height="100%"
                     />
                 ) : (
-                    <Stack spacing={2} sx={{ alignItems: "center", justifyContent: "center", height: '100%', bgcolor: '#eef1f5' }}>
+                    <Stack spacing={2} sx={{ alignItems: "center", justifyContent: "center", height: '100%', bgcolor: 'transparent', color: 'text.primary' }}>
                         <Typography color="text.secondary">{translate('ina_maps.editor.layouts.empty')}</Typography>
                         <Button variant="contained" color="error" startIcon={<LayersOutlinedIcon />} onClick={() => setPanel('layouts')}>
                             {translate('ina_maps.editor.layouts.new')}
@@ -881,7 +918,7 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
             </Box>
 
             {/* Barra de estado */}
-            <Stack direction="row" spacing={2} sx={{ alignItems: "center", px: 1.5, py: 0.75, bgcolor: 'background.paper', borderRadius: 2, boxShadow: 1, flexWrap: 'wrap', rowGap: 1 }}>
+            <Stack direction="row" spacing={1} sx={{ position: 'absolute', zIndex: 4, bottom: 8, left: 8, right: 8, height: 46, minHeight: 46, maxHeight: 46, alignItems: "center", px: 1, py: 0.35, bgcolor: 'background.paper', color: 'text.primary', border: '1px solid', borderColor: 'divider', borderRadius: 1.5, boxShadow: '0 4px 14px rgba(15,23,42,0.24)', backdropFilter: 'blur(12px)', flexWrap: 'nowrap', overflowX: 'auto', overflowY: 'hidden', whiteSpace: 'nowrap', '& > *': { flexShrink: 0 }, '& .MuiTypography-root': { color: 'text.primary', fontSize: 12 }, '& .MuiButton-root': { color: 'text.primary' }, '& .MuiSelect-select': { color: 'text.primary' }, '& .Mui-disabled': { opacity: 0.65, color: 'text.secondary' } }}>
                 <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
                     <Typography variant="body2">{translate('ina_maps.editor.statusbar.zoom')}:</Typography>
                     <Select
@@ -969,7 +1006,7 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                 anchor="right"
                 variant="persistent"
                 open={propertiesOpen}
-                slotProps={{ paper: { sx: { ...DRAWER_PAPER, width: { xs: '100vw', sm: 380 }, p: 2, overflowY: 'auto', boxShadow: 6, zIndex: 1250 } } }}
+                slotProps={{ paper: { sx: { ...DRAWER_PAPER, width: { xs: '100vw', sm: 320, lg: 330 }, p: 2, overflowY: 'auto', bgcolor: 'background.paper', color: 'text.primary', borderLeft: '1px solid', borderColor: 'divider', boxShadow: '-12px 0 32px rgba(15,23,42,0.32)', zIndex: 1250 } } }}
             >
                 {propertiesOpen && selection && selectedItem && renderProperties()}
             </Drawer>

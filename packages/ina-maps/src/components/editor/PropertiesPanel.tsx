@@ -38,6 +38,24 @@ import { DEFAULT_COLORS } from './types';
 
 const TYPE_ICON = { zone: CropFreeIcon, structure: ApartmentIcon, location: PlaceIcon, path: TimelineIcon, link: LinkIcon };
 
+const PANEL_SX = {
+    color: 'text.primary',
+    fontSize: 13,
+    '& .MuiButton-root': { minHeight: 28, px: 1, py: 0.35, fontSize: 12, lineHeight: 1.2 },
+    '& .MuiIconButton-root': { p: 0.5 },
+    '& .MuiChip-root': { height: 23, fontSize: 11 },
+    '& .MuiSvgIcon-root': { fontSize: 18 },
+    '& .MuiAccordion-root': { bgcolor: 'transparent', color: 'text.primary' },
+    '& .MuiAccordionSummary-root': { minHeight: 40 },
+    '& .MuiAccordionSummary-content': { my: 1 },
+    '& .MuiInputBase-root': { bgcolor: 'background.default', color: 'text.primary', fontSize: 12 },
+    '& .MuiOutlinedInput-notchedOutline': { borderColor: 'divider' },
+    '& .MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'text.secondary' },
+    '& .MuiInputLabel-root': { color: 'text.secondary', fontSize: 12 },
+    '& .MuiFormHelperText-root': { color: 'text.secondary' },
+    '& .MuiAccordionSummary-expandIconWrapper': { color: 'text.secondary' },
+};
+
 interface CommonProps {
     unit: string;
     onClose: () => void;
@@ -88,7 +106,7 @@ const Header: React.FC<{ kind: keyof typeof TYPE_ICON; onClose: () => void }> = 
                 </IconButton>
             </Stack>
             <Stack direction="row" spacing={1.5} sx={{ alignItems: "center", pb: 2, mb: 1, borderBottom: '1px solid', borderColor: 'divider' }}>
-                <Box sx={{ width: 48, height: 48, borderRadius: 1.5, bgcolor: 'success.50', border: '1px solid', borderColor: 'divider', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Box sx={{ width: 48, height: 48, borderRadius: 1.5, bgcolor: '#F0FDF4', border: '1px solid #BBF7D0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Icon color="success" />
                 </Box>
                 <Box>
@@ -255,7 +273,7 @@ export const PropertiesPanel: React.FC<PropertiesPanelProps> = (props) => {
             onChange({ metadata: { ...(item.metadata ?? {}), style: { ...style, ...patch } } });
 
         return (
-            <Box>
+            <Box sx={PANEL_SX}>
                 <Header kind={kind} onClose={onClose} />
                 <Section title={t('basic')} defaultExpanded>
                     <Stack spacing={2}>
@@ -310,7 +328,7 @@ export const PropertiesPanel: React.FC<PropertiesPanelProps> = (props) => {
     if (props.kind === 'location') {
         const { item, onChange, categories, structures, onDownloadQr } = props;
         return (
-            <Box>
+            <Box sx={PANEL_SX}>
                 <Header kind="location" onClose={onClose} />
                 <Section title={t('basic')} defaultExpanded>
                     <Stack spacing={2}>
@@ -378,7 +396,7 @@ export const PropertiesPanel: React.FC<PropertiesPanelProps> = (props) => {
     if (props.kind === 'path') {
         const { item, onChange } = props;
         return (
-            <Box>
+            <Box sx={PANEL_SX}>
                 <Header kind="path" onClose={onClose} />
                 <Section title={t('basic')} defaultExpanded>
                     <Stack spacing={2}>
@@ -414,7 +432,7 @@ export const PropertiesPanel: React.FC<PropertiesPanelProps> = (props) => {
 
     const { item, onChange } = props as LinkProps;
     return (
-        <Box>
+        <Box sx={PANEL_SX}>
             <Header kind="link" onClose={onClose} />
             <Section title={t('basic')} defaultExpanded>
                 <Stack spacing={2}>
