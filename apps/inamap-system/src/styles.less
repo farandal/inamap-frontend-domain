@@ -1,0 +1,481 @@
+/*
+@import './styles/root.less';
+@import './styles/mui-overrides.less';
+@import './styles/animations.less';
+@import './styles/custom.less';
+@import './styles/dark/sidebar.less';
+@import './styles/dash.less';
+@import './styles/devices/mac.less';
+@import './styles/drag.less';
+@import './styles/fonts.less';
+@import './styles/input.less';
+
+@import './styles/pagination.less';
+@import './styles/react-admin-overrides.less';
+@import './styles/screen-sixze-overwrites.less';
+@import './styles/scroll.less';
+@import './styles/sidebar.less';
+@import './styles/tabs.less';
+
+@import './styles/window-controls.less';
+@import './styles/dark/sidebar.less';
+@import './styles/devices/electron-base.less';
+@import './styles/devices/mac.less';
+@import './styles/voice/voice.less';
+*/
+/*
+@import './styles/tree.less';
+@import './styles/landing.less';
+@import './styles/login.less';
+@import './styles/kt-mall.less';
+*/
+
+@import './styles/root.less';
+@import './styles/theme/theme.less';
+
+@import './styles/sidebar.less';
+// bootstrap imports are important for this application because of the landing page using some bootstrap styles.
+@import './styles/theme/bootstrap.less';
+
+@import './styles/theme/responsive.less';
+@import './styles/theme/themify-icons.less';
+
+@import './styles/theme/colors.less';
+
+
+@import './styles/tree.less';
+@import './styles/tabs.less';
+
+:root {
+//    --sidebar-large-width: 200px;
+//    --sidebar-small-width: 60px;
+//    --sidebar-horizontal-height: 64px;
+    // Logo dimensions for vertical sidebar (left/right)
+//    --logo-vertical-max-width: 130px;
+//    --logo-vertical-max-height: 130px;
+    // Logo dimensions for horizontal sidebar (top/bottom)
+//    --logo-horizontal-max-width: 200px;
+//    --logo-horizontal-max-height: 60px;
+}
+
+/* =============================================================================
+   KITCHNTABS PUBLIC APP LAYOUT STYLES
+   - Sticky footer at bottom
+   - Centered content
+   ============================================================================= */
+
+.inamap-public-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.inamap-public-app .dash-app-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.inamap-public-app .dash-app-layout-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+/* Main content area - grows to push footer down */
+.inamap-public-app .dash-theme-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer stays at the bottom */
+.inamap-public-app footer,
+.inamap-public-app .footer-section {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+/* =============================================================================
+   LOGIN PAGE SPECIFIC STYLES
+   - Center the login form vertically in available space
+   ============================================================================= */
+
+.dash-app-login-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //min-height: calc(100vh - 200px); /* Account for header and footer */
+    padding: 20px;
+}
+
+.dash-app-login-form {
+    //width: 100%;
+    //max-width: 400px;
+    padding: 20px;
+    
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+html[data-theme='light'] .dash-app-login-form {
+    background: rgba(255, 255, 255, 0.5);
+}
+html[data-theme='dark'] .dash-app-login-form {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+
+.dash-app-login-form-title {
+    text-align: center;
+    color: var(--text-header, #fff);
+    margin-bottom: 24px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+/* Input field overrides for login form */
+.dash-app-login-form .MuiTextField-root {
+    margin-bottom: 16px;
+}
+
+.dash-app-login-form .MuiInputBase-root {
+    border-radius: 8px;
+}
+
+/* These were previously unscoped and hardcoded for the dark glass look
+   (white-on-translucent-white), which made the label/outline invisible
+   once the card background switched to translucent-white in light mode. */
+html[data-theme='dark'] .dash-app-login-form .MuiInputBase-root {
+    background: rgba(255, 255, 255, 0.1);
+}
+html[data-theme='light'] .dash-app-login-form .MuiInputBase-root {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+html[data-theme='dark'] .dash-app-login-form .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+}
+html[data-theme='light'] .dash-app-login-form .MuiInputLabel-root {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme='dark'] .dash-app-login-form .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+html[data-theme='light'] .dash-app-login-form .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme='dark'] .dash-app-login-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+html[data-theme='light'] .dash-app-login-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.dash-app-login-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--highlight-color, #d4ff00);
+}
+
+.dash-app-login-form .submit {
+    margin-top: 8px;
+}
+
+/* Link styles in login form */
+.dash-app-login-form .link--secondary {
+    color: var(--highlight-color, #d4ff00) !important;
+    text-decoration: none;
+}
+
+.dash-app-login-form .link--secondary:hover {
+    text-decoration: underline;
+}
+
+/* =============================================================================
+   FOOTER
+   - The footer has no background of its own, so it shows through to the page
+     body background, which IS theme-aware (light/dark). But Footer.tsx uses
+     Bootstrap's `.text-white` utility (and theme.less hardcodes
+     `.footer-bottom ul li a { color: #ffffff }`) unconditionally, assuming a
+     permanently dark backdrop. In light mode that leaves white text on the
+     light body background — invisible. Same bug shape as the login form above.
+   ============================================================================= */
+html[data-theme='light'] .footer-section .text-white {
+    color: var(--text-color, #0b0b0b) !important;
+}
+
+html[data-theme='light'] .footer-bottom ul li a {
+    color: var(--text-color, #0b0b0b) !important;
+}
+
+// TODO: Refactor to another location.
+.dash-tenant-switcher-menu {
+
+     z-index: 10000;        
+     min-width: 240px;
+     max-width: 320px;
+     background-color: var(--module-bg);
+     border-radius: 8px;
+     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+     overflow: hidden;
+     border: 1px solid var(--module-border);
+}
+
+/* =============================================================================
+   RICH TEXT EDITOR — ra-input-rich-text (TipTap)
+   Used by the Lab project's Base Prompt / Persona Prompt tabs.
+
+   WHY THIS BLOCK EXISTS. ra-input-rich-text styles `.ProseMirror` from the MUI
+   palette (`background.default`, `divider`), which in this app resolves through
+   the baked JS palette rather than the live CSS variables — so the editor did
+   not follow a theme switch. The previous fix here forced
+   `background-color: #FFF !important` UNSCOPED, which pinned the surface white
+   in BOTH themes while the text kept `--text-color--dark` (#f3f0ff, near
+   white). That is white-on-white: the prompt was there, just invisible.
+
+   This is gotcha #1 in F8-Public-Web_STYLE_SYSTEM_TECHNICAL_REFERENCE.md — the
+   same class of bug as the invisible login form and footer. The rule is: any
+   hardcoded color for a MUI/Ra class must either be theme-scoped or, better,
+   reference a CSS variable. Everything below uses `var(--…)`, which resolves
+   through the cascade at paint time and therefore tracks a theme toggle for
+   free — no dependence on when the JS palette happened to be built.
+
+   `!important` is unavoidable on the color-critical properties: emotion's
+   generated selector carries higher specificity than a plain class pair.
+   ============================================================================= */
+
+/* ── Toolbar ──────────────────────────────────────────────────────────────── */
+.RaRichTextInputToolbar-root {
+    background-color: var(--module-bg);
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-radius: var(--border-radius-base, 6px) var(--border-radius-base, 6px) 0 0;
+    padding: 4px 6px;
+    gap: 2px;
+
+    .MuiToggleButtonGroup-root {
+        gap: 2px;
+    }
+
+    button.MuiToggleButton-root {
+        border: none;
+        border-radius: 4px;
+        color: var(--text-light);
+        transition: background-color 120ms ease, color 120ms ease;
+
+        &:hover {
+            background-color: var(--component-hover-bg);
+            color: var(--text-color);
+        }
+
+        /* The active mark (bold on, heading level, alignment) has to be
+           obvious at a glance — it is the only feedback that a selection
+           already carries that formatting.
+
+           A NEUTRAL fill with a highlight underline, NOT a solid highlight
+           fill. `--highlight-color` / `--highlight-color-contrast` are not a
+           validated contrast pair: inamap-web sets them to #8FBF3F / #ffffff
+           in dark mode, which is ~2:1 and unreadable. That is gotcha #2 in the
+           style-system reference — a decorative brand colour used as though it
+           were a guaranteed-legible foreground. Pairing the neutral active
+           surface with the neutral text colour is legible whatever the brand
+           palette does, and the underline still carries the accent. */
+        &.Mui-selected {
+            background-color: var(--component-active-bg);
+            color: var(--text-color);
+            box-shadow: inset 0 -2px 0 var(--highlight-color);
+
+            &:hover {
+                background-color: var(--component-active-bg);
+                color: var(--text-color);
+            }
+        }
+
+        &.Mui-disabled {
+            color: var(--disabled-color);
+        }
+    }
+
+    /* The "Normal / Heading 1 …" level picker. */
+    .MuiSelect-select,
+    .MuiInputBase-root {
+        color: var(--text-color);
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        border-color: var(--border-color);
+    }
+}
+
+/* ── Editor surface ───────────────────────────────────────────────────────── */
+.RaRichTextInput-editorContent .ProseMirror {
+    background-color: var(--component-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 0 var(--border-radius-base, 6px) var(--border-radius-base, 6px) !important;
+
+    /* A prompt is a long document. Give it room, but cap it so the tab's Save
+       button stays reachable without scrolling past a thousand-line persona. */
+    min-height: 320px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 16px 18px !important;
+
+    font-size: var(--font-size-base, 14px);
+    line-height: 1.65;
+    transition: border-color 140ms ease, box-shadow 140ms ease;
+
+    /* ra-input-rich-text tints the surface with palette.action.hover on hover,
+       which reads as the field having changed state when merely passed over. */
+    &:hover {
+        background-color: var(--component-bg) !important;
+        border-color: var(--text-light) !important;
+    }
+
+    &:focus,
+    &.ProseMirror-focused {
+        background-color: var(--component-bg) !important;
+        border-color: var(--highlight-color) !important;
+        box-shadow: 0 0 0 2px color-mix(in srgb, var(--highlight-color) 28%, transparent);
+        outline: none;
+    }
+
+    &[contenteditable='false'] {
+        background-color: var(--disabled-bg) !important;
+        color: var(--disabled-color) !important;
+    }
+
+    ::selection {
+        background-color: color-mix(in srgb, var(--highlight-color) 35%, transparent);
+    }
+
+    /* Empty-state hint, when the editor is configured with a placeholder. */
+    p.is-editor-empty:first-child::before {
+        content: attr(data-placeholder);
+        color: var(--text-light);
+        opacity: 0.7;
+        float: left;
+        height: 0;
+        pointer-events: none;
+    }
+
+    /* ── Content typography ───────────────────────────────────────────────
+       A persona prompt is written AS a document — headings, bullets, bold
+       key terms. Without these it renders as one undifferentiated wall, which
+       is what made the prompt hard to scan even where it was legible. */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--heading-color, var(--text-color));
+        line-height: 1.3;
+        margin: 1.4em 0 0.5em;
+        font-weight: 600;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    h1 { font-size: 1.7em; }
+    h2 { font-size: 1.42em; }
+    h3 { font-size: 1.2em; }
+    h4, h5, h6 { font-size: 1.05em; }
+
+    strong, b {
+        color: var(--text-color);
+        font-weight: 650;
+    }
+
+    a {
+        color: var(--link-color);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        &:hover {
+            color: var(--link-hover);
+        }
+    }
+
+    ul, ol {
+        padding-left: 1.4em;
+        margin: 0.6em 0 1em;
+    }
+
+    li {
+        margin: 0.25em 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    blockquote {
+        margin: 1em 0;
+        padding: 0.2em 0 0.2em 1em;
+        border-left: 3px solid var(--highlight-color);
+        color: var(--text-light);
+    }
+
+    code {
+        background-color: var(--component-hover-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        padding: 0.1em 0.35em;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+    }
+
+    pre {
+        background-color: var(--component-hover-bg);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius-base, 6px);
+        padding: 12px 14px;
+        overflow-x: auto;
+
+        code {
+            background: none;
+            border: none;
+            padding: 0;
+        }
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid var(--border-color);
+        margin: 1.5em 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1em 0;
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 6px 10px;
+        }
+
+        th {
+            background-color: var(--component-hover-bg);
+            font-weight: 600;
+        }
+    }
+}
+
+/* The helper/error line under the editor. */
+.RaRichTextInput-root .MuiFormHelperText-root {
+    color: var(--text-light);
+
+    &.Mui-error {
+        color: var(--alert-error-title, #f48771);
+    }
+}

@@ -1,0 +1,201 @@
+/**
+ * Domain CSS Variable Overrides — inamap-web (Public App)
+ *
+ * Override the default CSS custom properties from dash-styles here.
+ * These will take precedence over the values in dash-css-transformer.less.
+ *
+ * Naming convention:
+ *   --variable-name--light   → light mode value
+ *   --variable-name--dark    → dark mode value
+ *
+ * At runtime, updateDomCssVariables() copies the correct suffixed
+ * value into the base key (e.g. --primary-color) depending on the
+ * active theme.
+ */
+:root {
+
+  /* ========================================
+     PRIMARY & SECONDARY COLORS
+  ======================================== */
+  --primary-color--light: #0078D4;   /* Bright tech blue */
+  --primary-color--dark: #002f55;    /* Deep trust blue */
+
+  --primary-contrast--light: #007bff;
+  --primary-contrast--dark: #00173d;
+
+  --secondary-color--light: #A8D800; /* Lemon green accent */
+  --secondary-color--dark: #8FBF3F;  /* Darker lemon green */
+
+  --secondary-contrast--light: #ffffff;
+  --secondary-contrast--dark: #ffffff;
+
+  --bodybg-primary--light: #f5f7fa;  /* Clean light background */
+  --bodybg-secondary--light: #ffffff;
+
+  --bodybg-primary--dark: #0E1A2B;   /* Futuristic dark navy */
+  --bodybg-secondary--dark: #1C2A3A;
+
+  /* ========================================
+     TEXT & CONTENT COLORS
+  ======================================== */
+  --heading-color--light: #004E8C;
+  --heading-color--dark: #ffffff;
+
+  --text-color--light: #0b0b0b;
+  --text-color--dark: #f3f0ff;
+
+  --light-color--light: #2d2d2d;
+  --light-color--dark: #2d3540;
+
+  --highlight-color--light: #A8D800;
+  --highlight-color--dark: #8FBF3F;
+
+  --highlight-color-contrast--light: #000000;
+  --highlight-color-contrast--dark: #ffffff;
+
+  /* ========================================
+     BUTTON STYLES
+  ======================================== */
+  --btn-primary-bg--light: #0078D4;
+  --btn-primary-color--light: #ffffff;
+
+  --btn-primary-bg--dark: #A8D800;
+  --btn-primary-color--dark: #0E1A2B;
+
+  --btn-bg--light: #A8D800;
+  --btn-bg--dark: #8FBF3F;
+
+  --btn-hover-bg--light: #6b9200;
+  --btn-hover-bg--dark: #6b9200;
+
+  --btn-color--light: #ffffff;
+  --btn-color--dark: #f3f0ff;
+
+  --tab-selected-bg--light: #0078D4;
+  --tab-selected-bg--dark: #004E8C;
+
+  --table-header-color--light: #ffffff;
+  --table-header-color--dark: #ffffff;
+  --table-header-bg--light: #0078D4;
+  --table-header-bg--dark: #004E8C;
+
+  /* ========================================
+     BACKGROUND COLORS
+  ======================================== */
+  --body-bg--light: inherit;
+  --body-bg--dark: inherit;
+
+  --framed_layout-bg--light: #f5f7fa;
+  --framed_layout-bg--dark: rgba(0, 0, 0, 0.7);
+
+  --module-bg--light: #ffffff;
+  --module-bg--dark: #1C2A3A;
+
+  /* ========================================
+     BORDERS
+  ======================================== */
+  --module-border--light: #d1d1d1;
+  --module-border--dark: #0d0d0d;
+
+  /* ========================================
+     SIDEBAR COLORS
+  ======================================== */
+  /* --sidebar-primary is the FOREGROUND (icon/text) color on top of a tile
+     backed by --primary-contrast (see dash-frontend-core's sidebar.less,
+     ".MuiListItemIcon-root"). It must contrast against --primary-contrast,
+     not match it — the dark value was previously #0E1A2B, nearly identical
+     to --primary-contrast--dark (#00173d) above, making the default (non-
+     selected) sidebar menu icon tiles nearly invisible in dark mode. */
+  --sidebar-primary--light: #ffffff;
+  --sidebar-primary--dark: #ffffff;
+
+  --sidebar-contrast--light: #0078D4;
+  --sidebar-contrast--dark: #A8D800;
+
+  --link-color--light: #0078D4;
+  --link-color--dark: #A8D800;
+
+  --sidebar_icon-primary--light: #0078D4;
+  --sidebar_icon-primary--dark: #A8D800;
+
+  --sidebar_icon-secondary--light: #A8D800;
+  --sidebar_icon-secondary--dark: #8FBF3F;
+
+  --sidebar-bg-primary--light: rgba(255, 255, 255, 0);
+  --sidebar-bg-primary--dark: rgba(255, 255, 255, 0);
+
+  --sidebar-bg-hover--light: rgba(0, 120, 212, 0.1);
+  --sidebar-bg-hover--dark: rgba(168, 216, 0, 0.2);
+
+  --sidebar-bg-contrast--light: rgba(0, 120, 212, 0.2);
+  --sidebar-bg-contrast--dark: rgba(168, 216, 0, 0.2);
+
+  --sidebar_submenu-bg-primary--light: rgba(0, 120, 212, 0.1);
+  --sidebar_submenu-bg-primary--dark: rgba(168, 216, 0, 0.2);
+
+  --sidebar_submenu-color-primary--light: #0078D4;
+  --sidebar_submenu-color-primary--dark: #A8D800;
+
+  --sidebar_submenu-color-contrast--light: #0b0b0b;
+  --sidebar_submenu-color-contrast--dark: #ffffff;
+
+  /* ========================================
+     SCROLLBAR
+  ======================================== */
+  --scroll_thumb-color--light: #A8D800;
+  --scroll_thumb-color--dark: #0078D4;
+
+  --scroll_track-color--light: transparent;
+  --scroll_track-color--dark: transparent;
+
+  --sidebar-handle-primary--light: rgba(0, 120, 212, 0.3);
+  --sidebar-handle-primary--dark: rgba(168, 216, 0, 0.3);
+
+  --sidebar-handle-contrast--light: rgba(0, 120, 212, 0.5);
+  --sidebar-handle-contrast--dark: rgba(168, 216, 0, 0.5);
+
+
+   --table-header-bg--light: #0010a2;
+    --table-header-bg--dark: #001848;
+    --table-header-color--light: #ffffff;
+    --table-header-color--dark: #ffffff;
+
+  // ========================================
+  // LAYOUT & DIMENSIONS
+  // ========================================
+  --custom-padding: 10px;
+  --content-horizontal-padding: 10px;
+  --min-body-width: 575px;
+
+  --sidebar-large-width: 200px;
+  --sidebar-small-width: 60px;
+  --sidebar-horizontal-height: 64px;
+
+  --sidebar_submenu-padding: 40px;
+  --sidebar-mini-drawer-width: 100px;
+  --sidebar-padding-lr: 10px;
+  --scroll-bar-margin: 19px;
+  --scroll-bar-collapsed-margin: 5px;
+  --sidebar-icon-width: 60px;
+
+  --logo-vertical-max-width: 130px;
+  --logo-vertical-max-height: 130px;
+    // Logo dimensions for horizontal sidebar (top/bottom)
+  --logo-horizontal-max-width: 200px;
+  --logo-horizontal-max-height: 60px;
+
+}
+
+// Breakpoints (kept as LESS variables — used in @media queries which can't use CSS vars)
+@screen-xs: 0;
+@screen-sm: 540px;
+@screen-md: 990px;
+@screen-lg: 1024px;
+@screen-xl: 1200px;
+@screen-xxl: 1400px;
+
+@mq-xs: 0;
+@mq-sm: 540;
+@mq-md: 960px;
+@mq-md: 1024px;
+@mq-lg: 1280px;

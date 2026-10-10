@@ -1,0 +1,213 @@
+
+// Tree
+.dash-tree {
+  width: 100%;
+  touch-action: pan-y; // Allow vertical scroll, prevent horizontal interference
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+  -webkit-user-select: none;
+
+  [role="tree"] {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 500px;
+  }
+
+  [role="treeitem"] {
+    width: 100% !important;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 12px;
+    transition: background-color 0.2s ease;
+    // Changed from touch-action: none to allow the polyfill to work
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &:active {
+      background-color: rgba(25, 118, 210, 0.08);
+    }
+
+    &.isSelected {
+      background-color: rgba(25, 118, 210, 0.12);
+    }
+
+    &.dragging {
+      opacity: 0.5;
+      background-color: rgba(25, 118, 210, 0.2);
+    }
+
+    // Drag indicator icon - this is the drag handle
+    .MuiSvgIcon-root[data-testid="DragIndicatorIcon"] {
+      flex-shrink: 0;
+      cursor: grab;
+      padding: 8px;
+      margin: -4px;
+      margin-right: 8px;
+
+      &:active {
+        cursor: grabbing;
+      }
+    }
+
+    // Folder icon container
+    div:has(.MuiSvgIcon-root[data-testid="FolderOpenIcon"]) {
+      flex-shrink: 0;
+    }
+
+    // Text content
+    .row-contents {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+      padding: 0 8px;
+    }
+
+    // Action buttons group
+    .MuiButtonGroup-root {
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+      margin-left: auto;
+      flex-shrink: 0;
+      touch-action: manipulation;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      // Individual action buttons
+      .MuiIconButton-root {
+        padding: 6px;
+        touch-action: manipulation;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+  }
+
+  // Container that holds the virtualized list
+  & > div[style*="position: relative"] {
+    width: 100% !important;
+
+    & > div[style*="position: absolute"] {
+      width: 100% !important;
+    }
+
+    & > div[style*="width: 100%"] {
+      width: 100% !important;
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .row {
+      padding: 10px 8px;
+      min-height: 48px; // Minimum touch target size
+
+      .MuiButtonGroup-root {
+        // Show buttons by default on mobile for better usability
+        opacity: 1;
+
+        .MuiIconButton-root {
+          padding: 8px;
+          min-width: 40px;
+          min-height: 40px;
+        }
+      }
+
+      // Make text smaller on mobile
+      .row-contents {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Extra small screens
+  @media (max-width: 480px) {
+    .row {
+      padding: 8px 6px;
+
+      .MuiButtonGroup-root {
+        .MuiIconButton-root {
+          padding: 6px;
+          min-width: 36px;
+          min-height: 36px;
+
+          .MuiSvgIcon-root {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile drag-drop polyfill styles
+// These are required for the polyfill to work correctly
+.touch-device {
+  // On touch devices, make draggable elements more obvious
+  [draggable="true"] {
+    cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+// Drag image styling for mobile
+.dnd-drag-image {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px 12px;
+}
+
+// Menu bar for search and expand/collapse
+.dash-tree-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+
+    .MuiTextField-root {
+      flex: 1 1 100%;
+      min-width: 200px;
+    }
+  }
+}
+
+// Ensure proper scrolling behavior
+div[role="tree"] {
+  overflow: auto !important;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scroll_thumb-color);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--scroll_track);
+    border-radius: 0;
+  }
+}

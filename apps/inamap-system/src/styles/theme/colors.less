@@ -1,0 +1,70 @@
+
+
+
+/**
+ * Palette overrides for the system app.
+ *
+ * NOTE: inamap-system's `dash-variables.less` uses the LESS `@var` convention
+ * and is imported BEFORE dash-css-transformer.less. The transformer emits every
+ * color as a LITERAL (it only references @vars for the two sidebar dimensions),
+ * so `@color` overrides in dash-variables.less are DEAD. This file is imported
+ * AFTER the transformer, so a plain :root here wins the cascade — put color
+ * overrides here, not in dash-variables.less.
+ */
+
+
+html[data-theme='light'] {
+
+    body,
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6,
+    p,
+    .navbar,
+    .brand,
+    .btn,
+    .btn-simple,
+    a,
+    .td-name,
+    td {
+    color: var(--text-light--light)
+    }
+
+}
+
+html[data-theme='dark'] {
+  
+        body,
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6,
+    p,
+    .navbar,
+    .brand,
+    .btn,
+    .btn-simple,
+    a,
+    .td-name,
+    td {
+    color: var(--text-light--dark)
+    }
+
+}

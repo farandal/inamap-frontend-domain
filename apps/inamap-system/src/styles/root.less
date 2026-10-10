@@ -1,0 +1,26 @@
+
+   html body {
+   margin: 0;
+   background: linear-gradient(to bottom,
+   var(--bodybg-primary),
+   var(--bodybg-secondary));
+   font-family: "Montserrat";
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rotateGradient {
+  to {
+    --angle: 360deg;
+  }
+}
