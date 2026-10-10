@@ -1,0 +1,84 @@
+
+
+.RaList-main > .MuiPaper-root {
+  background: none;
+  box-shadow: none;
+}
+/*
+@media (min-width: 990px) {
+  .dash-header-container {
+    .dash-header-content,
+    .dash-header-subheader {
+      height: 30px;
+     
+    }
+  }
+
+  
+}
+
+@media (min-width: 1200px) {
+  .dash-header-container {
+    .dash-header-content,
+    .dash-header-subheader {
+      height: 30px;
+    }
+  }
+}
+  */
+// makes all forms in mobile without padding to fit the screen
+@media (max-width: 900px) {
+  .auto-admin-grouped-form {
+    padding: 0 !important;
+    fieldset {
+      padding: 0;
+      margin: 0;
+    }
+  }
+} // Mui overwrites
+
+
+@media (max-width:@mq-sm) {
+
+   
+    .dash-header-subheader-actions {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        div {
+            margin:1px;
+        }
+        flex-direction: row;
+        display: flex;
+       
+    }
+}
+
+
+@media (max-width: @mq-sm) {
+    
+   .dash-header-subheader-user {
+    position: absolute;
+    top: 4px;
+    right: 74px;
+    }
+    
+  }
+
+@media screen and (max-width: 960px) {
+  .RaList-main,
+  .RaEdit-main {
+    .MuiCardContent-root {
+      padding: 0px;
+    }
+  }
+}
+
+//@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
+  .webview {
+    .dash-header-container {
+      padding-top: 35px;
+    }
+  }
+}
