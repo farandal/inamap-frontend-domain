@@ -1,0 +1,26 @@
+{
+	"name": "inamap-app",
+	"private": true,
+	"version": "1.0.0",
+	"description": "INAMAP — visor público de mapas (sin react-admin): búsqueda, rutas y QR.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"ina-viewer": "workspace:*",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"react-router-dom": "7.17.0"
+	},
+	"devDependencies": {
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"@vitejs/plugin-react": "^4.3.4",
+		"typescript": "^5.9.3",
+		"vite": "^7.2.4"
+	}
+}
