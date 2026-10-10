@@ -1,0 +1,39 @@
+{
+  "extends": "dash-tsconfig/base.json",
+  "exclude": [
+    "./src/**/*.spec.ts",
+    "./src/**/*.spec.tsx",
+    "./src/**/*.spec.js",
+    "./src/**/*.stories.tsx",
+    "**/*.wip"
+  ],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/custom.d.ts",
+    "./src/**/*.png",
+    "./src/**/*.ttf",
+    "./index.d.ts",
+    "./src/index.d.ts"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "ES2020",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@app/*": ["./src/*"],
+      "@kt-utils/*": ["../../packages/kt-utils/src/*"],
+      "@kt-ecommerce/*": ["../../packages/kt-ecommerce/src/*"],
+      "@kt-tabs/*": ["./src/kt-tabs/src/*"],
+      "@kt-mall/*": ["../../packages/kt-mall/src/*"],
+      "@kt-cashcount/*": ["../../packages/kt-cashcount/src/*"],
+      "@kt-kiosk/*": ["../../packages/kt-kiosk/src/*"],
+      "@kt-pages/*": ["../../packages/kt-pages/src/*"]
+    }
+  }
+}

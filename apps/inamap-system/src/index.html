@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>INAMAP</title>
+    
+    <style>
+      /* Critical CSS for initial loader */
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        /* Start with the brand's dark contrast color before data-theme
+           attaches (initializeThemeEarly runs after this paints) — avoids
+           a white flash. Overridden below once data-theme is known.
+           The fallback literal after the comma is injected automatically
+           at dev-serve/build time by vite-plugins/injectCriticalThemeVars.mts
+           from this app's own dash-variables.less — don't hand-edit it. */
+        background: var(--primary-contrast--dark);
+      }
+
+      html[data-theme="dark"] { background: var(--bodybg-secondary--dark); }
+      html[data-theme="light"] { background: var(--bodybg-secondary--light); }
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+      .initial-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .loader-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        border-top-color: limegreen;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+   
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-loader">
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>
