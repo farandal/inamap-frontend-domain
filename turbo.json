@@ -1,0 +1,48 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"globalDependencies": [
+		"**/dash-eslint/index.js",
+		"**/dash-prettier/index.js",
+		"**/dash-tsconfig/*.json"
+	],
+	"globalEnv": [
+		"NEXT_PUBLIC_API_URL"
+	],
+    "tasks": {
+        "build": {
+          "dependsOn": ["^build"],
+          "inputs": ["src/**", "build_config.json", ".env*", "vite.config.*", "package.json"],
+          "outputs": ["dist/**", ".next/**", "build/**"],
+          "env": ["NODE_ENV", "NEXT_PUBLIC_*", "MODE", "CUSTOM_MODE", "TARGET_TYPE", "PLATFORM", "VITE_*", "LINK_DASH_CORE"]
+        },
+        "dev": {
+          "dependsOn": ["^build"],
+          "cache": false,
+          "persistent": true
+        },
+        "start": {
+          "dependsOn": ["build"],
+          "cache": false
+        },
+        "test": {
+          "dependsOn": ["build"],
+          "outputs": ["coverage/**"],
+          "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
+        },
+        "lint": {
+          "outputs": []
+        },
+        "clean": {
+          "cache": false
+        },
+        "types:check": {
+          "dependsOn": [],
+          "inputs": ["**/*.ts", "**/*.tsx"],
+          "outputs": []
+        },
+        "deploy": {
+          "dependsOn": ["build", "test", "lint"],
+          "outputs": []
+        }
+      }
+}

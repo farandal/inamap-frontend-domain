@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.turbo/
+# Archivos de entorno con valores reales: solo van a git los .example
+apps/*/.env.*
+!apps/*/.env.*.example
+.DS_Store
+build_config*.json
+!apps/*/.env.example
