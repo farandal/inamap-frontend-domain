@@ -1,0 +1,37 @@
+{
+	"name": "ina-viewer",
+	"version": "1.0.0",
+	"description": "INAMAP — renderizado de mapas (SVG), geometría, cliente de la API pública y visor. Sin react-admin.",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"typecheck": "tsc --noEmit --skipLibCheck --skipDefaultLibCheck",
+		"build": "tsup",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"qrcode.react": "^4.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"typescript": "^5.9.3",
+		"vitest": "^3.2.4"
+	},
+	"module": "dist/index.js",
+	"types": "./src/index.ts",
+	"typesVersions": {
+		"*": {
+			"src/*": ["src/*", "src/*/index"],
+			"*": ["src/*", "src/*/index"]
+		}
+	},
+	"exports": {
+		".": "./dist/index.js",
+		"./*": "./dist/*.js",
+		"./src/*": "./dist/*.js"
+	},
+	"files": ["dist"]
+}
