@@ -2,10 +2,10 @@
   "name": "inamap-frontend-domain",
   "private": true,
   "version": "1.0.0",
-  "description": "INAMAP \u2014 frontend del dominio (apps inamap-web, inamap-system, inamap-app y paquetes ina-*) sobre el framework DashAdmin",
+  "description": "INAMAP — frontend del dominio (apps inamap-web, inamap-system, inamap-app y paquetes ina-*) sobre el framework DashAdmin",
   "license": "UNLICENSED",
   "scripts": {
-    "_INFO": "Apps: inamap-web (tenants), inamap-system (plataforma), inamap-app (visor p\u00fablico). Entorno por app: apps/<app>/.env.<app>.<entorno> (DashAdmin) o apps/inamap-app/.env.local.",
+    "_INFO": "Apps: inamap-web (tenants), inamap-system (plataforma), inamap-app (visor público). Entorno por app: apps/<app>/.env.<app>.<entorno> (DashAdmin) o apps/inamap-app/.env.local.",
     "dev:web": "cross-env CUSTOM_MODE=inamap-web.local TARGET_TYPE=web PLATFORM=web pnpm --filter inamap-web dev",
     "dev:system": "cross-env CUSTOM_MODE=inamap-system.local TARGET_TYPE=web PLATFORM=web pnpm --filter inamap-system dev",
     "dev:app": "pnpm --filter inamap-app dev",
@@ -17,7 +17,7 @@
     "typecheck": "pnpm -r --filter './packages/ina-*' --filter inamap-app run typecheck",
     "test": "pnpm --filter ina-viewer test"
   },
-  "packageManager": "pnpm@11.17.0",
+  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
   "engines": {
     "node": ">=20.19.0",
     "npm": ">=9.6.7"
