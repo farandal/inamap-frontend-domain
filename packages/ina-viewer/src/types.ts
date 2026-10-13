@@ -21,6 +21,8 @@ export interface InamapSettings {
     initial_layout_id?: string | null;
     initial_zoom?: number | null;
     primary_color?: string | null;
+    /** Permite zonas solapadas en el editor y al guardar. Apagado por defecto. */
+    allow_zone_overlap?: boolean;
     [key: string]: unknown;
 }
 

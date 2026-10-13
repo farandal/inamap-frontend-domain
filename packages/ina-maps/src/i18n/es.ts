@@ -29,6 +29,7 @@ const inaMapsEs = {
                 published_at: 'Publicado el',
                 access_mode: 'Modo de acceso',
                 session_ttl_minutes: 'Duración de sesiones de ruta (min)',
+                allow_zone_overlap: 'Permitir zonas solapadas',
                 primary_color: 'Color principal del visor',
                 created_at: 'Creado',
             },
@@ -84,6 +85,7 @@ const inaMapsEs = {
                 link: 'Haga clic en el extremo de un camino guardado y luego en el extremo destino (puede cambiar de piso).',
                 link_second: 'Ahora haga clic en el extremo destino. Puede cambiar de piso en el panel de layouts.',
                 measure: 'Haga clic en dos puntos para medir la distancia.',
+                zone_overlap_allowed: 'Haga clic para agregar vértices. Clic en el primer vértice, doble clic o Enter para cerrar. Las zonas pueden solaparse en este inamap.',
                 add_vertex: 'Haga clic sobre un borde del elemento seleccionado para agregar un vértice.',
                 remove_vertex: 'Haga clic sobre un vértice del elemento seleccionado para eliminarlo.',
             },
@@ -176,6 +178,7 @@ const inaMapsEs = {
             settings: {
                 info_title: 'Información del inamap',
                 access_title: 'Acceso público',
+                allow_zone_overlap_hint: 'Apagado por defecto: las zonas no pueden solaparse y el editor y el servidor rechazan las que se crucen. Encendido, las zonas de este inamap pueden superponerse (el borde compartido siempre se permite). Al apagarlo no se modifican las zonas ya guardadas.',
                 public_link: 'Enlace público',
                 embed: 'Código para incrustar',
                 access_key: 'Credencial de dispositivo (kioscos)',

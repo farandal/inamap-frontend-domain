@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNotify, useTranslate } from 'react-admin';
-import { Alert, Box, Button, Divider, Drawer, IconButton, MenuItem, Stack, TextField, Typography } from '@mui/material';
+import { Alert, Box, Button, Divider, Drawer, FormControlLabel, IconButton, MenuItem, Stack, Switch, TextField, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import KeyIcon from '@mui/icons-material/Key';
@@ -40,6 +40,7 @@ export const SettingsDrawer: React.FC<SettingsDrawerProps> = ({ open, section, o
         session_ttl_minutes: String(inamap.settings?.session_ttl_minutes ?? 60),
         initial_layout_id: (inamap.settings?.initial_layout_id as string) ?? '',
         primary_color: (inamap.settings?.primary_color as string) ?? '#E1251B',
+        allow_zone_overlap: inamap.settings?.allow_zone_overlap === true,
     });
     const [newKey, setNewKey] = useState<string | null>(null);
     const [busy, setBusy] = useState(false);
@@ -59,6 +60,7 @@ export const SettingsDrawer: React.FC<SettingsDrawerProps> = ({ open, section, o
                     session_ttl_minutes: Number(form.session_ttl_minutes),
                     initial_layout_id: form.initial_layout_id || null,
                     primary_color: form.primary_color,
+                    allow_zone_overlap: form.allow_zone_overlap,
                 },
             });
             onSaved(saved);
@@ -130,6 +132,16 @@ export const SettingsDrawer: React.FC<SettingsDrawerProps> = ({ open, section, o
                                 </MenuItem>
                             ))}
                         </TextField>
+
+                        <Box>
+                            <FormControlLabel
+                                control={<Switch checked={form.allow_zone_overlap} onChange={(e) => setForm({ ...form, allow_zone_overlap: e.target.checked })} />}
+                                label={f('allow_zone_overlap')}
+                            />
+                            <Typography variant="body2" color="text.secondary" sx={{ pl: 0.5 }}>
+                                {t('allow_zone_overlap_hint')}
+                            </Typography>
+                        </Box>
 
                         <Divider />
                         <Typography sx={{ fontWeight: 700 }}>{t('public_link')}</Typography>

@@ -169,7 +169,11 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
 
     /* ───────────────────── derivados ───────────────────── */
 
+    /** settings.allow_zone_overlap del inamap: apagado por defecto (RF-06). */
+    const allowZoneOverlap = inamap?.settings?.allow_zone_overlap === true;
+
     const clientConflicts = useMemo(() => {
+        if (allowZoneOverlap) return [];
         const ids = new Set<string>();
         for (let i = 0; i < doc.zones.length; i++) {
             for (let j = i + 1; j < doc.zones.length; j++) {
@@ -180,7 +184,7 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
             }
         }
         return [...ids];
-    }, [doc.zones]);
+    }, [doc.zones, allowZoneOverlap]);
 
     const conflicts = useMemo(() => [...new Set([...clientConflicts, ...serverConflicts])], [clientConflicts, serverConflicts]);
 
@@ -263,7 +267,7 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                 notify('ina_maps.editor.messages.polygon_invalid', { type: 'warning' });
                 return;
             }
-            if (tool === 'zone' && doc.zones.some((z) => polygonsOverlap(points, z.polygon))) {
+            if (tool === 'zone' && !allowZoneOverlap && doc.zones.some((z) => polygonsOverlap(points, z.polygon))) {
                 notify('ina_maps.editor.messages.zone_overlap', { type: 'warning' });
                 return;
             }
@@ -291,7 +295,7 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
         setDraft([]);
         setTool('select');
         setRoutePreview(null);
-    }, [draft, tool, doc, layoutId, update, notify, translate]);
+    }, [draft, tool, doc, layoutId, update, notify, translate, allowZoneOverlap]);
 
     const createLink = useCallback(
         async (from: EndpointRef, to: EndpointRef, verticalType?: VerticalType) => {
@@ -708,7 +712,7 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
     const published = inamap.status === 'published';
     const selectedPolygon = selection && (selection.type === 'zone' || selection.type === 'structure') ? (selectedItem as Polygonal | null) : null;
     const zoomPct = fitScale ? Math.round((scale / fitScale) * 100) : 100;
-    const hintKey = subMode !== 'none' ? subMode : tool === 'link' && linkStart ? 'link_second' : tool;
+    const hintKey = subMode !== 'none' ? subMode : tool === 'link' && linkStart ? 'link_second' : tool === 'zone' && allowZoneOverlap ? 'zone_overlap_allowed' : tool;
     const propertiesOpen = Boolean(selection && selectedItem && panel === 'editor' && !draft.length);
 
     const toolbarButton = (label: string, icon: React.ReactNode, onClick: () => void, active = false, disabled = false) => (

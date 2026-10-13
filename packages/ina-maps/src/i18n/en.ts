@@ -27,6 +27,7 @@ const inaMapsEn: typeof inaMapsEs = {
                 published_at: 'Published at',
                 access_mode: 'Access mode',
                 session_ttl_minutes: 'Route session lifetime (min)',
+                allow_zone_overlap: 'Allow overlapping zones',
                 primary_color: 'Viewer primary color',
                 created_at: 'Created',
             },
@@ -82,6 +83,7 @@ const inaMapsEn: typeof inaMapsEs = {
                 link: 'Click the end of a saved path, then the target end (you may switch floors).',
                 link_second: 'Now click the target end. You may switch floors in the layouts panel.',
                 measure: 'Click two points to measure the distance.',
+                zone_overlap_allowed: 'Click to add vertices. Click the first vertex, double-click or press Enter to close. Zones may overlap in this inamap.',
                 add_vertex: 'Click an edge of the selected element to add a vertex.',
                 remove_vertex: 'Click a vertex of the selected element to remove it.',
             },
@@ -174,6 +176,7 @@ const inaMapsEn: typeof inaMapsEs = {
             settings: {
                 info_title: 'Inamap information',
                 access_title: 'Public access',
+                allow_zone_overlap_hint: 'Off by default: zones cannot overlap, and both the editor and the server reject zones that cross. When on, zones in this inamap may overlap (a shared edge is always allowed). Turning it off does not change zones already saved.',
                 public_link: 'Public link',
                 embed: 'Embed code',
                 access_key: 'Device credential (kiosks)',

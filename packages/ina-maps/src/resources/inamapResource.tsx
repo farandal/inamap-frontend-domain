@@ -98,6 +98,14 @@ export const inamapSchema = [
     },
     {
         tab: 'ina_maps.inamap.tabs.general',
+        attribute: 'settings.allow_zone_overlap',
+        label: 'ina_maps.inamap.fields.allow_zone_overlap',
+        type: Boolean,
+        fieldProps: { defaultValue: false },
+        inList: false,
+    },
+    {
+        tab: 'ina_maps.inamap.tabs.general',
         attribute: 'created_at',
         label: 'ina_maps.inamap.fields.created_at',
         type: Date,
