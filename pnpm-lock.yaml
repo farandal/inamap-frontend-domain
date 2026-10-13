@@ -81,22 +81,22 @@ importers:
         version: 2.0.1(react-dom@19.2.8(react@19.2.8))(react-hook-form@7.78.0(react@19.2.8))(react@19.2.8)
       '@mui/icons-material':
         specifier: ^9.3.0
-        version: 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
       '@mui/material':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/system':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
       '@mui/utils':
         specifier: ^9.3.0
-        version: 9.4.0(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@mui/x-data-grid':
         specifier: ^9.10.1
-        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/x-date-pickers':
         specifier: ^9.10.1
-        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@react-oauth/google':
         specifier: ^0.13.4
         version: 0.13.5(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -120,52 +120,52 @@ importers:
         version: 2.7.0
       dash-admin:
         specifier: npm:@dashadmin/dash-admin@1.3.73
-        version: '@dashadmin/dash-admin@1.3.73(a9971648bf58d935e30384bf92b9a5ca)'
+        version: '@dashadmin/dash-admin@1.3.73(e91f7cb76fe47031c915c6227e884e53)'
       dash-admin-state:
         specifier: npm:@dashadmin/dash-admin-state@1.3.73
-        version: '@dashadmin/dash-admin-state@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
+        version: '@dashadmin/dash-admin-state@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
       dash-app-common:
         specifier: npm:@dashadmin/dash-app-common@1.3.73
-        version: '@dashadmin/dash-app-common@1.3.73(3454f2fd8b415a7117337408228ba203)'
+        version: '@dashadmin/dash-app-common@1.3.73(da6a49c8be5fc52ec9e6b414a1f65978)'
       dash-auth:
         specifier: npm:@dashadmin/dash-auth@1.3.73
         version: '@dashadmin/dash-auth@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
       dash-auto-admin:
         specifier: npm:@dashadmin/dash-auto-admin@1.3.73
-        version: '@dashadmin/dash-auto-admin@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
+        version: '@dashadmin/dash-auto-admin@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
       dash-axios-hook:
         specifier: npm:@dashadmin/dash-axios-hook@1.3.73
         version: '@dashadmin/dash-axios-hook@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
       dash-boilerplate:
         specifier: npm:@dashadmin/dash-boilerplate@1.3.73
-        version: '@dashadmin/dash-boilerplate@1.3.73(0ea8f7a4677e339251524c861f7a249a)'
+        version: '@dashadmin/dash-boilerplate@1.3.73(66a21f0d35564f768e19bf40348dfa98)'
       dash-components:
         specifier: npm:@dashadmin/dash-components@1.3.73
-        version: '@dashadmin/dash-components@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
+        version: '@dashadmin/dash-components@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
       dash-constants:
         specifier: npm:@dashadmin/dash-constants@1.3.73
         version: '@dashadmin/dash-constants@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
       dash-dialog:
         specifier: npm:@dashadmin/dash-dialog@1.3.73
-        version: '@dashadmin/dash-dialog@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
+        version: '@dashadmin/dash-dialog@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
       dash-icons:
         specifier: npm:@dashadmin/dash-icons@1.3.73
-        version: '@dashadmin/dash-icons@1.3.73(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(postcss@8.5.29)(react-dom@19.2.8(react@19.2.8))(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(vitest@3.2.7(@types/debug@4.1.13)(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.19.2)(yaml@2.9.1))'
+        version: '@dashadmin/dash-icons@1.3.73(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(postcss@8.5.29)(react-dom@19.2.8(react@19.2.8))(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(vitest@3.2.7(@types/debug@4.1.13)(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.19.2)(yaml@2.9.1))'
       dash-info:
         specifier: npm:@dashadmin/dash-info@1.3.73
-        version: '@dashadmin/dash-info@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
+        version: '@dashadmin/dash-info@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
       dash-interfaces:
         specifier: npm:@dashadmin/dash-interfaces@1.3.73
         version: '@dashadmin/dash-interfaces@1.3.73(react@19.2.8)'
       dash-modal:
         specifier: npm:@dashadmin/dash-modal@1.3.73
-        version: '@dashadmin/dash-modal@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
+        version: '@dashadmin/dash-modal@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)'
       dash-reports:
         specifier: npm:@dashadmin/dash-reports@1.3.73
         version: '@dashadmin/dash-reports@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
       dash-styles:
         specifier: npm:@dashadmin/dash-styles@1.3.73
-        version: '@dashadmin/dash-styles@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)'
+        version: '@dashadmin/dash-styles@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)'
       dash-utils:
         specifier: npm:@dashadmin/dash-utils@1.3.73
         version: '@dashadmin/dash-utils@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
@@ -186,7 +186,7 @@ importers:
         version: 4.18.1
       material-react-table:
         specifier: ^3.2.1
-        version: 3.2.1(d55d12d98ad2ca3106afa622231bd6ed)
+        version: 3.2.1(e3326df580a698dbf2d3efb26598b9df)
       pusher-js:
         specifier: ^8.4.0
         version: 8.6.0
@@ -207,10 +207,10 @@ importers:
         version: 1.0.0
       ra-ui-materialui:
         specifier: 5.15.1
-        version: 5.15.1(281dc86c529cfa2732d08bfa89382d49)
+        version: 5.15.1(187d647992796371d0641197f99b8f82)
       react-admin:
         specifier: 5.15.1
-        version: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+        version: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-error-boundary:
         specifier: ^6.0.0
         version: 6.1.6(@types/react@19.3.0)(react@19.2.8)
@@ -271,7 +271,7 @@ importers:
         version: 8.5.29
       prettier:
         specifier: latest
-        version: 3.9.9
+        version: 3.9.10
       terser:
         specifier: 5.19.2
         version: 5.19.2
@@ -335,34 +335,34 @@ importers:
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@mui/icons-material':
         specifier: ^9.3.0
-        version: 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
       '@mui/lab':
         specifier: ^7.0.1-beta.24
-        version: 7.0.1-beta.25(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 7.0.1-beta.25(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/material':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/system':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
       '@mui/utils':
         specifier: ^9.3.0
-        version: 9.4.0(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@mui/x-date-pickers':
         specifier: ^9.10.1
-        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@reduxjs/toolkit':
         specifier: latest
         version: 2.13.0(react-redux@9.3.0(@types/react@19.3.0)(react@19.2.8)(redux@5.0.1))(react@19.2.8)
       '@tanstack/query-async-storage-persister':
         specifier: ^5.90.15
-        version: 5.104.1
+        version: 5.104.2
       '@tanstack/react-query':
         specifier: 5.101.2
         version: 5.101.2(react@19.2.8)
       '@tanstack/react-query-persist-client':
         specifier: ^5.90.15
-        version: 5.104.1(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)
+        version: 5.104.2(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)
       axios:
         specifier: ^1.11.0
         version: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
@@ -407,7 +407,7 @@ importers:
         version: 19.2.8
       react-admin:
         specifier: 5.15.1
-        version: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+        version: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-dom:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
@@ -489,7 +489,7 @@ importers:
         version: 7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1)
       vite-plugin-svgr:
         specifier: latest
-        version: 5.2.0(rollup@4.64.3)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1))
+        version: 5.2.0(rollup@4.64.5)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1))
 
   apps/inamap-web:
     dependencies:
@@ -501,34 +501,34 @@ importers:
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@mui/icons-material':
         specifier: ^9.3.0
-        version: 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
       '@mui/lab':
         specifier: ^7.0.1-beta.24
-        version: 7.0.1-beta.25(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 7.0.1-beta.25(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/material':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/system':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
       '@mui/utils':
         specifier: ^9.3.0
-        version: 9.4.0(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@mui/x-date-pickers':
         specifier: ^9.10.1
-        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@reduxjs/toolkit':
         specifier: latest
         version: 2.13.0(react-redux@9.3.0(@types/react@19.3.0)(react@19.2.8)(redux@5.0.1))(react@19.2.8)
       '@tanstack/query-async-storage-persister':
         specifier: ^5.90.15
-        version: 5.104.1
+        version: 5.104.2
       '@tanstack/react-query':
         specifier: 5.101.2
         version: 5.101.2(react@19.2.8)
       '@tanstack/react-query-persist-client':
         specifier: ^5.90.15
-        version: 5.104.1(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)
+        version: 5.104.2(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)
       axios:
         specifier: ^1.11.0
         version: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
@@ -573,7 +573,7 @@ importers:
         version: 19.2.8
       react-admin:
         specifier: 5.15.1
-        version: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+        version: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-dom:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
@@ -655,22 +655,22 @@ importers:
         version: 7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1)
       vite-plugin-svgr:
         specifier: latest
-        version: 5.2.0(rollup@4.64.3)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1))
+        version: 5.2.0(rollup@4.64.5)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1))
 
   packages/ina-common:
     dependencies:
       '@mui/icons-material':
         specifier: ^9.3.0
-        version: 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
       '@mui/material':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react:
         specifier: 19.2.8
         version: 19.2.8
       react-admin:
         specifier: 5.15.1
-        version: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+        version: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-dom:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
@@ -704,10 +704,10 @@ importers:
     dependencies:
       '@mui/icons-material':
         specifier: ^9.3.0
-        version: 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+        version: 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
       '@mui/material':
         specifier: ^9.3.0
-        version: 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       ina-viewer:
         specifier: workspace:*
         version: link:../ina-viewer
@@ -722,7 +722,7 @@ importers:
         version: 19.2.8
       react-admin:
         specifier: 5.15.1
-        version: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+        version: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-arborist:
         specifier: ^3.4.3
         version: 3.16.0(@types/node@22.20.5)(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -1711,11 +1711,11 @@ packages:
   '@lokesh.dhakar/quantize@1.4.0':
     resolution: {integrity: sha512-+//cqVWKis//t0YH62EDtwaFSPG/CDtYNg4CZmzNmG2d5W17Iu3fuDAdpQXCDHUDrrU9q0veze4A7tPZXlR/mg==}
 
-  '@mui/core-downloads-tracker@9.4.0':
-    resolution: {integrity: sha512-d+gIYM1raJP87yrVQcVg+Q3vycVMArMkgu/TjJLi2vTvO9FHKWNRR1xs9nnN4eLpM9nGxxm02UMvc9BrmcUKvQ==}
+  '@mui/core-downloads-tracker@9.5.0':
+    resolution: {integrity: sha512-PErEpl3Lp+1ZqWYKI7GQU8XSiciAFmLbUAZ7IoaUL598HLy1UAFuEUMEJu8yAS1v8vkXYzWprMVZzky4UwXoOA==}
 
-  '@mui/icons-material@9.4.0':
-    resolution: {integrity: sha512-5PVgBYtLOXTk6u0YUAjoV9GoTUQDbeZ8g+pus2h0GphLT/rpmftRnB5D/Kw6QCAovB7EyBX7UxKdZqPBBAHUKw==}
+  '@mui/icons-material@9.5.0':
+    resolution: {integrity: sha512-dahtVaqnRUIBgaZ4WC9EdP+LgJ5d2rslASYIX+nDFG6+ssUiM11jQ+Gd1wH8vhUGoNA9ES40MYics5BI8zJFXQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@mui/material': ^9.3.0
@@ -1746,13 +1746,13 @@ packages:
       '@types/react':
         optional: true
 
-  '@mui/material@9.4.0':
-    resolution: {integrity: sha512-6KKUIvkQ2r/s48s9VZV9JEZ1W2dRa7RndVsF+Ipx4CYxDOQeozeRsS5r9NiheFf8A5hpbqJJIGoX7hjg5X4XUw==}
+  '@mui/material@9.5.0':
+    resolution: {integrity: sha512-QgqvdVjZoKxP8E8SBxYY6LrdV+kw00moXweZQWBbMMdifPKZAGfUaaXhGKIca6fjKnCL6HJIe/AWWCpqNvyHVw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
       '@emotion/styled': ^11.3.0
-      '@mui/material-pigment-css': ^9.4.0
+      '@mui/material-pigment-css': ^9.5.0
       '@types/react': ^19.2.7
       react: 19.2.8
       react-dom: 19.2.8
@@ -1766,8 +1766,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@mui/private-theming@9.4.0':
-    resolution: {integrity: sha512-qQpX/2XPGDz5F2OIWzo4kkorURlDeXGKytRQudXCdLS5TuwKsMKaZyx77LZEVSB73c7o3UrLWwQ/goRuHBdtjw==}
+  '@mui/private-theming@9.5.0':
+    resolution: {integrity: sha512-UHZKySlr4ZJeA5HEhe/Tq1fhsR5573ViKYn7JV80dCVJtgqRQIplRSer1DHPg2Yi22llX7QRhgM0Vtrx4kZHSA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@types/react': ^19.2.7
@@ -1776,8 +1776,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@mui/styled-engine@9.4.0':
-    resolution: {integrity: sha512-SlqVEYqnyEgXMFW4JuIDMelyhKzoWBJ85v2mNCQd0XtU0uk7U9E1zaJZ06XqodhA8oJrb+4Q+3E/JlwBe4jWkw==}
+  '@mui/styled-engine@9.5.0':
+    resolution: {integrity: sha512-IX1ceHnZ0bJgzJRWO/Ayl4ME1rNmpWVYwV28yb089UAMR17rJkV1qfr7ApsWQXXPi1oi+2JapJrWQAiAnTlJHQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -1789,8 +1789,8 @@ packages:
       '@emotion/styled':
         optional: true
 
-  '@mui/system@9.4.0':
-    resolution: {integrity: sha512-AZz9z13oGS1J0BYeAFHTbV7PegCtPiE/uMEIi7TJ1kTx3Vkt+jUpLyXF/2uV8B6Y79iTh98kVeOH9fX3x3zXXg==}
+  '@mui/system@9.5.0':
+    resolution: {integrity: sha512-OZuAwvoiaaHpvn0a540VH1DUwwmojJubGfNmO2g+nb2ybNDP4/gF7t7aA6AMduELSuJ5yxwlzyFvUO3CfLv1Yg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -1813,16 +1813,16 @@ packages:
       '@types/react':
         optional: true
 
-  '@mui/types@9.4.0':
-    resolution: {integrity: sha512-13DH0Oniua4WmGqeYbQAZqmiN7r4nfd0zwIoGJ5QeJwyIHgEmf+LkRw/jV1HZb6AiUoHX8Oxf4xgalq3vYHcIw==}
+  '@mui/types@9.5.0':
+    resolution: {integrity: sha512-O0S6xS80qEQqW2CYNrd4GlBEQ1xpMOHZ5b4zO/DaLu6NZmtthM6smEg0Gz/u9gX5vL+8NB3EiBIxmxSCcG590Q==}
     peerDependencies:
       '@types/react': ^19.2.7
     peerDependenciesMeta:
       '@types/react':
         optional: true
 
-  '@mui/utils@9.4.0':
-    resolution: {integrity: sha512-WkzY8uYtqUDyGKPShrRQRBomfMQHddlsyKu/gRRESYO24tDPD2z0xRE8CBoUsWqpBa+YrFs9KixiS7kQRjsPAQ==}
+  '@mui/utils@9.5.0':
+    resolution: {integrity: sha512-8m0LfSgE2pj58znY3kZ+anwRKbnBkcu/7AJPA8L/77wEjN0QnpX4/zRAccyplp1VEUnMsUBADeTRin5Mkf7epA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@types/react': ^19.2.7
@@ -2495,141 +2495,141 @@ packages:
       rollup:
         optional: true
 
-  '@rollup/rollup-android-arm-eabi@4.64.3':
-    resolution: {integrity: sha512-a31GFbL70GlGUGhn8goVjRLtdDG1urLCJFWLZ7JcxdHK9pPvCohLFtYLgJDdNbtrNZSrJl1u9bK05ISsSC2EpA==}
+  '@rollup/rollup-android-arm-eabi@4.64.5':
+    resolution: {integrity: sha512-MrfgRQSpD5hkkRg6XI16B6EDLb+6+xp8xje6bpdSwkYw+qxrBKbUVrRAQu9h82UT+QumSIVQ8HXsXjPd2dlhqw==}
     cpu: [arm]
     os: [android]
 
-  '@rollup/rollup-android-arm64@4.64.3':
-    resolution: {integrity: sha512-IRv757RLiPGlNxAX5JXU0eiUlUPvKiwFRbkqLd+gywptLK4uSEg1qkl6en6r0cXMazSnWUWOBABv+QfuLV3n5Q==}
+  '@rollup/rollup-android-arm64@4.64.5':
+    resolution: {integrity: sha512-+uu2p/R9Tzn8GpoQyX1pAo5dmKT1DhXevfaCzqzmPFhnLjHLWw7uWkaVGlxmhwYoRiYYhsGfRcD5cTBpL7rgSw==}
     cpu: [arm64]
     os: [android]
 
-  '@rollup/rollup-darwin-arm64@4.64.3':
-    resolution: {integrity: sha512-UkzI35Fnz6+MJNATdnjnZ3TpdG/rXab8h7oDOD9R0zDVIFmuuYrvgUj8V8mh+A//+LR4TlEQo4ZW4RhyRtWv3A==}
+  '@rollup/rollup-darwin-arm64@4.64.5':
+    resolution: {integrity: sha512-17dys+YEmzwzzFVHQAVDONg5FALXY9kd99HFEpfk4gJVHYxoh5bGea3D4t1fXXnwkTcOe25wPyd6nWS0I8IdLQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rollup/rollup-darwin-x64@4.64.3':
-    resolution: {integrity: sha512-C3AyMtAnKQ/jSkZ0chIoWbPXRbFz8JnPLhl1ULecEhcaOGkT19xt7KmO8BulQxt9S/XideHRXvsVQUbGj4JCOg==}
+  '@rollup/rollup-darwin-x64@4.64.5':
+    resolution: {integrity: sha512-wg0zQEKkEvFZf1UaaX1UELOoPs//OSKUG7D+yITuqOsAvza7LvHTv5Wu4nmMfzNG7EYI2jp2PJC7Id6OETmsYQ==}
     cpu: [x64]
     os: [darwin]
 
-  '@rollup/rollup-freebsd-arm64@4.64.3':
-    resolution: {integrity: sha512-M8yAdBMyHh14JLeXDNGvEkljzuHdcoLBQ399O4Fp4nvX51lueuEY/5U2G9Ci0D6/bQlBp/3JLiBQH55STwwbwg==}
+  '@rollup/rollup-freebsd-arm64@4.64.5':
+    resolution: {integrity: sha512-CoJmWcpEMuwin+TZ/ev/H9uDyF/uxUKQSWXdmIPn/UBx/uGV9+4ebMp0FwnlhWR9PE1AdzYsKf3bZevhif38+A==}
     cpu: [arm64]
     os: [freebsd]
 
-  '@rollup/rollup-freebsd-x64@4.64.3':
-    resolution: {integrity: sha512-WQjuOKGh2FN98ZK6i0uM6M6YqnPEds85p3oRkrxiEeTQo/p7RpuU8c9MwQ88LfgwVAzohumlzbQQSikz4Zw9rw==}
+  '@rollup/rollup-freebsd-x64@4.64.5':
+    resolution: {integrity: sha512-PxZnLAaTUAL5xG0W2BXLeYPKrK2b3LIASV2/e/Kf7PZvSLI1iAQIm9B9aJD+YyFIT7hc6qaMV3+OOO35R28LfA==}
     cpu: [x64]
     os: [freebsd]
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.64.3':
-    resolution: {integrity: sha512-5tDLZG5s9WyVKoEHgwos6FpKrgpotl61EYeHSLSVkQzMzTsaClwEr8mok9rm3y734zjiGInG4dfw/56ebWVvEQ==}
+  '@rollup/rollup-linux-arm-gnueabihf@4.64.5':
+    resolution: {integrity: sha512-uPo3IvnONjhbFXwWgroBeFwOicuhT7ZwQrnzkzmOtBJzeQbkUJUE1SJDfDI31ijQ5+ZUIA6sPrdUMxTSnxUWAg==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-arm-musleabihf@4.64.3':
-    resolution: {integrity: sha512-Mh5KbLeplM2HX6lQI18jsxSsqvPW8d+Hyk8HtY6Zl93woMitRSCZ92rBEzq6v8bfZGlpyMgj4P/sKW4KCjhH3A==}
+  '@rollup/rollup-linux-arm-musleabihf@4.64.5':
+    resolution: {integrity: sha512-ywI8Jyuc4LyHYTjC0mw4yA1ulvZBkHusdpWnoiEBsmBuHvSnt90btTBGCZ+s/2y+YNNfVAEKy33nPo5UI9zTmg==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-arm64-gnu@4.64.3':
-    resolution: {integrity: sha512-QZrrwHnznTv6y4iiHtCqDN+ZsF4qNFQObMOLgPrbxhh9O5o4rgoUe5OnkqG/ceCObMrAjhQt+eQ6HSDzBFgVMw==}
+  '@rollup/rollup-linux-arm64-gnu@4.64.5':
+    resolution: {integrity: sha512-tmuXJoQ/3ovSr637aykZMdQteU/CB2APAz2CrvsbibuoHZi1BS1Db13cVViBdEARGwXCLn1DSJ8wsjoThLJPGA==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-arm64-musl@4.64.3':
-    resolution: {integrity: sha512-4vLehpXSwlkltnvk5ETB+Hz+d3xayZS3NamZ5Vq4bSo+IUoIALovEJF1YgWPMjHwN7R5o/R4BpP9h3q8EK1xAA==}
+  '@rollup/rollup-linux-arm64-musl@4.64.5':
+    resolution: {integrity: sha512-5FMjSYNcUOHx7oW8Qu9KB6jGPpvF/8sG7+BDHwU/Ihh1/6FMJ9ySmsFG4tJ1qbNRuP8OLzCBDso4sF0mQaLuFQ==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-loong64-gnu@4.64.3':
-    resolution: {integrity: sha512-SEN7TTTOdXJKZmsWKOnQeVfgy3Dje/08ISXWwFhTggQ3SxjuIaChvmOB5ZDZqJNlBjaXrV6nAHraqEAvdLGqcw==}
+  '@rollup/rollup-linux-loong64-gnu@4.64.5':
+    resolution: {integrity: sha512-K8ZJ+neLDbUkIrL8dqF/5LtuVCrKwo27kREgOlxjBEjlOXwHvDnHLU8Z/UKv/B49qi7e8hsSDOyoJwhwqhvX4w==}
     cpu: [loong64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-loong64-musl@4.64.3':
-    resolution: {integrity: sha512-1LDsQMRMCEdGF9Dih5qyh6fF1LK3NnA+pAtE2+9AgZwUdXyd19TOBVC9crSB63iZBHR4vOG7h8gN/LcUH3J7xw==}
+  '@rollup/rollup-linux-loong64-musl@4.64.5':
+    resolution: {integrity: sha512-NlVxsq7PFPv0DBKGuNWRDKixQYQCjM53zl04mxEcKMBmJbCBIUm1JdPfIWDRHyOOFzzYPmLQzfeEwh4716ayQg==}
     cpu: [loong64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-ppc64-gnu@4.64.3':
-    resolution: {integrity: sha512-v3D2tAfRriqGOi+5Ac5CiYbBo2NXtLVxJlludTvUZRj502lVMFeVIuvvWbz4qCrotn3e3Uvpvh7FcMpG2QxxXQ==}
+  '@rollup/rollup-linux-ppc64-gnu@4.64.5':
+    resolution: {integrity: sha512-ARhRHJYs5eCFet5azfrHD97vOkD8OzNW2RSMlvo5CcBqXaTOLfp0OHDtUQh7/K5AL5fUYoFp2fgC9KDg4vVYMQ==}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-ppc64-musl@4.64.3':
-    resolution: {integrity: sha512-db5q6dP189V2+JkMpsXBl8ym6bC0x8ydZ47fUJZ9YdM6T2OF5uqNzX9HaAZHRP/lqjA9bJeNwi0qw1/2/37dUA==}
+  '@rollup/rollup-linux-ppc64-musl@4.64.5':
+    resolution: {integrity: sha512-atSgreM5C7jpxd9aEXN+6vJ5wTd05iYw+S3FiQpw7VsoEl8B90llbq35ARON+GOHj5QlVQEq2vOKWCHTob/BSQ==}
     cpu: [ppc64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-riscv64-gnu@4.64.3':
-    resolution: {integrity: sha512-nArAVDmrL5ix9UoipcKEsYJw4kMUQCIPYRWuYF2POOC7jd9rmN95d/48ewsYFC/OdtwEx6VYYWYxrp8FbMOU2Q==}
+  '@rollup/rollup-linux-riscv64-gnu@4.64.5':
+    resolution: {integrity: sha512-vmlmwBFGnjVWxSRoVabNkyYuscSmg52Pd0fM8jEbNT3Jmka4A6HcB84x4uAmuumznWfBVaxKOqU6jbEgomWKCA==}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-riscv64-musl@4.64.3':
-    resolution: {integrity: sha512-2dc7LElu7EVSvpQT8epNnBLa02wlqilNYqHN0FA/RaKqCr9U9ZFYQ0Eh4sfgSzLneLDuJsJRjcezR/l2UyYGXA==}
+  '@rollup/rollup-linux-riscv64-musl@4.64.5':
+    resolution: {integrity: sha512-hhJrP6S9WkbsbcHgUkvCBS5Cn8IdsG8XjlLZyxjnv9+NdoYfbbZE4TWJYr8apdaj1M5t5Y1id2StnEslxpNFyA==}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-s390x-gnu@4.64.3':
-    resolution: {integrity: sha512-9PYq2IEzSwXcvQLERcT9LKXRzw8J05GFTbJHA2anJR2WmlRjA1esgXVYhanp+bmjKsDVoZeU2L7Z2pRClLcZTw==}
+  '@rollup/rollup-linux-s390x-gnu@4.64.5':
+    resolution: {integrity: sha512-NNVCyN9pGrwFmQa4bf+Cnf5aVH3g6ZpnlOg1Cs/H9swIHT9bRixijfzUqyEIWm1WtiAuR1LJ+rJH6zpBm8kgQA==}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-x64-gnu@4.64.3':
-    resolution: {integrity: sha512-vMh+mt0cw1BHldd8cqaU6A5s1W4EUKl6+8MRsv86mj954L4xyruKD7qPXMUI2icImadAZARK10h0onaGTLmCVg==}
+  '@rollup/rollup-linux-x64-gnu@4.64.5':
+    resolution: {integrity: sha512-dR9nd6OKnvSS60Ifz/L7Mj5zzYyoqyRn2NwTuaOONKaa3xsVGXyp8YusMbvFyEOR94DxnwgcbgsFqkHd29ZSzQ==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-x64-musl@4.64.3':
-    resolution: {integrity: sha512-PpiKU+sWbqDGc0U0su8oXiyeyqm0UQjmaaPKHktX+DaLe6YKJwW2YVD0f2AXHdVvblZbRqpwRVClWP2F5HCqrQ==}
+  '@rollup/rollup-linux-x64-musl@4.64.5':
+    resolution: {integrity: sha512-1tzsMjaqhsh3bAO6SJiJqh8hIr9sSPRd+i2vPPxJHod8/XYnf9TEnK0z/u3r1z1AkI347X0KbRSg9dWcxeGahw==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-openbsd-x64@4.64.3':
-    resolution: {integrity: sha512-/3enY/AmaIt8IS0fWjX4ztYVPBqkj49cQTy/hCryhBFaEzDfJwwEolq9sxvyWAM2qmsmVuPdeRg5JXSrmeqvJg==}
+  '@rollup/rollup-openbsd-x64@4.64.5':
+    resolution: {integrity: sha512-01mWMQblKoXXsmk28KXtpbA96w7g/aOWUoV3AC16fdHdqkykGalqyyM+5u8M7uP5/MEMiiPv69Hv7iv/hEH/dA==}
     cpu: [x64]
     os: [openbsd]
 
-  '@rollup/rollup-openharmony-arm64@4.64.3':
-    resolution: {integrity: sha512-zsEP/QDuet52hhwvi5T1VPg0/Tkms0m3zkVv7CPsznvhdO4pL4oJTMz26EJsiCe18OeLKPgpTu3XVO3C1eq3ew==}
+  '@rollup/rollup-openharmony-arm64@4.64.5':
+    resolution: {integrity: sha512-trdnMPb/DNm4V/CgsaoGgr90HfQQ071wfK0KoIs4YpLvjBgVQGXhGabg2Z6nK4EcYNilrb9ZZPcsP6+zpJIdxQ==}
     cpu: [arm64]
     os: [openharmony]
 
-  '@rollup/rollup-win32-arm64-msvc@4.64.3':
-    resolution: {integrity: sha512-4ESknW4Db+kqvazVOfsReYJaHxcIsOqcgwjKV2J1tG5Bn4RVf5ocTQKSGuq2HWBJcOLuyim8IWX8DuH6nKmELA==}
+  '@rollup/rollup-win32-arm64-msvc@4.64.5':
+    resolution: {integrity: sha512-x2LxZlfdfsw99T6/qb9EqE/Qi84JWzibjyOJyhJsgFJy6CafaTiqIXCCnslCGrV5XWNh7fwrS3FbRENcuKnooA==}
     cpu: [arm64]
     os: [win32]
 
-  '@rollup/rollup-win32-ia32-msvc@4.64.3':
-    resolution: {integrity: sha512-3B8VCQyIyv7FQxYYhb3HpR3bIpronR20txjMSffSoz/sm/DDs3/49CFpEueOsvq9qW9sWoI/6pi6mtciD9NXFg==}
+  '@rollup/rollup-win32-ia32-msvc@4.64.5':
+    resolution: {integrity: sha512-/Qd/9aDQIo0+jmItgBmPIs8195YVbDxRRApn47GyufgbutCDOh7eP5vSKKlI4QNFeaI+wKQAkSMsPnF3EuMpaA==}
     cpu: [ia32]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-gnu@4.64.3':
-    resolution: {integrity: sha512-YOoDkKh2oQxOxRB5D9AR8sj3qpMShpmyTkjojiBjMGigz3caV7UvCnXWWUQC0TBmrZ5zuHe2pWl8S+cMfvXzRg==}
+  '@rollup/rollup-win32-x64-gnu@4.64.5':
+    resolution: {integrity: sha512-ngUJ/XvOWrqbd2IMsfXfh2xXFLTP3sY7sCKvxbGvYdBZ1KmXFd3ewDZ9n3/GNzAUgzRuhLT/UvJRivbNoAQRBw==}
     cpu: [x64]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-msvc@4.64.3':
-    resolution: {integrity: sha512-qTv4bG+eKJKifzxNJevMUh8L6CjJrz9/Kn1IbP2F5bo0tBzNIR7HMg4vni6XmDzcKUl00lHHY+J5ZgjbGiujOQ==}
+  '@rollup/rollup-win32-x64-msvc@4.64.5':
+    resolution: {integrity: sha512-IhV6ew/DuzUWwHaYmlh7MrPCV3lKFUq/amTEwysi4r/mwNPAEfAMh5dYWeTSPTeMy2pFHGMEWYtPkHzfX3tG5A==}
     cpu: [x64]
     os: [win32]
 
@@ -2785,17 +2785,17 @@ packages:
     resolution: {integrity: sha512-Wo1iKt2b9OT7d+YGhvEPD3DXvPv2etTusIMhMUoG7fbhmxcXCtIjJDEygy91Y2JFlwGyjqiBPRozme7UD8hoqg==}
     engines: {node: '>=12'}
 
-  '@tanstack/query-async-storage-persister@5.104.1':
-    resolution: {integrity: sha512-wSs/HrangoSMVW3zLifawRT9lA+fbiilPQmaY+YhxBOM/VS9oqx+MQvROHpW+hKwDpdvFmhyBjWiyDhTHL1YXg==}
+  '@tanstack/query-async-storage-persister@5.104.2':
+    resolution: {integrity: sha512-LULNGhfU7JkhTgOvjwe+X7LN5q8VhTTQGhAaCa0uZXfhBUHYY/BTohB9x0LB9dqCNi9QPKQAIm1GJt4Yxnp4eQ==}
 
   '@tanstack/query-core@5.101.2':
     resolution: {integrity: sha512-hH5MLoJhF7KaIGd7q3xTXGXvslI+GYlM1Z/35aSHHWaCJWB7XvTSHYuV3eM7tw+aE0mT/xMro4M4Q9rCGHT0lw==}
 
-  '@tanstack/query-persist-client-core@5.104.1':
-    resolution: {integrity: sha512-ONiadXqe56iNrw6RESqKILpTIVG9ZMI/DageTQnrBDt/nZ6WiP4G13iIiMwJEsiO12gQ3Gychx8tcFIPw4k25g==}
+  '@tanstack/query-persist-client-core@5.104.2':
+    resolution: {integrity: sha512-rFbWzV0NmdPU9b6xbJBEH6dtaWbbSX1vmXoi+s5o63ETKJhcKoh3gGq0NMqITtGEGEG8kogvJ56US7DJjwkPKA==}
 
-  '@tanstack/react-query-persist-client@5.104.1':
-    resolution: {integrity: sha512-kU3YaqjkwEUzUUfPF0JVg56d6gJKWHaFVqOlQztwc4C2IT0P5sv/23orrSoQqjxKaUe6Ejw5IIQtA/G12uNmow==}
+  '@tanstack/react-query-persist-client@5.104.2':
+    resolution: {integrity: sha512-IpwHqsJM2KBX9LkYrlH2FmWdq7fVj2NrXJVIkqg3rIYZ9Kv0AwtaUVphf0t1PL+gYqqGfF76YtMjm8vUSr94BQ==}
     peerDependencies:
       '@tanstack/react-query': 5.101.2
       react: 19.2.8
@@ -3367,8 +3367,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
-  bser@2.1.1:
-    resolution: {integrity: sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==}
+  bser@2.1.2:
+    resolution: {integrity: sha512-V2o8YS2EhrKMO9AumnkK0ynynfFlsajpYupwq7S46H5mhcanwxDkNTw3K67wPIcKTH1ffkA4vhMOtAc7gRmPZw==}
 
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
@@ -3787,8 +3787,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.451:
-    resolution: {integrity: sha512-vUNKPrUzw8ByEMOxloq0a71iD/mPuPxVkbDm3G5YhnxTzOw/I6qAg2MUS0cYj/c267lWmw26yW4Vv7foxTxPLg==}
+  electron-to-chromium@1.5.452:
+    resolution: {integrity: sha512-cVvk1YBSj6571VmV6hdJTqj94Y79xSu8cj6Y9t6ae4Y4431z8/7EJFvu3rVp90xhfuv9BpPKUmaLfTo4+FOGBg==}
 
   embla-carousel-react@8.6.0:
     resolution: {integrity: sha512-0/PjqU7geVmo6F734pmPqpyHqiM99olvyecY7zdweCw+6tKEXnrE90pBiBbMMU8s5tICemzpQ3hi5EpxzGW+JA==}
@@ -3927,8 +3927,8 @@ packages:
   fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
 
-  fb-watchman@2.0.2:
-    resolution: {integrity: sha512-p5161BqbuCaSnB8jIbzQHOlpgsPmK5rJVDfDKO91Axs5NC1uu3HRQm6wt9cd9/+GtQQIO53JdGXXoyDpTAsgYA==}
+  fb-watchman@2.0.4:
+    resolution: {integrity: sha512-tGQtaoYisPDriJBN0mT5yZSyNETnJGA1gTYxaVRAE5KUO3LI9kPUc9WIu8JXcxaIci+faIKlzXqXyPgrmubtBQ==}
 
   fdir@6.5.0:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
@@ -3984,8 +3984,8 @@ packages:
   fraction.js@5.3.4:
     resolution: {integrity: sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==}
 
-  framer-motion@14.0.0:
-    resolution: {integrity: sha512-QAtHmybrDFSliyW1sexMtSQTQd+1jw2ajibEmzpuI4XdPVzQkn+dAzJMm2sW3pl9MJuSS4xN51djQ7huhlP/VA==}
+  framer-motion@14.1.0:
+    resolution: {integrity: sha512-QsdZSdWoyQfUmgi+GZfow8Du5COG6VRYEo9FlgKUPgH87/Le/fYekHCAKwLdYKHdCZcZfWHg4iOxlD6RoqXciQ==}
     peerDependencies:
       react: 19.2.8
       react-dom: 19.2.8
@@ -4762,11 +4762,11 @@ packages:
   mobile-drag-drop@3.0.0-rc.0:
     resolution: {integrity: sha512-f8wIDTbBYLBW/+5sei1cqUE+StyDpf/LP+FRZELlVX6tmOOmELk84r3wh1z3woxCB9G5octhF06K5COvFjGgqg==}
 
-  motion-dom@14.0.0:
-    resolution: {integrity: sha512-aU3ApXo1yTpeUi3JU+jbDk2TELjxPE3MbBMUP7nZHlARb6RweJK+ojmLjpuB0YsY6zhbBl1YWGo8LMsI1/Llqw==}
+  motion-dom@14.1.0:
+    resolution: {integrity: sha512-FyFLkNUAAETzCvf851mZcl+v+kaZrKq+UM+XmkY4G8n+ny/WYfiWh9j0fhSQ1KOKVQrM9/cLO11THO2k71HJlg==}
 
-  motion-utils@14.0.0:
-    resolution: {integrity: sha512-jBsyjVxTTRZNeuvd/v+btVXr90LQkYl4HhRu9T2ARc+PMnvkmjsjRVeAg4Qm10b6TlTw+kykWI8gu/6LuvpLSQ==}
+  motion-utils@14.1.0:
+    resolution: {integrity: sha512-xd4FeWOnnXsJHmAaRCLNbOS7mEaNOangjMt3Pl241H07f1kxW48fADQ/8O5hLLNhf1qdlozgY3PPAHBdOoU7AA==}
 
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
@@ -5264,8 +5264,8 @@ packages:
   prefix-style@2.0.1:
     resolution: {integrity: sha512-gdr1MBNVT0drzTq95CbSNdsrBDoHGlb2aDJP/FoY+1e+jSDPOb1Cv554gH2MGiSr2WTcXi/zu+NaFzfcHQkfBQ==}
 
-  prettier@3.9.9:
-    resolution: {integrity: sha512-Z/CJHIkdujO/OtN7nXUii0Rf3VT5SRuhjBA82Xvu2XhBUgX3nhP67T0LHceBdQLex7OOFGTox+Q5Yg8Jk2Qivg==}
+  prettier@3.9.10:
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5772,8 +5772,8 @@ packages:
   rollup-pluginutils@2.8.2:
     resolution: {integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==}
 
-  rollup@4.64.3:
-    resolution: {integrity: sha512-iIMWbptLYsZdGTJMH8ngApXdsCatE6bCMv2eqGIfGE1++kwh7TCWBdWKK0FKC0yx++196vGK5VdagzRXSLMa8A==}
+  rollup@4.64.5:
+    resolution: {integrity: sha512-EAP5ZHcz2ijbgCWwPkpI7zh6bfsri2Ez5FtCy2dCp1k62duXzfG7DLGGh7RU2QQXWwavT+u4qpvDF/TWOiiGTw==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -6724,9 +6724,9 @@ snapshots:
     dependencies:
       '@capacitor/core': 7.6.9
 
-  '@dashadmin/dash-admin-state@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
+  '@dashadmin/dash-admin-state@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
-      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       history: 5.3.0
@@ -6754,37 +6754,37 @@ snapshots:
       - tslib
       - typescript
 
-  '@dashadmin/dash-admin@1.3.73(a9971648bf58d935e30384bf92b9a5ca)':
+  '@dashadmin/dash-admin@1.3.73(e91f7cb76fe47031c915c6227e884e53)':
     dependencies:
       '@capacitor/core': 7.6.9
       '@capacitor/push-notifications': 7.0.7(@capacitor/core@7.6.9)
-      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-auth': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-axios-hook': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-components': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-components': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
-      '@dashadmin/dash-modal': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
-      '@dashadmin/dash-styles': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-modal': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-styles': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@rollup/plugin-alias': 6.0.0(rollup@4.64.3)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.5)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       '@tanstack/react-query': 5.101.2(react@19.2.8)
-      '@tanstack/react-query-persist-client': 5.104.1(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)
+      '@tanstack/react-query-persist-client': 5.104.2(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)
       antd: 6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      framer-motion: 14.0.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      framer-motion: 14.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       prop-types: 15.8.1
       query-string: 7.1.3
-      ra-input-rich-text: 5.15.1(1af9ae3181099170d54a6d865da28e72)
+      ra-input-rich-text: 5.15.1(2dafb6863193d088f1fd430dca58c7a7)
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-custom-scrollbars-2: 4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-hook-form: 7.78.0(react@19.2.8)
       react-query: 3.39.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -6793,9 +6793,9 @@ snapshots:
       react-router-dom: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-spinners: 0.17.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-toastify: 11.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
       - '@floating-ui/dom'
@@ -6822,16 +6822,16 @@ snapshots:
       - tslib
       - typescript
 
-  '@dashadmin/dash-app-common@1.3.73(3454f2fd8b415a7117337408228ba203)':
+  '@dashadmin/dash-app-common@1.3.73(da6a49c8be5fc52ec9e6b414a1f65978)':
     dependencies:
-      '@dashadmin/dash-admin': 1.3.73(a9971648bf58d935e30384bf92b9a5ca)
-      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-admin': 1.3.73(e91f7cb76fe47031c915c6227e884e53)
+      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-auth': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-axios-hook': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-components': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-components': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
@@ -6868,7 +6868,7 @@ snapshots:
   '@dashadmin/dash-auth@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     transitivePeerDependencies:
       - '@emotion/react'
       - '@emotion/styled'
@@ -6877,32 +6877,32 @@ snapshots:
       - react
       - react-dom
 
-  '@dashadmin/dash-auto-admin@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
+  '@dashadmin/dash-auto-admin@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/icons-material': 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@rollup/plugin-alias': 6.0.0(rollup@4.64.3)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@mui/icons-material': 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.5)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       axios: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       node-match-path: 0.6.3
       prop-types: 15.8.1
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-custom-scrollbars-2: 4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
       react-hook-form: 7.78.0(react@19.2.8)
       react-redux: 9.3.0(@types/react@19.3.0)(react@19.2.8)(redux@5.0.1)
       react-router: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-toastify: 11.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
       - '@emotion/react'
@@ -6925,7 +6925,7 @@ snapshots:
     dependencies:
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     transitivePeerDependencies:
       - '@emotion/react'
       - '@emotion/styled'
@@ -6934,22 +6934,22 @@ snapshots:
       - react
       - react-dom
 
-  '@dashadmin/dash-boilerplate@1.3.73(0ea8f7a4677e339251524c861f7a249a)':
+  '@dashadmin/dash-boilerplate@1.3.73(66a21f0d35564f768e19bf40348dfa98)':
     dependencies:
-      '@dashadmin/dash-admin': 1.3.73(a9971648bf58d935e30384bf92b9a5ca)
-      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-admin': 1.3.73(e91f7cb76fe47031c915c6227e884e53)
+      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-auth': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-axios-hook': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/icons-material': 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/icons-material': 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       numeral: 2.0.6
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-dom: 19.2.8(react@19.2.8)
       react-error-boundary: 4.1.2(react@19.2.8)
       react-redux: 9.3.0(@types/react@19.3.0)(react@19.2.8)(redux@5.0.1)
@@ -6977,30 +6977,30 @@ snapshots:
       - tslib
       - typescript
 
-  '@dashadmin/dash-components@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
+  '@dashadmin/dash-components@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
-      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-admin-state': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-auth': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-axios-hook': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
       '@dashadmin/dash-interfaces': 1.3.73(react@19.2.8)
-      '@dashadmin/dash-modal': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
-      '@dashadmin/dash-styles': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      '@dashadmin/dash-modal': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-styles': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@dashadmin/dash-utils': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@hello-pangea/dnd': 18.0.1(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@rollup/plugin-alias': 6.0.0(rollup@4.64.3)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.5)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       numeral: 2.0.6
       query-string: 7.1.3
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-color: 2.19.3(react@19.2.8)
       react-custom-scrollbars-2: 4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
@@ -7012,9 +7012,9 @@ snapshots:
       react-router-dom: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-spinners: 0.17.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-toastify: 11.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
       - '@mui/material-pigment-css'
@@ -7035,7 +7035,7 @@ snapshots:
 
   '@dashadmin/dash-constants@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     transitivePeerDependencies:
       - '@emotion/react'
       - '@emotion/styled'
@@ -7044,19 +7044,19 @@ snapshots:
       - react
       - react-dom
 
-  '@dashadmin/dash-dialog@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
+  '@dashadmin/dash-dialog@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@rollup/plugin-alias': 6.0.0(rollup@4.64.3)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.5)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       query-string: 7.1.3
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-custom-scrollbars-2: 4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
       react-draggable: 4.7.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -7066,9 +7066,9 @@ snapshots:
       react-router-dom: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-spinners: 0.17.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-toastify: 11.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
       - '@mui/material-pigment-css'
@@ -7087,22 +7087,22 @@ snapshots:
 
   '@dashadmin/dash-eslint@1.3.73': {}
 
-  '@dashadmin/dash-icons@1.3.73(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(postcss@8.5.29)(react-dom@19.2.8(react@19.2.8))(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(vitest@3.2.7(@types/debug@4.1.13)(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.19.2)(yaml@2.9.1))':
+  '@dashadmin/dash-icons@1.3.73(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(postcss@8.5.29)(react-dom@19.2.8(react@19.2.8))(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(vitest@3.2.7(@types/debug@4.1.13)(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.19.2)(yaml@2.9.1))':
     dependencies:
       '@jest/globals': 30.5.2(supports-color@8.1.1)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-image': 3.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-image': 3.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       '@testing-library/jest-dom': 7.0.1(@testing-library/dom@10.4.2)(vitest@3.2.7(@types/debug@4.1.13)(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(supports-color@8.1.1)(terser@5.19.2)(yaml@2.9.1))
       '@testing-library/react': 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@testing-library/user-event': 14.6.7(@testing-library/dom@10.4.2)
       react: 19.2.8
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-copy-assets: 2.0.3(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-copy-assets: 2.0.3(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-postcss: 4.0.2(postcss@8.5.29)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
@@ -7119,19 +7119,19 @@ snapshots:
       - typescript
       - vitest
 
-  '@dashadmin/dash-info@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
+  '@dashadmin/dash-info@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@rollup/plugin-alias': 6.0.0(rollup@4.64.3)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.5)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       query-string: 7.1.3
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-custom-scrollbars-2: 4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
       react-draggable: 4.7.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -7141,9 +7141,9 @@ snapshots:
       react-router-dom: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-spinners: 0.17.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-toastify: 11.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
       - '@mui/material-pigment-css'
@@ -7164,22 +7164,22 @@ snapshots:
     dependencies:
       react: 19.2.8
 
-  '@dashadmin/dash-modal@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
+  '@dashadmin/dash-modal@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
-      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
-      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.3)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
-      '@dashadmin/dash-styles': 1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      '@dashadmin/dash-auto-admin': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(debug@4.4.3(supports-color@8.1.1))(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-dialog': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-custom-scrollbars-2@4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(redux@5.0.1)(rollup@4.64.5)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)
+      '@dashadmin/dash-styles': 1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@rollup/plugin-alias': 6.0.0(rollup@4.64.3)
-      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.3)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.3)
-      '@rollup/plugin-replace': 6.0.3(rollup@4.64.3)
-      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.64.5)
+      '@rollup/plugin-commonjs': 29.0.3(rollup@4.64.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.64.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.64.5)
+      '@rollup/plugin-typescript': 12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)
       query-string: 7.1.3
       react: 19.2.8
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       react-custom-scrollbars-2: 4.5.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
       react-query: 3.39.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -7187,9 +7187,9 @@ snapshots:
       react-router: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-router-dom: 7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-toastify: 11.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      rollup-plugin-cleaner: 1.0.0(rollup@4.64.3)
-      rollup-plugin-dts: 6.5.1(rollup@4.64.3)(typescript@5.9.3)
-      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.3)
+      rollup-plugin-cleaner: 1.0.0(rollup@4.64.5)
+      rollup-plugin-dts: 6.5.1(rollup@4.64.5)(typescript@5.9.3)
+      rollup-plugin-peer-deps-external: 2.2.4(rollup@4.64.5)
       rollup-plugin-svg: 2.0.0
     transitivePeerDependencies:
       - '@mui/material-pigment-css'
@@ -7213,7 +7213,7 @@ snapshots:
   '@dashadmin/dash-reports@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@dashadmin/dash-axios-hook': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       chart.js: 4.5.1
       react-chartjs-2: 5.3.1(chart.js@4.5.1)(react@19.2.8)
     transitivePeerDependencies:
@@ -7224,11 +7224,11 @@ snapshots:
       - react
       - react-dom
 
-  '@dashadmin/dash-styles@1.3.73(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)':
+  '@dashadmin/dash-styles@1.3.73(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(antd@6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)':
     dependencies:
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       antd: 6.6.5(date-fns@3.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      react-admin: 5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
+      react-admin: 5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1)
     transitivePeerDependencies:
       - '@mui/material-pigment-css'
       - '@mui/system'
@@ -7244,7 +7244,7 @@ snapshots:
   '@dashadmin/dash-utils@1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@dashadmin/dash-constants': 1.3.73(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     transitivePeerDependencies:
       - '@emotion/react'
       - '@emotion/styled'
@@ -7743,23 +7743,23 @@ snapshots:
 
   '@lokesh.dhakar/quantize@1.4.0': {}
 
-  '@mui/core-downloads-tracker@9.4.0': {}
+  '@mui/core-downloads-tracker@9.5.0': {}
 
-  '@mui/icons-material@9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)':
+  '@mui/icons-material@9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)':
     dependencies:
-      '@babel/runtime': 7.29.10
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@babel/runtime': 8.0.7
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@mui/lab@7.0.1-beta.25(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@mui/lab@7.0.1-beta.25(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@babel/runtime': 7.29.10
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/system': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/system': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
       '@mui/types': 7.4.12(@types/react@19.3.0)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       clsx: 2.1.1
       prop-types: 15.8.1
       react: 19.2.8
@@ -7769,13 +7769,13 @@ snapshots:
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@types/react': 19.3.0
 
-  '@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
-      '@babel/runtime': 7.29.10
-      '@mui/core-downloads-tracker': 9.4.0
-      '@mui/system': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/types': 9.4.0(@types/react@19.3.0)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@babel/runtime': 8.0.7
+      '@mui/core-downloads-tracker': 9.5.0
+      '@mui/system': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/types': 9.5.0(@types/react@19.3.0)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@popperjs/core': 2.11.8
       '@types/react-transition-group': 4.4.12(@types/react@19.3.0)
       clsx: 2.1.1
@@ -7790,18 +7790,18 @@ snapshots:
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@types/react': 19.3.0
 
-  '@mui/private-theming@9.4.0(@types/react@19.3.0)(react@19.2.8)':
+  '@mui/private-theming@9.5.0(@types/react@19.3.0)(react@19.2.8)':
     dependencies:
-      '@babel/runtime': 7.29.10
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@babel/runtime': 8.0.7
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       prop-types: 15.8.1
       react: 19.2.8
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@mui/styled-engine@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(react@19.2.8)':
+  '@mui/styled-engine@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(react@19.2.8)':
     dependencies:
-      '@babel/runtime': 7.29.10
+      '@babel/runtime': 8.0.7
       '@emotion/cache': 11.14.0
       '@emotion/serialize': 1.3.3
       '@emotion/sheet': 1.4.0
@@ -7812,13 +7812,13 @@ snapshots:
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
 
-  '@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)':
+  '@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)':
     dependencies:
-      '@babel/runtime': 7.29.10
-      '@mui/private-theming': 9.4.0(@types/react@19.3.0)(react@19.2.8)
-      '@mui/styled-engine': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(react@19.2.8)
-      '@mui/types': 9.4.0(@types/react@19.3.0)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@babel/runtime': 8.0.7
+      '@mui/private-theming': 9.5.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/styled-engine': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(react@19.2.8)
+      '@mui/types': 9.5.0(@types/react@19.3.0)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       clsx: 2.1.1
       csstype: 3.2.3
       prop-types: 15.8.1
@@ -7834,16 +7834,16 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@mui/types@9.4.0(@types/react@19.3.0)':
+  '@mui/types@9.5.0(@types/react@19.3.0)':
     dependencies:
-      '@babel/runtime': 7.29.10
+      '@babel/runtime': 8.0.7
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8)':
+  '@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8)':
     dependencies:
-      '@babel/runtime': 7.29.10
-      '@mui/types': 9.4.0(@types/react@19.3.0)
+      '@babel/runtime': 8.0.7
+      '@mui/types': 9.5.0(@types/react@19.3.0)
       '@types/prop-types': 15.7.15
       clsx: 2.1.1
       prop-types: 15.8.1
@@ -7852,13 +7852,13 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@mui/x-data-grid@9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@mui/x-data-grid@9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@babel/runtime': 8.0.7
       '@base-ui/utils': 0.4.0(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/system': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/system': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@mui/x-internals': 9.15.0(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@mui/x-virtualizer': 0.7.3(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       clsx: 2.1.1
@@ -7872,12 +7872,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@mui/x-date-pickers@9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@mui/x-date-pickers@9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@babel/runtime': 8.0.7
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/system': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/system': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@mui/x-internals': 9.15.0(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@types/react-transition-group': 4.4.12(@types/react@19.3.0)
       clsx: 2.1.1
@@ -7897,7 +7897,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 8.0.7
       '@base-ui/utils': 0.4.0(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
       reselect: 5.3.0
@@ -7908,7 +7908,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 8.0.7
       '@base-ui/utils': 0.4.0(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@mui/x-internals': 9.15.0(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
@@ -8465,13 +8465,13 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
 
-  '@rollup/plugin-alias@6.0.0(rollup@4.64.3)':
+  '@rollup/plugin-alias@6.0.0(rollup@4.64.5)':
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  '@rollup/plugin-commonjs@29.0.3(rollup@4.64.3)':
+  '@rollup/plugin-commonjs@29.0.3(rollup@4.64.5)':
     dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.3)
+      '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       commondir: 1.0.1
       estree-walker: 2.0.2
       fdir: 6.5.0(picomatch@4.0.7)
@@ -8479,122 +8479,122 @@ snapshots:
       magic-string: 0.30.21
       picomatch: 4.0.7
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  '@rollup/plugin-image@3.0.3(rollup@4.64.3)':
+  '@rollup/plugin-image@3.0.3(rollup@4.64.5)':
     dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.3)
+      '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       mini-svg-data-uri: 1.4.4
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  '@rollup/plugin-node-resolve@16.0.3(rollup@4.64.3)':
+  '@rollup/plugin-node-resolve@16.0.3(rollup@4.64.5)':
     dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.3)
+      '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
       resolve: 1.22.13
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  '@rollup/plugin-replace@6.0.3(rollup@4.64.3)':
+  '@rollup/plugin-replace@6.0.3(rollup@4.64.5)':
     dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.3)
+      '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       magic-string: 0.30.21
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  '@rollup/plugin-typescript@12.3.0(rollup@4.64.3)(tslib@2.8.1)(typescript@5.9.3)':
+  '@rollup/plugin-typescript@12.3.0(rollup@4.64.5)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.3)
+      '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       resolve: 1.22.13
       typescript: 5.9.3
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
       tslib: 2.8.1
 
-  '@rollup/pluginutils@5.4.0(rollup@4.64.3)':
+  '@rollup/pluginutils@5.4.0(rollup@4.64.5)':
     dependencies:
       '@types/estree': 1.0.9
       estree-walker: 2.0.2
       picomatch: 4.0.7
     optionalDependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  '@rollup/rollup-android-arm-eabi@4.64.3':
+  '@rollup/rollup-android-arm-eabi@4.64.5':
     optional: true
 
-  '@rollup/rollup-android-arm64@4.64.3':
+  '@rollup/rollup-android-arm64@4.64.5':
     optional: true
 
-  '@rollup/rollup-darwin-arm64@4.64.3':
+  '@rollup/rollup-darwin-arm64@4.64.5':
     optional: true
 
-  '@rollup/rollup-darwin-x64@4.64.3':
+  '@rollup/rollup-darwin-x64@4.64.5':
     optional: true
 
-  '@rollup/rollup-freebsd-arm64@4.64.3':
+  '@rollup/rollup-freebsd-arm64@4.64.5':
     optional: true
 
-  '@rollup/rollup-freebsd-x64@4.64.3':
+  '@rollup/rollup-freebsd-x64@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.64.3':
+  '@rollup/rollup-linux-arm-gnueabihf@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-arm-musleabihf@4.64.3':
+  '@rollup/rollup-linux-arm-musleabihf@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-arm64-gnu@4.64.3':
+  '@rollup/rollup-linux-arm64-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-arm64-musl@4.64.3':
+  '@rollup/rollup-linux-arm64-musl@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-loong64-gnu@4.64.3':
+  '@rollup/rollup-linux-loong64-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-loong64-musl@4.64.3':
+  '@rollup/rollup-linux-loong64-musl@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-ppc64-gnu@4.64.3':
+  '@rollup/rollup-linux-ppc64-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-ppc64-musl@4.64.3':
+  '@rollup/rollup-linux-ppc64-musl@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-gnu@4.64.3':
+  '@rollup/rollup-linux-riscv64-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-musl@4.64.3':
+  '@rollup/rollup-linux-riscv64-musl@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-s390x-gnu@4.64.3':
+  '@rollup/rollup-linux-s390x-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-x64-gnu@4.64.3':
+  '@rollup/rollup-linux-x64-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-linux-x64-musl@4.64.3':
+  '@rollup/rollup-linux-x64-musl@4.64.5':
     optional: true
 
-  '@rollup/rollup-openbsd-x64@4.64.3':
+  '@rollup/rollup-openbsd-x64@4.64.5':
     optional: true
 
-  '@rollup/rollup-openharmony-arm64@4.64.3':
+  '@rollup/rollup-openharmony-arm64@4.64.5':
     optional: true
 
-  '@rollup/rollup-win32-arm64-msvc@4.64.3':
+  '@rollup/rollup-win32-arm64-msvc@4.64.5':
     optional: true
 
-  '@rollup/rollup-win32-ia32-msvc@4.64.3':
+  '@rollup/rollup-win32-ia32-msvc@4.64.5':
     optional: true
 
-  '@rollup/rollup-win32-x64-gnu@4.64.3':
+  '@rollup/rollup-win32-x64-gnu@4.64.5':
     optional: true
 
-  '@rollup/rollup-win32-x64-msvc@4.64.3':
+  '@rollup/rollup-win32-x64-msvc@4.64.5':
     optional: true
 
   '@rooks/use-previous@4.11.2': {}
@@ -8729,20 +8729,20 @@ snapshots:
     dependencies:
       remove-accents: 0.5.0
 
-  '@tanstack/query-async-storage-persister@5.104.1':
+  '@tanstack/query-async-storage-persister@5.104.2':
     dependencies:
       '@tanstack/query-core': 5.101.2
-      '@tanstack/query-persist-client-core': 5.104.1
+      '@tanstack/query-persist-client-core': 5.104.2
 
   '@tanstack/query-core@5.101.2': {}
 
-  '@tanstack/query-persist-client-core@5.104.1':
+  '@tanstack/query-persist-client-core@5.104.2':
     dependencies:
       '@tanstack/query-core': 5.101.2
 
-  '@tanstack/react-query-persist-client@5.104.1(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)':
+  '@tanstack/react-query-persist-client@5.104.2(@tanstack/react-query@5.101.2(react@19.2.8))(react@19.2.8)':
     dependencies:
-      '@tanstack/query-persist-client-core': 5.104.1
+      '@tanstack/query-persist-client-core': 5.104.2
       '@tanstack/react-query': 5.101.2(react@19.2.8)
       react: 19.2.8
 
@@ -9410,11 +9410,11 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.11.28
       caniuse-lite: 1.0.30001815
-      electron-to-chromium: 1.5.451
+      electron-to-chromium: 1.5.452
       node-releases: 2.0.58
       update-browserslist-db: 1.3.4(browserslist@4.29.3)
 
-  bser@2.1.1:
+  bser@2.1.2:
     dependencies:
       node-int64: 0.4.0
 
@@ -9882,7 +9882,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.451: {}
+  electron-to-chromium@1.5.452: {}
 
   embla-carousel-react@8.6.0(react@19.2.8):
     dependencies:
@@ -10106,9 +10106,9 @@ snapshots:
 
   fast-json-stable-stringify@2.1.0: {}
 
-  fb-watchman@2.0.2:
+  fb-watchman@2.0.4:
     dependencies:
-      bser: 2.1.1
+      bser: 2.1.2
 
   fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
@@ -10133,7 +10133,7 @@ snapshots:
     dependencies:
       magic-string: 0.30.21
       mlly: 1.8.2
-      rollup: 4.64.3
+      rollup: 4.64.5
 
   follow-redirects@1.16.1(debug@4.4.3(supports-color@8.1.1)):
     optionalDependencies:
@@ -10158,10 +10158,10 @@ snapshots:
 
   fraction.js@5.3.4: {}
 
-  framer-motion@14.0.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  framer-motion@14.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
-      motion-dom: 14.0.0
-      motion-utils: 14.0.0
+      motion-dom: 14.1.0
+      motion-utils: 14.1.0
       tslib: 2.8.1
     optionalDependencies:
       react: 19.2.8
@@ -10572,7 +10572,7 @@ snapshots:
       '@parcel/watcher': 2.6.0
       '@types/node': 22.20.5
       anymatch: 3.1.3
-      fb-watchman: 2.0.2
+      fb-watchman: 2.0.4
       fdir: 6.5.0(picomatch@4.0.7)
       graceful-fs: 4.2.11
       jest-regex-util: 30.5.0
@@ -10802,13 +10802,13 @@ snapshots:
 
   material-colors@1.2.6: {}
 
-  material-react-table@3.2.1(d55d12d98ad2ca3106afa622231bd6ed):
+  material-react-table@3.2.1(e3326df580a698dbf2d3efb26598b9df):
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/icons-material': 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/x-date-pickers': 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/icons-material': 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/x-date-pickers': 9.15.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(date-fns@3.6.0)(dayjs@1.11.23)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tanstack/match-sorter-utils': 8.19.4
       '@tanstack/react-table': 8.20.6(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tanstack/react-virtual': 3.11.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -11108,11 +11108,11 @@ snapshots:
 
   mobile-drag-drop@3.0.0-rc.0: {}
 
-  motion-dom@14.0.0:
+  motion-dom@14.1.0:
     dependencies:
-      motion-utils: 14.0.0
+      motion-utils: 14.1.0
 
-  motion-utils@14.0.0: {}
+  motion-utils@14.1.0: {}
 
   ms@2.0.0:
     optional: true
@@ -11586,7 +11586,7 @@ snapshots:
 
   prefix-style@2.0.1: {}
 
-  prettier@3.9.9: {}
+  prettier@3.9.10: {}
 
   pretty-format@27.5.1:
     dependencies:
@@ -11748,10 +11748,10 @@ snapshots:
       - react-router
       - react-router-dom
 
-  ra-input-rich-text@5.15.1(1af9ae3181099170d54a6d865da28e72):
+  ra-input-rich-text@5.15.1(2dafb6863193d088f1fd430dca58c7a7):
     dependencies:
-      '@mui/icons-material': 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/icons-material': 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tiptap/core': 3.31.4(@tiptap/pm@3.31.4)
       '@tiptap/extension-color': 3.31.4(@tiptap/extension-text-style@3.31.4(@tiptap/core@3.31.4(@tiptap/pm@3.31.4)))
       '@tiptap/extension-highlight': 3.31.4(@tiptap/core@3.31.4(@tiptap/pm@3.31.4))
@@ -11763,7 +11763,7 @@ snapshots:
       '@tiptap/starter-kit': 3.31.4
       clsx: 2.1.1
       ra-core: 5.15.0(@tanstack/react-query@5.101.2(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-hook-form@7.78.0(react@19.2.8))(react-router-dom@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-router@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
-      ra-ui-materialui: 5.15.1(281dc86c529cfa2732d08bfa89382d49)
+      ra-ui-materialui: 5.15.1(187d647992796371d0641197f99b8f82)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
     transitivePeerDependencies:
@@ -11784,12 +11784,12 @@ snapshots:
 
   ra-language-spanish@1.0.0: {}
 
-  ra-ui-materialui@5.15.1(281dc86c529cfa2732d08bfa89382d49):
+  ra-ui-materialui@5.15.1(187d647992796371d0641197f99b8f82):
     dependencies:
-      '@mui/icons-material': 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@mui/system': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/utils': 9.4.0(@types/react@19.3.0)(react@19.2.8)
+      '@mui/icons-material': 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/system': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/utils': 9.5.0(@types/react@19.3.0)(react@19.2.8)
       '@tanstack/react-query': 5.101.2(react@19.2.8)
       autosuggest-highlight: 3.3.4
       clsx: 2.1.1
@@ -11819,17 +11819,17 @@ snapshots:
     dependencies:
       performance-now: 2.1.0
 
-  react-admin@5.15.1(@mui/system@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.4.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1):
+  react-admin@5.15.1(@mui/system@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8))(@mui/utils@9.5.0(@types/react@19.3.0)(react@19.2.8))(@types/react@19.3.0)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react-is@19.3.0)(react@19.2.8)(supports-color@8.1.1):
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1)
-      '@mui/icons-material': 9.4.0(@mui/material@9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
-      '@mui/material': 9.4.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@mui/icons-material': 9.5.0(@mui/material@9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react@19.3.0)(react@19.2.8)
+      '@mui/material': 9.5.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react@19.2.8)(supports-color@8.1.1))(@types/react@19.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tanstack/react-query': 5.101.2(react@19.2.8)
       ra-core: 5.15.0(@tanstack/react-query@5.101.2(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-hook-form@7.78.0(react@19.2.8))(react-router-dom@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-router@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       ra-i18n-polyglot: 5.15.0(@tanstack/react-query@5.101.2(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-hook-form@7.78.0(react@19.2.8))(react-router-dom@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-router@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       ra-language-english: 5.15.0(@tanstack/react-query@5.101.2(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react-hook-form@7.78.0(react@19.2.8))(react-router-dom@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-router@7.17.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
-      ra-ui-materialui: 5.15.1(281dc86c529cfa2732d08bfa89382d49)
+      ra-ui-materialui: 5.15.1(187d647992796371d0641197f99b8f82)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
       react-hook-form: 7.78.0(react@19.2.8)
@@ -12203,30 +12203,30 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup-plugin-cleaner@1.0.0(rollup@4.64.3):
+  rollup-plugin-cleaner@1.0.0(rollup@4.64.5):
     dependencies:
       rimraf: 2.7.1
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  rollup-plugin-copy-assets@2.0.3(rollup@4.64.3):
+  rollup-plugin-copy-assets@2.0.3(rollup@4.64.5):
     dependencies:
       fs-extra: 7.0.1
-      rollup: 4.64.3
+      rollup: 4.64.5
 
-  rollup-plugin-dts@6.5.1(rollup@4.64.3)(typescript@5.9.3):
+  rollup-plugin-dts@6.5.1(rollup@4.64.5)(typescript@5.9.3):
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.6.0
       convert-source-map: 2.0.0
       magic-string: 0.30.21
-      rollup: 4.64.3
+      rollup: 4.64.5
       typescript: 5.9.3
     optionalDependencies:
       '@babel/code-frame': 8.0.6
 
-  rollup-plugin-peer-deps-external@2.2.4(rollup@4.64.3):
+  rollup-plugin-peer-deps-external@2.2.4(rollup@4.64.5):
     dependencies:
-      rollup: 4.64.3
+      rollup: 4.64.5
 
   rollup-plugin-postcss@4.0.2(postcss@8.5.29):
     dependencies:
@@ -12260,36 +12260,36 @@ snapshots:
     dependencies:
       estree-walker: 0.6.1
 
-  rollup@4.64.3:
+  rollup@4.64.5:
     dependencies:
       '@types/estree': 1.0.9
     optionalDependencies:
       '@napi-rs/lzma-linux-x64-gnu': 1.5.1
-      '@rollup/rollup-android-arm-eabi': 4.64.3
-      '@rollup/rollup-android-arm64': 4.64.3
-      '@rollup/rollup-darwin-arm64': 4.64.3
-      '@rollup/rollup-darwin-x64': 4.64.3
-      '@rollup/rollup-freebsd-arm64': 4.64.3
-      '@rollup/rollup-freebsd-x64': 4.64.3
-      '@rollup/rollup-linux-arm-gnueabihf': 4.64.3
-      '@rollup/rollup-linux-arm-musleabihf': 4.64.3
-      '@rollup/rollup-linux-arm64-gnu': 4.64.3
-      '@rollup/rollup-linux-arm64-musl': 4.64.3
-      '@rollup/rollup-linux-loong64-gnu': 4.64.3
-      '@rollup/rollup-linux-loong64-musl': 4.64.3
-      '@rollup/rollup-linux-ppc64-gnu': 4.64.3
-      '@rollup/rollup-linux-ppc64-musl': 4.64.3
-      '@rollup/rollup-linux-riscv64-gnu': 4.64.3
-      '@rollup/rollup-linux-riscv64-musl': 4.64.3
-      '@rollup/rollup-linux-s390x-gnu': 4.64.3
-      '@rollup/rollup-linux-x64-gnu': 4.64.3
-      '@rollup/rollup-linux-x64-musl': 4.64.3
-      '@rollup/rollup-openbsd-x64': 4.64.3
-      '@rollup/rollup-openharmony-arm64': 4.64.3
-      '@rollup/rollup-win32-arm64-msvc': 4.64.3
-      '@rollup/rollup-win32-ia32-msvc': 4.64.3
-      '@rollup/rollup-win32-x64-gnu': 4.64.3
-      '@rollup/rollup-win32-x64-msvc': 4.64.3
+      '@rollup/rollup-android-arm-eabi': 4.64.5
+      '@rollup/rollup-android-arm64': 4.64.5
+      '@rollup/rollup-darwin-arm64': 4.64.5
+      '@rollup/rollup-darwin-x64': 4.64.5
+      '@rollup/rollup-freebsd-arm64': 4.64.5
+      '@rollup/rollup-freebsd-x64': 4.64.5
+      '@rollup/rollup-linux-arm-gnueabihf': 4.64.5
+      '@rollup/rollup-linux-arm-musleabihf': 4.64.5
+      '@rollup/rollup-linux-arm64-gnu': 4.64.5
+      '@rollup/rollup-linux-arm64-musl': 4.64.5
+      '@rollup/rollup-linux-loong64-gnu': 4.64.5
+      '@rollup/rollup-linux-loong64-musl': 4.64.5
+      '@rollup/rollup-linux-ppc64-gnu': 4.64.5
+      '@rollup/rollup-linux-ppc64-musl': 4.64.5
+      '@rollup/rollup-linux-riscv64-gnu': 4.64.5
+      '@rollup/rollup-linux-riscv64-musl': 4.64.5
+      '@rollup/rollup-linux-s390x-gnu': 4.64.5
+      '@rollup/rollup-linux-x64-gnu': 4.64.5
+      '@rollup/rollup-linux-x64-musl': 4.64.5
+      '@rollup/rollup-openbsd-x64': 4.64.5
+      '@rollup/rollup-openharmony-arm64': 4.64.5
+      '@rollup/rollup-win32-arm64-msvc': 4.64.5
+      '@rollup/rollup-win32-ia32-msvc': 4.64.5
+      '@rollup/rollup-win32-x64-gnu': 4.64.5
+      '@rollup/rollup-win32-x64-msvc': 4.64.5
       fsevents: 2.3.3
 
   rope-sequence@1.3.4: {}
@@ -12715,7 +12715,7 @@ snapshots:
       picocolors: 1.1.1
       postcss-load-config: 6.0.1(postcss@8.5.29)(yaml@2.9.1)
       resolve-from: 5.0.0
-      rollup: 4.64.3
+      rollup: 4.64.5
       source-map: 0.7.6
       sucrase: 3.35.1
       tinyexec: 0.3.2
@@ -12887,9 +12887,9 @@ snapshots:
 
   vite-plugin-remove-console@2.2.0: {}
 
-  vite-plugin-svgr@5.2.0(rollup@4.64.3)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1)):
+  vite-plugin-svgr@5.2.0(rollup@4.64.5)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1)):
     dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.3)
+      '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       '@svgr/core': 8.1.0(supports-color@8.1.1)(typescript@5.9.3)
       '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0(supports-color@8.1.1)(typescript@5.9.3))(supports-color@8.1.1)
       vite: 7.3.7(@types/node@22.20.5)(less@4.9.1(supports-color@8.1.1))(terser@5.19.2)(yaml@2.9.1)
@@ -12904,7 +12904,7 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
       postcss: 8.5.29
-      rollup: 4.64.3
+      rollup: 4.64.5
       tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 22.20.5
