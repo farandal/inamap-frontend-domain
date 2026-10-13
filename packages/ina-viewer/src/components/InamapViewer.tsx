@@ -22,15 +22,30 @@ export interface InamapViewerProps {
     token?: string | null;
     /** Ubicación a enfocar como destino (`?location=`). */
     focusLocationId?: string | null;
+    /**
+     * Destino y origen como referencia `tipo:uuid` (`?to=` y `?from=`): lo que
+     * abre el QR de un mapa impreso o de una tarjeta de quiosco. Con ambos, la
+     * ruta se calcula al abrir; con solo el destino, se enfoca ese lugar.
+     */
+    toRef?: string | null;
+    fromRef?: string | null;
+    /** Ruta sin escaleras (`?accessible=1`) al calcular desde `toRef`/`fromRef`. */
+    accessibleRoute?: boolean;
     strings?: ViewerStrings;
     locale?: string;
     /** Altura del contenedor (por defecto 100vh). */
     height?: number | string;
+    /**
+     * Empotrado en otra página (un iframe en una tarjeta): el panel de búsqueda
+     * y ruta parte cerrado para que el mapa ocupe el cuadro. El botón para
+     * abrirlo sigue disponible.
+     */
+    embedded?: boolean;
 }
 
 const isNarrow = () => typeof window !== 'undefined' && window.innerWidth < 760;
 
-export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh' }: InamapViewerProps) {
+export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh', embedded = false, toRef = null, fromRef = null, accessibleRoute = false }: InamapViewerProps) {
     const token = useMemo(() => tokenProp ?? readTokenFromHash(), [tokenProp]);
     const client = useMemo(() => createPublicClient({ apiUrl, token, locale }), [apiUrl, token, locale]);
     const canvasRef = useRef<MapCanvasHandle>(null);
@@ -49,7 +64,9 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
     const [selected, setSelected] = useState<Location | null>(null);
     const [session, setSession] = useState<RouteSession | null>(null);
     const [narrow, setNarrow] = useState(isNarrow());
-    const [panelOpen, setPanelOpen] = useState(() => !isNarrow());
+    const [viewportH, setViewportH] = useState(() => (typeof window !== 'undefined' ? window.innerHeight : 800));
+    const [panelOpen, setPanelOpen] = useState(() => !embedded && !isNarrow());
+    const [stepsOpen, setStepsOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
     const themeVars = {
@@ -65,7 +82,10 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
     const errorText = (e: unknown) => strings.errors[e instanceof InamapApiError ? e.code : 'NETWORK'] ?? strings.errors.NETWORK;
 
     useEffect(() => {
-        const onResize = () => setNarrow(isNarrow());
+        const onResize = () => {
+            setNarrow(isNarrow());
+            setViewportH(window.innerHeight);
+        };
         window.addEventListener('resize', onResize);
         return () => window.removeEventListener('resize', onResize);
     }, []);
@@ -110,6 +130,41 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
             setLayoutId(location.layout_id);
         }
     }, [data, focusLocationId]);
+
+    // Destino y origen desde la URL (?to=&from=): se resuelven contra el propio
+    // inamap, nunca se confía en el texto de la URL.
+    useEffect(() => {
+        if (!data || (!toRef && !fromRef)) return;
+        const hitFor = (ref?: string | null): SearchHit | null => {
+            const [type, id] = (ref ?? '').split(':');
+            const pool = type === 'zone' ? data.zones : type === 'structure' ? data.structures : type === 'location' ? data.locations : null;
+            const item = pool?.find((x) => x.id === id);
+
+            return item ? { type: type as SearchHit['type'], id: item.id, label: item.label, code: item.code, layout_id: item.layout_id, score: 1 } : null;
+        };
+        const toHit = hitFor(toRef);
+        const fromHit = hitFor(fromRef);
+        if (toHit) {
+            setTo(toHit);
+            setLayoutId(toHit.layout_id);
+            if (toHit.type === 'location') setSelected(data.locations.find((l) => l.id === toHit.id) ?? null);
+        }
+        if (fromHit) setFrom(fromHit);
+        if (!toHit || !fromHit) return;
+
+        let cancelled = false;
+        setRouting(true);
+        client
+            .route(inamapId, endpointRef(fromHit.type, fromHit.id), endpointRef(toHit.type, toHit.id), accessibleRoute)
+            .then((result) => !cancelled && applyRoute(result, data))
+            .catch((e) => !cancelled && (setRoute(null), setRouteError(errorText(e))))
+            .finally(() => !cancelled && setRouting(false));
+
+        return () => {
+            cancelled = true;
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [data, toRef, fromRef, accessibleRoute]);
 
     const layout = data?.layouts.find((l) => l.id === layoutId) ?? data?.layouts[0] ?? null;
     const layoutNames = useMemo(() => Object.fromEntries((data?.layouts ?? []).map((l) => [l.id, l.name])), [data]);
@@ -215,252 +270,349 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
         return <div style={{ ...themeVars, height, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Inter, system-ui, sans-serif', color: 'var(--viewer-text)', background: 'var(--viewer-panel)' }}>{strings.loading}</div>;
     }
 
-    const panel = (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, color: 'var(--viewer-text)' }}>
-            <SearchBox client={client} inamapId={inamapId} value={from} onChange={setFrom} label={strings.from} marker="#16a34a" layoutNames={layoutNames} strings={strings} />
-            <SearchBox client={client} inamapId={inamapId} value={to} onChange={setTo} label={strings.to} marker="#E1251B" category={category} layoutNames={layoutNames} strings={strings} />
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, color: 'var(--viewer-text)' }} title={strings.accessibleHint}>
-                    <input type="checkbox" checked={accessible} onChange={(e) => setAccessible(e.target.checked)} />
-                    ♿ {strings.accessible}
-                </label>
-                <button
-                    type="button"
-                    onClick={() => {
-                        setFrom(to);
-                        setTo(from);
-                    }}
-                    style={{ border: '1px solid var(--viewer-border)', background: 'var(--viewer-input)', color: 'var(--viewer-text)', borderRadius: 8, padding: '4px 10px', cursor: 'pointer', fontSize: 13 }}
-                >
-                    ⇅ {strings.swap}
-                </button>
-            </div>
-            <button
-                type="button"
-                disabled={!from || !to || routing}
-                onClick={computeRoute}
-                style={{ background: !from || !to ? '#FCA5A5' : '#E1251B', color: '#fff', border: 'none', borderRadius: 10, padding: '11px 14px', fontSize: 15, fontWeight: 700, cursor: !from || !to ? 'default' : 'pointer' }}
-            >
-                {routing ? strings.loading : strings.route}
-            </button>
+    // Lo que abre el QR de la barra: este mismo lugar y esta misma ruta en un
+    // celular. Un mapa que exige token no se abre con un enlace pelado: ahí el QR
+    // es el de una sesión de ruta (se pide con el botón).
+    const tokenRequired = data.settings?.access_mode === 'token_required';
+    const phoneUrl = (() => {
+        const query = new URLSearchParams();
+        if (to) query.set('to', `${to.type}:${to.id}`);
+        if (to && from) {
+            query.set('from', `${from.type}:${from.id}`);
+            if (accessible) query.set('accessible', '1');
+        }
+        if (locale?.toLowerCase().startsWith('en')) query.set('lang', 'en');
+        const base = `${window.location.origin}/inamap/${inamapId}`;
 
-            {data.categories.length > 0 && (
-                <div>
-                    <div style={{ fontSize: 12, color: 'var(--viewer-muted)', marginBottom: 6 }}>{strings.categories}</div>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                        {[{ id: null as string | null, name: strings.all, color: '#6b7280' }, ...data.categories.map((c) => ({ id: c.id as string | null, name: c.name, color: c.color || '#6b7280' }))].map((c) => (
-                            <button
-                                key={c.id ?? 'all'}
-                                type="button"
-                                onClick={() => setCategory(c.id)}
-                                style={{
-                                    border: `1px solid ${c.color}`,
-                                    background: category === c.id ? c.color : 'var(--viewer-input)',
-                                    color: category === c.id ? '#fff' : 'var(--viewer-text)',
-                                    borderRadius: 999,
-                                    padding: '4px 10px',
-                                    fontSize: 12,
-                                    cursor: 'pointer',
-                                }}
-                            >
-                                {c.name}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            )}
+        return query.toString() ? `${base}?${query}` : base;
+    })();
+    const qrValue = tokenRequired ? session?.view_url ?? null : phoneUrl;
+    // En un celular el QR no sirve (ya se está en él), salvo dentro de una tarjeta.
+    const showQr = !narrow || embedded;
+    // Big enough to scan from a kiosk screen: ~7% of the viewport height, 120-176 px.
+    const QR_SIZE = Math.max(120, Math.min(176, Math.round(viewportH * 0.07)));
+    // Room the overlay takes at the bottom-right of the map (plate padding + caption).
+    const QR_BLOCK = QR_SIZE + 16 + 22;
 
-            {routeError && <div style={{ background: darkMode ? '#451F24' : '#FEF2F2', color: darkMode ? '#FECACA' : '#991B1B', borderRadius: 8, padding: 10, fontSize: 14 }}>{routeError}</div>}
+    const column: React.CSSProperties = { display: 'flex', alignItems: 'center', gap: 8, padding: '0 10px', borderLeft: '1px solid var(--viewer-border)', minWidth: 0 };
+    const control: React.CSSProperties = { height: 34, boxSizing: 'border-box', border: '1px solid var(--viewer-border)', background: 'var(--viewer-input)', color: 'var(--viewer-text)', borderRadius: 8, padding: '0 10px', cursor: 'pointer', fontSize: 13, whiteSpace: 'nowrap' };
+    const routeLocked = !from || !to || routing;
 
-            {route && (
-                <div style={{ background: 'var(--viewer-surface)', border: '1px solid var(--viewer-border)', borderRadius: 10, padding: 12 }}>
-                    <div style={{ display: 'flex', gap: 16, marginBottom: 8 }}>
-                        <div>
-                            <div style={{ fontSize: 11, color: 'var(--viewer-muted)' }}>{strings.distance}</div>
-                            <div style={{ fontSize: 18, fontWeight: 700 }}>{formatDistance(route.distance, route.unit)}</div>
-                        </div>
-                        <div>
-                            <div style={{ fontSize: 11, color: 'var(--viewer-muted)' }}>{strings.time}</div>
-                            <div style={{ fontSize: 18, fontWeight: 700 }}>{formatDuration(route.estimated_seconds)}</div>
-                        </div>
-                    </div>
-                    <div style={{ fontSize: 12, color: 'var(--viewer-muted)', marginBottom: 4 }}>{strings.steps}</div>
-                    <ol style={{ margin: 0, paddingLeft: 18, fontSize: 14, color: 'var(--viewer-text)' }}>
-                        {route.steps.map((step, i) => (
-                            <li key={i} onClick={() => goToStep(i)} style={{ marginBottom: 6, cursor: 'pointer', fontWeight: i === stepIndex ? 700 : 400 }}>
-                                {format(strings.stepWalk, { distance: formatDistance(step.distance, route.unit), layout: step.layout_name ?? layoutNames[step.layout_id] ?? '' })}
-                                {step.transition && (
-                                    <div style={{ color: darkMode ? '#C4B5FD' : '#6D28D9' }}>
-                                        {format(strings.stepTransition, {
-                                            transport: strings.transport[(step.transition.vertical_type ?? 'elevator') as keyof ViewerStrings['transport']],
-                                            layout: layoutNames[step.transition.to_layout_id] ?? '',
-                                        })}
-                                    </div>
-                                )}
-                            </li>
-                        ))}
-                        <li style={{ color: darkMode ? '#4ADE80' : '#15803D' }}>{format(strings.arrive, { place: route.to.label })}</li>
-                    </ol>
-                    <button
-                        type="button"
-                        onClick={shareOnPhone}
-                        style={{ marginTop: 8, width: '100%', border: '1px solid var(--viewer-border)', background: 'var(--viewer-input)', color: 'var(--viewer-text)', borderRadius: 8, padding: '8px 10px', cursor: 'pointer', fontSize: 14 }}
-                    >
-                        📱 {strings.showOnPhone}
-                    </button>
-                </div>
-            )}
-        </div>
-    );
-
-    return (
-        <div style={{ ...themeVars, position: 'relative', height, minHeight: '100vh', maxHeight: '100dvh', width: '100%', overflow: 'hidden', fontFamily: 'Inter, "Segoe UI", Roboto, system-ui, sans-serif', color: 'var(--viewer-text)', colorScheme: darkMode ? 'dark' : 'light', background: darkMode ? '#111821' : '#E8EBEF' }}>
-            <div style={{ position: 'absolute', inset: 0 }}>
-                <MapCanvas
-                    ref={canvasRef}
-                    layout={layout}
-                    content={content}
-                    categories={data.categories}
-                    layers={{ paths: false, links: false }}
-                    unit={data.unit}
-                    route={routeHere}
-                    routeStart={firstStep && firstStep.layout_id === layout.id && route?.from.type === 'location' ? firstStep.points[0] : null}
-                    routeEnd={lastStep && lastStep.layout_id === layout.id ? lastStep.points[lastStep.points.length - 1] : null}
-                    selection={selected ? { type: 'location', id: selected.id } : null}
-                    onElementClick={onElementClick}
-                    height="100%"
-                />
-            </div>
-
-            {/* Floating viewer controls */}
-            <div style={{ position: 'absolute', zIndex: 15, top: 'calc(env(safe-area-inset-top, 0px) + 12px)', left: 12, display: 'flex', gap: 8 }}>
-                <button type="button" onClick={() => setPanelOpen(!panelOpen)} aria-expanded={panelOpen} aria-label="Toggle search and route panel" style={floatingButton(darkMode)}>
+    const toolbar = (
+        <header
+            style={{
+                position: 'relative',
+                zIndex: 20,
+                flex: '0 0 auto',
+                display: 'flex',
+                alignItems: 'stretch',
+                // Embedded in a card, the host draws its own close button over the
+                // top-right corner when the card is expanded; keep it off the controls.
+                padding: embedded ? '5px 60px 5px 4px' : '5px 4px',
+                boxSizing: 'border-box',
+                background: 'var(--viewer-panel)',
+                color: 'var(--viewer-text)',
+                borderBottom: '1px solid var(--viewer-border)',
+                boxShadow: '0 2px 10px rgba(0,0,0,.18)',
+            }}
+        >
+            {/* Las columnas de la barra: si no caben en una línea, bajan a otra dentro de este grupo; el QR no. */}
+            <div style={{ flex: '1 1 0', minWidth: 0, display: 'flex', flexWrap: 'wrap', alignItems: 'center', alignContent: 'center', gap: '6px 0' }}>
+            {/* Columna 1: el mapa y el interruptor de la búsqueda */}
+            <div style={{ ...column, borderLeft: 'none' }}>
+                <button type="button" onClick={() => setPanelOpen(!panelOpen)} aria-expanded={panelOpen} aria-label={strings.togglePanel} title={strings.togglePanel} style={{ ...control, width: 34, padding: 0, fontSize: 18 }}>
                     {panelOpen ? '×' : '⌕'}
                 </button>
-                <button type="button" onClick={() => setDarkMode(!darkMode)} aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'} aria-pressed={darkMode} style={floatingButton(darkMode)}>
+                <h1 style={{ fontSize: 15, margin: 0, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 160 }}>{data.name}</h1>
+            </div>
+
+            {panelOpen && (
+                <>
+                    {/* Columnas 2 y 3: origen y destino */}
+                    <div style={{ ...column, flex: '1 1 190px' }}>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                            <SearchBox compact client={client} inamapId={inamapId} value={from} onChange={setFrom} label={strings.from} marker="#16a34a" layoutNames={layoutNames} strings={strings} />
+                        </div>
+                    </div>
+                    <div style={{ ...column, flex: '1 1 190px' }}>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                            <SearchBox compact client={client} inamapId={inamapId} value={to} onChange={setTo} label={strings.to} marker="#E1251B" category={category} layoutNames={layoutNames} strings={strings} />
+                        </div>
+                    </div>
+
+                    {/* Columna 4: acciones de la ruta */}
+                    <div style={column}>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                setFrom(to);
+                                setTo(from);
+                            }}
+                            title={strings.swap}
+                            aria-label={strings.swap}
+                            style={{ ...control, padding: '0 8px' }}
+                        >
+                            ⇅
+                        </button>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 13, whiteSpace: 'nowrap' }} title={strings.accessibleHint}>
+                            <input type="checkbox" checked={accessible} onChange={(e) => setAccessible(e.target.checked)} />
+                            ♿ {strings.accessible}
+                        </label>
+                        <button
+                            type="button"
+                            disabled={routeLocked}
+                            onClick={computeRoute}
+                            style={{ ...control, background: routeLocked ? '#FCA5A5' : '#E1251B', color: '#fff', border: 'none', fontWeight: 700, cursor: routeLocked ? 'default' : 'pointer' }}
+                        >
+                            {routing ? strings.loading : strings.route}
+                        </button>
+                    </div>
+
+                    {/* Columna 5: categoría */}
+                    {data.categories.length > 0 && (
+                        <div style={column}>
+                            <select
+                                value={category ?? ''}
+                                onChange={(e) => setCategory(e.target.value || null)}
+                                aria-label={strings.categories}
+                                style={{ ...control, paddingRight: 4, maxWidth: 170 }}
+                            >
+                                <option value="">{strings.categories}: {strings.all}</option>
+                                {data.categories.map((c) => (
+                                    <option key={c.id} value={c.id}>
+                                        {c.name}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    )}
+
+                    {/* Columna 6: la ruta (distancia, tiempo e indicaciones en un desplegable) */}
+                    {(route || routeError) && (
+                        <div style={{ ...column, position: 'relative' }}>
+                            {routeError && !route && <span style={{ fontSize: 13, color: darkMode ? '#FECACA' : '#991B1B', maxWidth: 240 }}>{routeError}</span>}
+                            {route && (
+                                <>
+                                    <span style={{ fontSize: 14, fontWeight: 700, whiteSpace: 'nowrap' }}>
+                                        {formatDistance(route.distance, route.unit)} · {formatDuration(route.estimated_seconds)}
+                                    </span>
+                                    <button type="button" onClick={() => setStepsOpen(!stepsOpen)} aria-expanded={stepsOpen} style={control}>
+                                        {strings.steps} {stepsOpen ? '▴' : '▾'}
+                                    </button>
+                                    {stepsOpen && (
+                                        <div
+                                            style={{
+                                                position: 'absolute',
+                                                top: '100%',
+                                                left: 0,
+                                                marginTop: 6,
+                                                width: 'min(360px, 90vw)',
+                                                maxHeight: '50vh',
+                                                overflowY: 'auto',
+                                                boxSizing: 'border-box',
+                                                padding: 12,
+                                                background: 'var(--viewer-panel)',
+                                                border: '1px solid var(--viewer-border)',
+                                                borderRadius: 12,
+                                                boxShadow: '0 12px 36px rgba(0,0,0,.28)',
+                                            }}
+                                        >
+                                            <ol style={{ margin: 0, paddingLeft: 18, fontSize: 14, color: 'var(--viewer-text)' }}>
+                                                {route.steps.map((step, i) => (
+                                                    <li key={i} onClick={() => goToStep(i)} style={{ marginBottom: 6, cursor: 'pointer', fontWeight: i === stepIndex ? 700 : 400 }}>
+                                                        {format(strings.stepWalk, { distance: formatDistance(step.distance, route.unit), layout: step.layout_name ?? layoutNames[step.layout_id] ?? '' })}
+                                                        {step.transition && (
+                                                            <div style={{ color: darkMode ? '#C4B5FD' : '#6D28D9' }}>
+                                                                {format(strings.stepTransition, {
+                                                                    transport: strings.transport[(step.transition.vertical_type ?? 'elevator') as keyof ViewerStrings['transport']],
+                                                                    layout: layoutNames[step.transition.to_layout_id] ?? '',
+                                                                })}
+                                                            </div>
+                                                        )}
+                                                    </li>
+                                                ))}
+                                                <li style={{ color: darkMode ? '#4ADE80' : '#15803D' }}>{format(strings.arrive, { place: route.to.label })}</li>
+                                            </ol>
+                                        </div>
+                                    )}
+                                </>
+                            )}
+                        </div>
+                    )}
+                </>
+            )}
+
+            {/* Tema */}
+            <div style={{ ...column, marginLeft: 'auto' }}>
+                <button type="button" onClick={() => setDarkMode(!darkMode)} aria-label={darkMode ? strings.lightMode : strings.darkMode} title={darkMode ? strings.lightMode : strings.darkMode} aria-pressed={darkMode} style={{ ...control, width: 34, padding: 0, fontSize: 18 }}>
                     {darkMode ? '☀' : '☾'}
                 </button>
             </div>
 
-            {panelOpen && (
-                <aside
-                    style={{
-                        position: 'absolute',
-                        zIndex: 12,
-                        left: 12,
-                        top: narrow ? 'auto' : 'calc(env(safe-area-inset-top, 0px) + 58px)',
-                        right: narrow ? 12 : 'auto',
-                        bottom: narrow ? 'calc(env(safe-area-inset-bottom, 0px) + 12px)' : 12,
-                        width: narrow ? 'auto' : 'min(360px, calc(100vw - 24px))',
-                        maxHeight: narrow ? 'min(62vh, 560px)' : 'none',
-                        overflowY: 'auto',
-                        padding: 16,
-                        boxSizing: 'border-box',
-                        color: 'var(--viewer-text)',
-                        background: 'var(--viewer-panel)',
-                        border: '1px solid var(--viewer-border)',
-                        borderRadius: 16,
-                        boxShadow: '0 12px 36px rgba(0,0,0,.28)',
-                        backdropFilter: 'blur(16px)',
-                    }}
-                >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, marginBottom: 12 }}>
-                        <h1 style={{ fontSize: 18, margin: 0, color: 'var(--viewer-text)' }}>{data.name}</h1>
-                        <button type="button" onClick={() => setPanelOpen(false)} aria-label={strings.close} style={closeButton(darkMode)}>×</button>
-                    </div>
-                    {panel}
-                </aside>
-            )}
+            </div>
 
-            {/* Selector de piso */}
-            {sortedLayouts.length > 1 && (
-                <div style={{ position: 'absolute', zIndex: 10, top: 'calc(env(safe-area-inset-top, 0px) + 12px)', right: 12, background: 'var(--viewer-panel)', color: 'var(--viewer-text)', border: '1px solid var(--viewer-border)', borderRadius: 10, boxShadow: '0 3px 14px rgba(0,0,0,.2)', overflow: 'hidden' }}>
-                    <div style={{ fontSize: 11, color: 'var(--viewer-muted)', padding: '6px 10px 2px' }}>{strings.layouts}</div>
-                    {[...sortedLayouts].reverse().map((l) => {
-                        const onRoute = route?.steps.some((s) => s.layout_id === l.id);
-                        return (
-                            <button
-                                key={l.id}
-                                type="button"
-                                onClick={() => setLayoutId(l.id)}
-                                style={{
-                                    display: 'block',
-                                    width: '100%',
-                                    border: 'none',
-                                    textAlign: 'left',
-                                    padding: '8px 14px',
-                                    fontSize: 14,
-                                    cursor: 'pointer',
-                                    background: l.id === layout.id ? '#E1251B' : 'var(--viewer-panel)',
-                                    color: l.id === layout.id ? '#fff' : 'var(--viewer-text)',
-                                    fontWeight: onRoute ? 700 : 400,
-                                }}
-                            >
-                                {l.name}
-                                {onRoute && l.id !== layout.id ? ' •' : ''}
-                            </button>
-                        );
-                    })}
+        </header>
+    );
+
+    return (
+        <div
+            style={{
+                ...themeVars,
+                position: 'relative',
+                display: 'flex',
+                flexDirection: 'column',
+                height,
+                minHeight: '100vh',
+                maxHeight: '100dvh',
+                width: '100%',
+                overflow: 'hidden',
+                fontFamily: 'Inter, "Segoe UI", Roboto, system-ui, sans-serif',
+                color: 'var(--viewer-text)',
+                colorScheme: darkMode ? 'dark' : 'light',
+                background: darkMode ? '#111821' : '#E8EBEF',
+            }}
+        >
+            {toolbar}
+
+            {/* El mapa ocupa todo lo que queda bajo la barra: nada lo tapa. */}
+            <div style={{ position: 'relative', flex: '1 1 0', minHeight: 0 }}>
+                <div style={{ position: 'absolute', inset: 0 }}>
+                    <MapCanvas
+                        ref={canvasRef}
+                        layout={layout}
+                        content={content}
+                        categories={data.categories}
+                        layers={{ paths: false, links: false }}
+                        unit={data.unit}
+                        route={routeHere}
+                        routeStart={firstStep && firstStep.layout_id === layout.id && route?.from.type === 'location' ? firstStep.points[0] : null}
+                        routeEnd={lastStep && lastStep.layout_id === layout.id ? lastStep.points[lastStep.points.length - 1] : null}
+                        selection={selected ? { type: 'location', id: selected.id } : null}
+                        onElementClick={onElementClick}
+                        // Abierta desde un QR en un celular, lo primero que se ve es el camino.
+                        fitTo={routeHere}
+                        labels={{ zoomIn: strings.zoomIn, zoomOut: strings.zoomOut, fit: strings.fit }}
+                        controlsBottom={showQr ? QR_BLOCK + 24 : 14}
+                        height="100%"
+                    />
                 </div>
-            )}
 
-            {/* Navegación por tramos de la ruta */}
-            {route && route.steps.length > 1 && (
-                <div style={{ position: 'absolute', zIndex: 10, top: 'calc(env(safe-area-inset-top, 0px) + 62px)', right: 12, display: 'flex', gap: 6 }}>
-                    <button type="button" disabled={stepIndex === 0} onClick={() => goToStep(stepIndex - 1)} style={navButton(stepIndex === 0)}>
-                        ← {strings.prevFloor}
-                    </button>
-                    <button type="button" disabled={stepIndex >= route.steps.length - 1} onClick={() => goToStep(stepIndex + 1)} style={navButton(stepIndex >= route.steps.length - 1)}>
-                        {strings.nextFloor} →
-                    </button>
-                </div>
-            )}
-
-            {/* Ficha de ubicación */}
-            {selected && (
-                <div style={{ position: 'absolute', zIndex: 11, left: narrow ? 12 : 'auto', right: 12, bottom: narrow ? 'calc(env(safe-area-inset-bottom, 0px) + 12px)' : 12, width: narrow ? 'auto' : 320, maxWidth: 'calc(100vw - 24px)', boxSizing: 'border-box', color: 'var(--viewer-text)', background: 'var(--viewer-panel)', border: '1px solid var(--viewer-border)', borderRadius: 12, boxShadow: '0 6px 20px rgba(0,0,0,.2)', padding: 14 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                        <div>
-                            <div style={{ fontSize: 16, fontWeight: 700 }}>{selected.label}</div>
-                            <div style={{ fontSize: 13, color: 'var(--viewer-muted)' }}>
-                                {[selected.code, selected.category?.name, layoutNames[selected.layout_id]].filter(Boolean).join(' · ')}
+                {/* El QR para llevarse el mapa: sobre el mapa, abajo a la derecha */}
+                {showQr && (
+                    <div
+                        style={{
+                            position: 'absolute',
+                            zIndex: 9,
+                            right: 12,
+                            bottom: 12,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            gap: 4,
+                            padding: 8,
+                            boxSizing: 'border-box',
+                            background: '#ffffff',
+                            color: '#111827',
+                            borderRadius: 12,
+                            boxShadow: '0 6px 20px rgba(0,0,0,.35)',
+                        }}
+                    >
+                        {qrValue ? (
+                            <div style={{ lineHeight: 0 }}>
+                                {/* Nivel L: menos módulos, así el código se lee mejor a este tamaño. */}
+                                <QRCodeSVG value={qrValue} size={QR_SIZE} level="L" bgColor="#ffffff" fgColor="#000000" />
                             </div>
-                        </div>
-                        <button type="button" onClick={() => setSelected(null)} aria-label={strings.close} style={closeButton(darkMode)}>×</button>
-                    </div>
-                    <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
-                        <button
-                            type="button"
-                            onClick={() => {
-                                setTo({ type: 'location', id: selected.id, label: selected.label, code: selected.code, layout_id: selected.layout_id, score: 1 });
-                                setSelected(null);
-                                setPanelOpen(true);
-                            }}
-                            style={{ flex: 1, background: '#E1251B', color: '#fff', border: 'none', borderRadius: 8, padding: '8px 10px', cursor: 'pointer', fontWeight: 600 }}
-                        >
-                            {strings.route}
-                        </button>
-                        {selected.qr_url && (
-                            <a href={selected.qr_url} target="_blank" rel="noreferrer" style={{ flex: 1, textAlign: 'center', border: '1px solid var(--viewer-border)', borderRadius: 8, padding: '8px 10px', color: 'var(--viewer-text)', background: 'var(--viewer-input)', textDecoration: 'none' }}>
-                                ↗ Web
-                            </a>
+                        ) : (
+                            <button
+                                type="button"
+                                disabled={!from || !to}
+                                onClick={shareOnPhone}
+                                style={{ width: QR_SIZE, height: QR_SIZE, border: '1px solid #CBD5E1', borderRadius: 8, background: '#F8FAFC', color: '#111827', cursor: !from || !to ? 'default' : 'pointer', fontSize: 14 }}
+                            >
+                                📱 {strings.showOnPhone}
+                            </button>
                         )}
+                        <span style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.15, textAlign: 'center' }}>{strings.phoneHint}</span>
                     </div>
-                </div>
-            )}
+                )}
 
-            {session?.view_url && (
-                <div onClick={() => setSession(null)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.55)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 50 }}>
-                    <div onClick={(e) => e.stopPropagation()} style={{ background: 'var(--viewer-panel)', color: 'var(--viewer-text)', border: '1px solid var(--viewer-border)', borderRadius: 16, padding: 24, textAlign: 'center', maxWidth: 340 }}>
-                        <QRCodeSVG value={session.view_url} size={240} level="M" includeMargin />
-                        <p style={{ fontSize: 14, color: 'var(--viewer-text)' }}>{strings.scanQr}</p>
-                        <p style={{ fontSize: 12, color: 'var(--viewer-muted)' }}>{format(strings.expires, { time: new Date(session.expires_at).toLocaleTimeString() })}</p>
-                        <button type="button" onClick={() => setSession(null)} style={{ border: 'none', background: '#E1251B', color: '#fff', borderRadius: 8, padding: '8px 16px', cursor: 'pointer' }}>
-                            {strings.close}
+                {/* Selector de piso */}
+                {sortedLayouts.length > 1 && (
+                    <div style={{ position: 'absolute', zIndex: 10, top: 12, right: 12, background: 'var(--viewer-panel)', color: 'var(--viewer-text)', border: '1px solid var(--viewer-border)', borderRadius: 10, boxShadow: '0 3px 14px rgba(0,0,0,.2)', overflow: 'hidden' }}>
+                        <div style={{ fontSize: 11, color: 'var(--viewer-muted)', padding: '6px 10px 2px' }}>{strings.layouts}</div>
+                        {[...sortedLayouts].reverse().map((l) => {
+                            const onRoute = route?.steps.some((s) => s.layout_id === l.id);
+                            return (
+                                <button
+                                    key={l.id}
+                                    type="button"
+                                    onClick={() => setLayoutId(l.id)}
+                                    style={{
+                                        display: 'block',
+                                        width: '100%',
+                                        border: 'none',
+                                        textAlign: 'left',
+                                        padding: '8px 14px',
+                                        fontSize: 14,
+                                        cursor: 'pointer',
+                                        background: l.id === layout.id ? '#E1251B' : 'var(--viewer-panel)',
+                                        color: l.id === layout.id ? '#fff' : 'var(--viewer-text)',
+                                        fontWeight: onRoute ? 700 : 400,
+                                    }}
+                                >
+                                    {l.name}
+                                    {onRoute && l.id !== layout.id ? ' •' : ''}
+                                </button>
+                            );
+                        })}
+                    </div>
+                )}
+
+                {/* Navegación por tramos de la ruta */}
+                {route && route.steps.length > 1 && (
+                    <div style={{ position: 'absolute', zIndex: 10, top: 12, left: 12, display: 'flex', gap: 6 }}>
+                        <button type="button" disabled={stepIndex === 0} onClick={() => goToStep(stepIndex - 1)} style={navButton(stepIndex === 0)}>
+                            ← {strings.prevFloor}
+                        </button>
+                        <button type="button" disabled={stepIndex >= route.steps.length - 1} onClick={() => goToStep(stepIndex + 1)} style={navButton(stepIndex >= route.steps.length - 1)}>
+                            {strings.nextFloor} →
                         </button>
                     </div>
-                </div>
-            )}
+                )}
+
+                {/* Ficha de ubicación */}
+                {selected && (
+                    <div style={{ position: 'absolute', zIndex: 11, left: 12, right: narrow ? 12 : 'auto', bottom: showQr ? 40 : 12, width: narrow ? 'auto' : 320, maxWidth: 'calc(100% - 24px)', boxSizing: 'border-box', color: 'var(--viewer-text)', background: 'var(--viewer-panel)', border: '1px solid var(--viewer-border)', borderRadius: 12, boxShadow: '0 6px 20px rgba(0,0,0,.2)', padding: 14 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                            <div>
+                                <div style={{ fontSize: 16, fontWeight: 700 }}>{selected.label}</div>
+                                <div style={{ fontSize: 13, color: 'var(--viewer-muted)' }}>
+                                    {[selected.code, selected.category?.name, layoutNames[selected.layout_id]].filter(Boolean).join(' · ')}
+                                </div>
+                            </div>
+                            <button type="button" onClick={() => setSelected(null)} aria-label={strings.close} style={closeButton(darkMode)}>×</button>
+                        </div>
+                        <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setTo({ type: 'location', id: selected.id, label: selected.label, code: selected.code, layout_id: selected.layout_id, score: 1 });
+                                    setSelected(null);
+                                    setPanelOpen(true);
+                                }}
+                                style={{ flex: 1, background: '#E1251B', color: '#fff', border: 'none', borderRadius: 8, padding: '8px 10px', cursor: 'pointer', fontWeight: 600 }}
+                            >
+                                {strings.route}
+                            </button>
+                            {selected.qr_url && (
+                                <a href={selected.qr_url} target="_blank" rel="noreferrer" style={{ flex: 1, textAlign: 'center', border: '1px solid var(--viewer-border)', borderRadius: 8, padding: '8px 10px', color: 'var(--viewer-text)', background: 'var(--viewer-input)', textDecoration: 'none' }}>
+                                    ↗ Web
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }
@@ -474,19 +626,6 @@ const navButton = (disabled: boolean): React.CSSProperties => ({
     fontSize: 13,
     cursor: disabled ? 'default' : 'pointer',
     boxShadow: '0 1px 4px rgba(0,0,0,.2)',
-});
-
-const floatingButton = (darkMode: boolean): React.CSSProperties => ({
-    width: 42,
-    height: 42,
-    border: `1px solid ${darkMode ? '#3A4858' : '#CBD5E1'}`,
-    borderRadius: 12,
-    background: darkMode ? '#18212B' : '#FFFFFF',
-    color: darkMode ? '#F1F5F9' : '#1E293B',
-    fontSize: 22,
-    lineHeight: 1,
-    cursor: 'pointer',
-    boxShadow: '0 3px 14px rgba(0,0,0,.2)',
 });
 
 const closeButton = (darkMode: boolean): React.CSSProperties => ({

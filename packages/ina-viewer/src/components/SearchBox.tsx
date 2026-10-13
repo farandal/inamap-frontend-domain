@@ -17,11 +17,13 @@ export interface SearchBoxProps {
     category?: string | null;
     layoutNames: Record<string, string>;
     strings: ViewerStrings;
+    /** Una sola línea delgada, para una barra de herramientas. */
+    compact?: boolean;
 }
 
 const TYPE_COLOR: Record<string, string> = { zone: '#16a34a', structure: '#2563eb', location: '#E1251B' };
 
-export function SearchBox({ client, inamapId, value, onChange, label, marker, category, layoutNames, strings }: SearchBoxProps) {
+export function SearchBox({ client, inamapId, value, onChange, label, marker, category, layoutNames, strings, compact = false }: SearchBoxProps) {
     const [query, setQuery] = useState(value?.label ?? '');
     const [hits, setHits] = useState<SearchHit[]>([]);
     const [open, setOpen] = useState(false);
@@ -51,9 +53,20 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
 
     return (
         <div style={{ position: 'relative' }}>
-            <label style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--viewer-input, #fff)', color: 'var(--viewer-text, #111827)', border: '1px solid var(--viewer-border, #d1d5db)', borderRadius: 10, padding: '8px 10px' }}>
-                <span style={{ width: 20, height: 20, borderRadius: '50%', background: marker, flexShrink: 0 }} aria-hidden />
-                <span style={{ fontSize: 12, color: 'var(--viewer-muted, #6b7280)', width: 52, flexShrink: 0 }}>{label}</span>
+            <label
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: compact ? 6 : 8,
+                    background: 'var(--viewer-input, #fff)',
+                    color: 'var(--viewer-text, #111827)',
+                    border: '1px solid var(--viewer-border, #d1d5db)',
+                    borderRadius: compact ? 8 : 10,
+                    padding: compact ? '4px 8px' : '8px 10px',
+                }}
+            >
+                <span style={{ width: compact ? 10 : 20, height: compact ? 10 : 20, borderRadius: '50%', background: marker, flexShrink: 0 }} aria-hidden />
+                <span style={{ fontSize: compact ? 11 : 12, color: 'var(--viewer-muted, #6b7280)', ...(compact ? {} : { width: 52 }), flexShrink: 0 }}>{label}</span>
                 <input
                     value={query}
                     placeholder={strings.searchPlaceholder}
@@ -63,7 +76,7 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
                         setQuery(e.target.value);
                         if (value) onChange(null);
                     }}
-                    style={{ border: 'none', outline: 'none', fontSize: 15, flex: 1, minWidth: 0, background: 'transparent', color: 'var(--viewer-text, #111827)' }}
+                    style={{ border: 'none', outline: 'none', fontSize: compact ? 13 : 15, flex: 1, minWidth: 0, background: 'transparent', color: 'var(--viewer-text, #111827)' }}
                 />
                 {value && (
                     <button type="button" onClick={() => onChange(null)} aria-label={strings.clear} style={{ border: 'none', background: 'none', cursor: 'pointer', fontSize: 16, color: '#9ca3af' }}>
@@ -78,7 +91,8 @@ export function SearchBox({ client, inamapId, value, onChange, label, marker, ca
                         position: 'absolute',
                         zIndex: 20,
                         left: 0,
-                        right: 0,
+                        // In a narrow toolbar column the list may be wider than its box.
+                        width: compact ? 'max(100%, 280px)' : '100%',
                         top: '100%',
                         marginTop: 4,
                         listStyle: 'none',

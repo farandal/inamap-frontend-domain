@@ -85,6 +85,12 @@ export interface MapCanvasProps {
     onViewChange?: (view: ViewState) => void;
     renderOverlay?: (ctx: OverlayContext) => React.ReactNode;
     labels?: { zoomIn?: string; zoomOut?: string; fit?: string };
+    /**
+     * Puntos a encuadrar (la ruta). El lienzo mide su propio tamaño después de
+     * montar, así que el encuadre se rehace cuando ese tamaño se asienta en vez
+     * de ordenarse una sola vez desde fuera con una medida vieja.
+     */
+    fitTo?: Point[] | null;
 }
 
 const MIN_SCALE = 0.05;
@@ -138,6 +144,7 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
         onViewChange,
         renderOverlay,
         labels = {},
+        fitTo = null,
     } = props;
 
     const layers = useMemo(() => ({ ...DEFAULT_LAYERS, ...(props.layers ?? {}) }), [props.layers]);
@@ -178,6 +185,27 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
             ty: (size.height - layout.height * scale) / 2,
         });
     }, [layout.width, layout.height, size.width, size.height, updateView]);
+
+    const fitBounds = useCallback(
+        (points: Point[]) => {
+            if (points.length === 0 || size.width === 0 || size.height === 0) return;
+            const xs = points.map((p) => p[0]);
+            const ys = points.map((p) => p[1]);
+            const [minX, maxX, minY, maxY] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+            const pad = 48;
+            const wholeMap = Math.min((size.width - 32 * 2) / layout.width, (size.height - 32 * 2) / layout.height);
+            const wanted = Math.min(
+                (size.width - pad * 2) / Math.max(maxX - minX, 1),
+                (size.height - pad * 2) / Math.max(maxY - minY, 1),
+            );
+            // A route of a few metres must not zoom into a blur.
+            const scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, Math.min(wanted, wholeMap * 6)));
+            const cx = (minX + maxX) / 2;
+            const cy = (minY + maxY) / 2;
+            updateView({ scale, tx: size.width / 2 - cx * scale, ty: size.height / 2 - cy * scale });
+        },
+        [layout.width, layout.height, size.width, size.height, updateView],
+    );
 
     const zoomAt = useCallback(
         (factor: number, cx: number, cy: number) => {
@@ -224,6 +252,11 @@ export const MapCanvas = forwardRef<MapCanvasHandle, MapCanvasProps>(function Ma
             fit();
         }
     }, [layout.id, layout.width, layout.height, size.width, fit]);
+
+    // Después del encuadre del layout, para ganarle: la ruta pedida desde fuera.
+    useEffect(() => {
+        if (fitTo && fitTo.length > 1 && size.width > 0) fitBounds(fitTo);
+    }, [fitTo, size.width, size.height, fitBounds]);
 
     // Zoom con la rueda (listener no pasivo para poder prevenir el scroll).
     useEffect(() => {
