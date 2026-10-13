@@ -26,11 +26,17 @@ export interface InamapViewerProps {
     locale?: string;
     /** Altura del contenedor (por defecto 100vh). */
     height?: number | string;
+    /**
+     * Empotrado en otra página (un iframe en una tarjeta): el panel de búsqueda
+     * y ruta parte cerrado para que el mapa ocupe el cuadro. El botón para
+     * abrirlo sigue disponible.
+     */
+    embedded?: boolean;
 }
 
 const isNarrow = () => typeof window !== 'undefined' && window.innerWidth < 760;
 
-export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh' }: InamapViewerProps) {
+export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh', embedded = false }: InamapViewerProps) {
     const token = useMemo(() => tokenProp ?? readTokenFromHash(), [tokenProp]);
     const client = useMemo(() => createPublicClient({ apiUrl, token, locale }), [apiUrl, token, locale]);
     const canvasRef = useRef<MapCanvasHandle>(null);
@@ -49,7 +55,7 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
     const [selected, setSelected] = useState<Location | null>(null);
     const [session, setSession] = useState<RouteSession | null>(null);
     const [narrow, setNarrow] = useState(isNarrow());
-    const [panelOpen, setPanelOpen] = useState(() => !isNarrow());
+    const [panelOpen, setPanelOpen] = useState(() => !embedded && !isNarrow());
     const [darkMode, setDarkMode] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
     const themeVars = {

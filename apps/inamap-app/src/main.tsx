@@ -8,12 +8,15 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:25200/api';
 const locale = navigator.language?.toLowerCase().startsWith('en') ? 'en' : 'es';
 const strings = locale === 'en' ? viewerStringsEn : viewerStringsEs;
 
-/** /inamap/:id — el token de sesión (si lo hay) llega en el fragmento #t=. */
-function ViewerRoute() {
+/**
+ * /inamap/:id — el token de sesión (si lo hay) llega en el fragmento #t=.
+ * /embed/:id — el mismo visor para un iframe: el panel parte cerrado.
+ */
+function ViewerRoute({ embedded = false }: { embedded?: boolean }) {
     const { id } = useParams();
     const [search] = useSearchParams();
     if (!id) return <Navigate to="/" replace />;
-    return <InamapViewer apiUrl={API_URL} inamapId={id} focusLocationId={search.get('location')} strings={strings} locale={locale} />;
+    return <InamapViewer apiUrl={API_URL} inamapId={id} focusLocationId={search.get('location')} strings={strings} locale={locale} embedded={embedded} />;
 }
 
 createRoot(document.getElementById('root')!).render(
@@ -21,7 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <BrowserRouter>
             <Routes>
                 <Route path="/inamap/:id" element={<ViewerRoute />} />
-                <Route path="/embed/:id" element={<ViewerRoute />} />
+                <Route path="/embed/:id" element={<ViewerRoute embedded />} />
                 <Route path="*" element={<Start />} />
             </Routes>
         </BrowserRouter>
