@@ -324,6 +324,16 @@ export default ({ mode, command }) => {
 
     //...isElectronBuild ? { VITE_DASH_ADMIN_URL_PREFIX : '#/' } : {}
   };
+  // Tunnel de Cloudflare (VITE_HMR_HOST = hostname público): el navegador entra por
+  // https, así que el HMR debe ir por wss/443 compartiendo el puerto del dev server
+  // (el túnel solo enruta ese puerto) y Vite debe aceptar el Host público.
+  const hmrHostname = ENV_VARS.VITE_HMR_HOST || "localhost";
+  const isPublicHmr = !/^(localhost|127\.0\.0\.1|0\.0\.0\.0|\d+\.\d+\.\d+\.\d+)$/i.test(hmrHostname);
+  const publicHostname = (() => {
+    try { return ENV_VARS.VITE_APP_FRONTEND_URL ? new URL(ENV_VARS.VITE_APP_FRONTEND_URL).hostname : ""; }
+    catch { return ""; }
+  })();
+
   console.log("ENV Vars:", ENV_VARS);
 
   const currentPath = path.resolve(__dirname);
@@ -516,18 +526,21 @@ export default ({ mode, command }) => {
       port: ENV_VARS.VITE_DEV_PORT || 3000,
       host: ENV_VARS.VITE_DEV_HOST || "0.0.0.0",
       strictPort: true,
-      hmr: {
-        protocol: isDevelopment ? "ws" : "wss",
-        port: ENV_VARS.VITE_HMR_PORT || 4431,
-        // No clientPort for ngrok (uses default HTTPS port 443)
-        clientHost: ENV_VARS.VITE_HMR_HOST || "localhost", // Browser connects to ngrok domain
-        path: "/hmr/",
-      },
+      hmr: isPublicHmr
+        ? { protocol: "wss", clientPort: 443, path: "/hmr/" }
+        : {
+            protocol: isDevelopment ? "ws" : "wss",
+            port: ENV_VARS.VITE_HMR_PORT || 4431,
+            // No clientPort for ngrok (uses default HTTPS port 443)
+            clientHost: ENV_VARS.VITE_HMR_HOST || "localhost", // Browser connects to ngrok domain
+            path: "/hmr/",
+          },
 
       allowedHosts: [
                         "localhost",
         "localhost:3000",
         "0.0.0.0",
+        ...(publicHostname ? [publicHostname] : []),
 
         // Add dynamic ngrok host from build config
         ...(buildConfig.customModeConfig?.apiBaseUrl
@@ -675,7 +688,7 @@ export default ({ mode, command }) => {
             // - If host is a domain name (like ngrok), don't include port (uses 443)
             const isLocalhost = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\d+\.\d+\.\d+\.\d+)$/i.test(hmrHost);
             const socketHost = isLocalhost ? `${hmrHost}:${hmrPort}` : hmrHost;
-            const socketProtocol = isDevelopment ? "ws" : "wss";
+            const socketProtocol = isPublicHmr || !isDevelopment ? "wss" : "ws";
             console.log(`ðŸ”§ Injecting HMR URL: ${socketProtocol}://${socketHost}/hmr/`);
             console.log(`   Host type: ${isLocalhost ? 'localhost/IP (with port)' : 'domain (no port)'}`);
             

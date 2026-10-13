@@ -43,6 +43,9 @@ cp apps/inamap-app/.env.example apps/inamap-app/.env.local
 
 Usuarios de prueba: los que crea el backend al sembrar (ver `.env.app.local` del docker).
 
+`pnpm dev:all` levanta las tres. Para publicarlas en `app-dev` / `web-dev` / `system-dev` `.inamap.space`
+(Cloudflare Tunnel): ver [TUNNELS.md](./TUNNELS.md).
+
 ## Comandos
 
 ```bash

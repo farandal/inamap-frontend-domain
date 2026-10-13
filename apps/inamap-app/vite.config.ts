@@ -10,7 +10,14 @@ export default defineConfig(({ mode }) => {
         resolve: {
             alias: mode === 'production' ? [] : [{ find: /^ina-viewer$/, replacement: path.resolve(__dirname, '../../packages/ina-viewer/src/index.ts') }],
         },
-        server: { port: Number(env.VITE_DEV_PORT || 5180), host: '0.0.0.0' },
+        // VITE_PUBLIC_HOST: hostname del túnel de Cloudflare (p. ej. app-dev.inamap.space).
+        server: {
+            port: Number(env.VITE_DEV_PORT || 5180),
+            host: '0.0.0.0',
+            allowedHosts: env.VITE_PUBLIC_HOST ? [env.VITE_PUBLIC_HOST] : [],
+            // Detrás del túnel el HMR comparte el puerto del dev server por wss/443.
+            hmr: env.VITE_PUBLIC_HOST ? { protocol: 'wss', clientPort: 443 } : undefined,
+        },
         preview: { port: Number(env.VITE_DEV_PORT || 5180) },
     };
 });
