@@ -5,7 +5,12 @@ import { InamapViewer, viewerStringsEn, viewerStringsEs } from 'ina-viewer';
 import Start from './Start';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:25200/api';
-const locale = navigator.language?.toLowerCase().startsWith('en') ? 'en' : 'es';
+/**
+ * Español por defecto, sin importar el idioma del dispositivo: los quioscos y
+ * celulares de los visitantes suelen venir en inglés de fábrica. Otro idioma se
+ * pide explícitamente con `?lang=en` (o `?lang=es`).
+ */
+const locale = new URLSearchParams(window.location.search).get('lang')?.toLowerCase().startsWith('en') ? 'en' : 'es';
 const strings = locale === 'en' ? viewerStringsEn : viewerStringsEs;
 
 /**

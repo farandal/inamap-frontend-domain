@@ -334,16 +334,17 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
                     routeEnd={lastStep && lastStep.layout_id === layout.id ? lastStep.points[lastStep.points.length - 1] : null}
                     selection={selected ? { type: 'location', id: selected.id } : null}
                     onElementClick={onElementClick}
+                    labels={{ zoomIn: strings.zoomIn, zoomOut: strings.zoomOut, fit: strings.fit }}
                     height="100%"
                 />
             </div>
 
             {/* Floating viewer controls */}
             <div style={{ position: 'absolute', zIndex: 15, top: 'calc(env(safe-area-inset-top, 0px) + 12px)', left: 12, display: 'flex', gap: 8 }}>
-                <button type="button" onClick={() => setPanelOpen(!panelOpen)} aria-expanded={panelOpen} aria-label="Toggle search and route panel" style={floatingButton(darkMode)}>
+                <button type="button" onClick={() => setPanelOpen(!panelOpen)} aria-expanded={panelOpen} aria-label={strings.togglePanel} style={floatingButton(darkMode)}>
                     {panelOpen ? '×' : '⌕'}
                 </button>
-                <button type="button" onClick={() => setDarkMode(!darkMode)} aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'} aria-pressed={darkMode} style={floatingButton(darkMode)}>
+                <button type="button" onClick={() => setDarkMode(!darkMode)} aria-label={darkMode ? strings.lightMode : strings.darkMode} aria-pressed={darkMode} style={floatingButton(darkMode)}>
                     {darkMode ? '☀' : '☾'}
                 </button>
             </div>
