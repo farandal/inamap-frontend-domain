@@ -27,6 +27,7 @@ function ViewerRoute({ embedded = false }: { embedded?: boolean }) {
             inamapId={id}
             focusLocationId={search.get('location')}
             toRef={search.get('to')}
+            placeRefs={search.get('places')?.split(',').filter(Boolean) ?? null}
             fromRef={search.get('from')}
             accessibleRoute={search.get('accessible') === '1'}
             strings={strings}
