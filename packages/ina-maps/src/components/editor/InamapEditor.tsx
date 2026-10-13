@@ -13,6 +13,10 @@ import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
+import ZoomInMapIcon from '@mui/icons-material/ZoomInMap';
+import GridOnIcon from '@mui/icons-material/GridOn';
+import MyLocationIcon from '@mui/icons-material/MyLocation';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import {
     DEFAULT_LAYERS,
     MapCanvas,
@@ -803,12 +807,18 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                     <MenuItem value="edit">{translate('ina_maps.editor.view.edit')}</MenuItem>
                     <MenuItem value="preview">{translate('ina_maps.editor.view.preview')}</MenuItem>
                 </Select>
-                <Button variant="outlined" color="inherit" startIcon={saving ? <CircularProgress size={16} /> : <SaveOutlinedIcon />} onClick={save} disabled={saving || !layoutId} sx={{ color: '#334155', borderColor: '#CBD5E1', textTransform: 'none', '&:hover': { borderColor: '#94A3B8', bgcolor: '#F8FAFC' } }}>
-                    {translate('ina_maps.editor.actions.save')}
-                </Button>
-                <Button variant="contained" color="error" startIcon={published ? <UnpublishedOutlinedIcon /> : <PublishIcon />} onClick={togglePublish} sx={{ textTransform: 'none', boxShadow: 'none', '&:hover': { bgcolor: '#B91C1C', boxShadow: 'none' } }}>
-                    {translate(`ina_maps.editor.actions.${published ? 'unpublish' : 'publish'}`)}
-                </Button>
+                <Tooltip title={translate('ina_maps.editor.actions.save')}>
+                    <span>
+                        <IconButton aria-label={translate('ina_maps.editor.actions.save')} onClick={save} disabled={saving || !layoutId} size="small" sx={{ width: 30, height: 30, color: 'text.primary', border: '1px solid', borderColor: 'divider', borderRadius: 1 }}>
+                            {saving ? <CircularProgress size={15} /> : <SaveOutlinedIcon fontSize="small" />}
+                        </IconButton>
+                    </span>
+                </Tooltip>
+                <Tooltip title={translate(`ina_maps.editor.actions.${published ? 'unpublish' : 'publish'}`)}>
+                    <IconButton aria-label={translate(`ina_maps.editor.actions.${published ? 'unpublish' : 'publish'}`)} onClick={togglePublish} size="small" color="error" sx={{ width: 30, height: 30, borderRadius: 1 }}>
+                        {published ? <UnpublishedOutlinedIcon fontSize="small" /> : <PublishIcon fontSize="small" />}
+                    </IconButton>
+                </Tooltip>
             </Stack>
 
             {/* Barra contextual de la herramienta */}
@@ -918,11 +928,16 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
             </Box>
 
             {/* Barra de estado */}
-            <Stack direction="row" spacing={1} sx={{ position: 'absolute', zIndex: 4, bottom: 8, left: 8, right: 8, height: 46, minHeight: 46, maxHeight: 46, alignItems: "center", px: 1, py: 0.35, bgcolor: 'background.paper', color: 'text.primary', border: '1px solid', borderColor: 'divider', borderRadius: 1.5, boxShadow: '0 4px 14px rgba(15,23,42,0.24)', backdropFilter: 'blur(12px)', flexWrap: 'nowrap', overflowX: 'auto', overflowY: 'hidden', whiteSpace: 'nowrap', '& > *': { flexShrink: 0 }, '& .MuiTypography-root': { color: 'text.primary', fontSize: 12 }, '& .MuiButton-root': { color: 'text.primary' }, '& .MuiSelect-select': { color: 'text.primary' }, '& .Mui-disabled': { opacity: 0.65, color: 'text.secondary' } }}>
-                <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-                    <Typography variant="body2">{translate('ina_maps.editor.statusbar.zoom')}:</Typography>
+            <Stack direction="row" spacing={0.5} sx={{ position: 'absolute', zIndex: 4, bottom: 8, left: 8, right: 8, height: 42, minHeight: 42, maxHeight: 42, boxSizing: 'border-box', display: 'flex', alignItems: 'center', px: 0.75, py: 0, bgcolor: 'background.paper', color: 'text.primary', border: '1px solid', borderColor: 'divider', borderRadius: 1.5, boxShadow: '0 4px 14px rgba(15,23,42,0.24)', backdropFilter: 'blur(12px)', flexWrap: 'nowrap', overflow: 'hidden', whiteSpace: 'nowrap', '& > *:not(.MuiDivider-root)': { flexShrink: 0, alignSelf: 'center' }, '& .MuiDivider-root': { alignSelf: 'stretch' }, '& .MuiTypography-root': { color: 'text.primary', fontSize: 11 }, '& .MuiButton-root': { color: 'text.primary' }, '& .MuiSelect-select': { color: 'text.primary' }, '& .Mui-disabled': { opacity: 0.65, color: 'text.secondary' } }}>
+                <Stack direction="row" spacing={0.25} sx={{ height: 28, alignItems: 'center', alignSelf: 'center' }}>
+                    <Tooltip title={translate('ina_maps.editor.statusbar.zoom')}>
+                        <Box sx={{ height: 28, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <ZoomInMapIcon sx={{ display: 'block', verticalAlign: 'middle', fontSize: 16, color: 'text.secondary' }} />
+                        </Box>
+                    </Tooltip>
                     <Select
                         size="small"
+                        sx={{ minWidth: 60, '& .MuiSelect-select': { px: 0.5 } }}
                         value={ZOOM_STEPS.includes(zoomPct) ? zoomPct : ''}
                         displayEmpty
                         renderValue={() => `${zoomPct}%`}
@@ -939,15 +954,21 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                         ))}
                     </Select>
                 </Stack>
-                <Typography variant="body2" sx={{ minWidth: 100 }}>
-                    X: {cursor ? round(cursor[0], 1) : '–'} {unit}
-                </Typography>
-                <Typography variant="body2" sx={{ minWidth: 100 }}>
-                    Y: {cursor ? round(cursor[1], 1) : '–'} {unit}
-                </Typography>
-                <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-                    <Typography variant="body2">{translate('ina_maps.editor.statusbar.grid')}:</Typography>
-                    <Select size="small" value={gridStep} onChange={(e) => setGridStep(Number(e.target.value))}>
+                <Stack spacing={0} sx={{ height: '100%', flexShrink: 0, justifyContent: 'center', alignSelf: 'center', lineHeight: 1.1 }}>
+                    <Typography variant="body2" sx={{ fontSize: 9, lineHeight: 1.2 }} title={`X: ${cursor ? round(cursor[0], 1) : '–'} ${unit}`}>
+                        X {cursor ? round(cursor[0], 1) : '–'}{unit}
+                    </Typography>
+                    <Typography variant="body2" sx={{ fontSize: 9, lineHeight: 1.2 }} title={`Y: ${cursor ? round(cursor[1], 1) : '–'} ${unit}`}>
+                        Y {cursor ? round(cursor[1], 1) : '–'}{unit}
+                    </Typography>
+                </Stack>
+                <Stack direction="row" spacing={0.25} sx={{ height: 28, alignItems: 'center', alignSelf: 'center' }}>
+                    <Tooltip title={translate('ina_maps.editor.statusbar.grid')}>
+                        <Box sx={{ height: 28, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <GridOnIcon sx={{ display: 'block', verticalAlign: 'middle', fontSize: 16, color: 'text.secondary' }} />
+                        </Box>
+                    </Tooltip>
+                    <Select size="small" sx={{ minWidth: 60, '& .MuiSelect-select': { px: 0.5 } }} value={gridStep} onChange={(e) => setGridStep(Number(e.target.value))}>
                         {GRID_STEPS.map((g) => (
                             <MenuItem key={g} value={g}>
                                 {g} {unit}
@@ -955,50 +976,54 @@ export const InamapEditor: React.FC<InamapEditorProps> = ({ inamapId }) => {
                         ))}
                     </Select>
                 </Stack>
-                <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-                    <Typography variant="body2">{translate('ina_maps.editor.statusbar.snap')}:</Typography>
+                <Stack direction="row" spacing={0.25} sx={{ height: 28, alignItems: 'center', alignSelf: 'center' }}>
+                    <Tooltip title={translate('ina_maps.editor.statusbar.snap')}>
+                        <Box sx={{ height: 28, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <MyLocationIcon sx={{ display: 'block', verticalAlign: 'middle', fontSize: 15, color: 'text.secondary' }} />
+                        </Box>
+                    </Tooltip>
                     <Chip
                         size="small"
                         clickable
                         onClick={() => setSnapOn(!snapOn)}
                         color={snapOn ? 'error' : 'default'}
-                        variant={snapOn ? 'outlined' : 'filled'}
+                        variant="filled"
                         label={translate(`ina_maps.editor.statusbar.${snapOn ? 'on' : 'off'}`)}
+                        sx={{
+                            height: 22,
+                            alignSelf: 'center',
+                            fontWeight: 700,
+                            color: snapOn ? '#FFFFFF' : 'text.primary',
+                            bgcolor: snapOn ? 'error.main' : 'action.selected',
+                            '&:hover': { bgcolor: snapOn ? 'error.dark' : 'action.hover' },
+                        }}
                     />
                 </Stack>
                 <Divider orientation="vertical" flexItem />
-                <Tooltip title={translate('ina_maps.editor.actions.check_connectivity')}>
-                    <Button
-                        size="small"
-                        color="inherit"
-                        onClick={checkConnectivity}
-                        startIcon={
-                            checking ? (
-                                <CircularProgress size={12} />
-                            ) : (
-                                <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: connectivity ? (connectivity.ok ? 'success.main' : 'warning.main') : 'grey.400' }} />
-                            )
-                        }
-                        sx={{ textTransform: 'none' }}
-                    >
-                        {connectivity
-                            ? connectivity.ok
-                                ? translate('ina_maps.editor.statusbar.connectivity_ok')
-                                : translate('ina_maps.editor.statusbar.connectivity_issues', {
-                                      count: connectivity.unreachable_locations.length + connectivity.isolated_path_ids.length,
-                                  })
-                            : translate('ina_maps.editor.statusbar.connectivity_unknown')}
-                    </Button>
+                <Tooltip title={connectivity
+                    ? connectivity.ok
+                        ? translate('ina_maps.editor.statusbar.connectivity_ok')
+                        : translate('ina_maps.editor.statusbar.connectivity_issues', { count: connectivity.unreachable_locations.length + connectivity.isolated_path_ids.length })
+                    : translate('ina_maps.editor.statusbar.connectivity_unknown')}>
+                    <IconButton size="small" aria-label={translate('ina_maps.editor.actions.check_connectivity')} onClick={checkConnectivity} disabled={checking} sx={{ width: 28, height: 28, alignSelf: 'center' }}>
+                        {checking ? (
+                            <CircularProgress size={14} />
+                        ) : (
+                            <Box sx={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 20, height: 20 }}>
+                                <AccountTreeIcon sx={{ fontSize: 17 }} />
+                                <Box sx={{ position: 'absolute', width: 6, height: 6, right: -1, bottom: -1, borderRadius: '50%', border: '1px solid', borderColor: 'background.paper', bgcolor: connectivity ? (connectivity.ok ? 'success.main' : 'warning.main') : 'grey.500' }} />
+                            </Box>
+                        )}
+                    </IconButton>
                 </Tooltip>
-                <Box sx={{ flex: 1 }} />
                 {routePreview && (
                     <IconButton size="small" onClick={() => setRoutePreview(null)} title={translate('ina_maps.editor.toolbar.cancel')}>
                         <RestartAltIcon fontSize="small" />
                     </IconButton>
                 )}
-                <Button variant="outlined" color="inherit" size="small" startIcon={<PlayArrowIcon />} onClick={() => setRouteDialog(true)} disabled={!layouts.length}>
-                    {translate('ina_maps.editor.actions.test_route')}
-                </Button>
+                <Tooltip title={translate('ina_maps.editor.actions.test_route')}>
+                    <span style={{ display: 'flex', alignItems: 'center' }}><IconButton size="small" aria-label={translate('ina_maps.editor.actions.test_route')} onClick={() => setRouteDialog(true)} disabled={!layouts.length} sx={{ width: 28, height: 28, alignSelf: 'center' }}><PlayArrowIcon fontSize="small" /></IconButton></span>
+                </Tooltip>
             </Stack>
 
             {/* Propiedades: drawer derecho persistente (el canvas sigue usable) */}
