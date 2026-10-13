@@ -21,7 +21,19 @@ function ViewerRoute({ embedded = false }: { embedded?: boolean }) {
     const { id } = useParams();
     const [search] = useSearchParams();
     if (!id) return <Navigate to="/" replace />;
-    return <InamapViewer apiUrl={API_URL} inamapId={id} focusLocationId={search.get('location')} strings={strings} locale={locale} embedded={embedded} />;
+    return (
+        <InamapViewer
+            apiUrl={API_URL}
+            inamapId={id}
+            focusLocationId={search.get('location')}
+            toRef={search.get('to')}
+            fromRef={search.get('from')}
+            accessibleRoute={search.get('accessible') === '1'}
+            strings={strings}
+            locale={locale}
+            embedded={embedded}
+        />
+    );
 }
 
 createRoot(document.getElementById('root')!).render(

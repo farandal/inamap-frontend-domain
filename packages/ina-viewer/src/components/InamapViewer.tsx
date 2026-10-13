@@ -22,6 +22,15 @@ export interface InamapViewerProps {
     token?: string | null;
     /** Ubicación a enfocar como destino (`?location=`). */
     focusLocationId?: string | null;
+    /**
+     * Destino y origen como referencia `tipo:uuid` (`?to=` y `?from=`): lo que
+     * abre el QR de un mapa impreso o de una tarjeta de quiosco. Con ambos, la
+     * ruta se calcula al abrir; con solo el destino, se enfoca ese lugar.
+     */
+    toRef?: string | null;
+    fromRef?: string | null;
+    /** Ruta sin escaleras (`?accessible=1`) al calcular desde `toRef`/`fromRef`. */
+    accessibleRoute?: boolean;
     strings?: ViewerStrings;
     locale?: string;
     /** Altura del contenedor (por defecto 100vh). */
@@ -36,7 +45,7 @@ export interface InamapViewerProps {
 
 const isNarrow = () => typeof window !== 'undefined' && window.innerWidth < 760;
 
-export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh', embedded = false }: InamapViewerProps) {
+export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh', embedded = false, toRef = null, fromRef = null, accessibleRoute = false }: InamapViewerProps) {
     const token = useMemo(() => tokenProp ?? readTokenFromHash(), [tokenProp]);
     const client = useMemo(() => createPublicClient({ apiUrl, token, locale }), [apiUrl, token, locale]);
     const canvasRef = useRef<MapCanvasHandle>(null);
@@ -116,6 +125,41 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
             setLayoutId(location.layout_id);
         }
     }, [data, focusLocationId]);
+
+    // Destino y origen desde la URL (?to=&from=): se resuelven contra el propio
+    // inamap, nunca se confía en el texto de la URL.
+    useEffect(() => {
+        if (!data || (!toRef && !fromRef)) return;
+        const hitFor = (ref?: string | null): SearchHit | null => {
+            const [type, id] = (ref ?? '').split(':');
+            const pool = type === 'zone' ? data.zones : type === 'structure' ? data.structures : type === 'location' ? data.locations : null;
+            const item = pool?.find((x) => x.id === id);
+
+            return item ? { type: type as SearchHit['type'], id: item.id, label: item.label, code: item.code, layout_id: item.layout_id, score: 1 } : null;
+        };
+        const toHit = hitFor(toRef);
+        const fromHit = hitFor(fromRef);
+        if (toHit) {
+            setTo(toHit);
+            setLayoutId(toHit.layout_id);
+            if (toHit.type === 'location') setSelected(data.locations.find((l) => l.id === toHit.id) ?? null);
+        }
+        if (fromHit) setFrom(fromHit);
+        if (!toHit || !fromHit) return;
+
+        let cancelled = false;
+        setRouting(true);
+        client
+            .route(inamapId, endpointRef(fromHit.type, fromHit.id), endpointRef(toHit.type, toHit.id), accessibleRoute)
+            .then((result) => !cancelled && applyRoute(result, data))
+            .catch((e) => !cancelled && (setRoute(null), setRouteError(errorText(e))))
+            .finally(() => !cancelled && setRouting(false));
+
+        return () => {
+            cancelled = true;
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [data, toRef, fromRef, accessibleRoute]);
 
     const layout = data?.layouts.find((l) => l.id === layoutId) ?? data?.layouts[0] ?? null;
     const layoutNames = useMemo(() => Object.fromEntries((data?.layouts ?? []).map((l) => [l.id, l.name])), [data]);
@@ -334,6 +378,8 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
                     routeEnd={lastStep && lastStep.layout_id === layout.id ? lastStep.points[lastStep.points.length - 1] : null}
                     selection={selected ? { type: 'location', id: selected.id } : null}
                     onElementClick={onElementClick}
+                    // Abierta desde un QR en un celular, lo primero que se ve es el camino.
+                    fitTo={routeHere}
                     labels={{ zoomIn: strings.zoomIn, zoomOut: strings.zoomOut, fit: strings.fit }}
                     height="100%"
                 />
