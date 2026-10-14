@@ -31,6 +31,12 @@ export interface InamapViewerProps {
     fromRef?: string | null;
     /** Ruta sin escaleras (`?accessible=1`) al calcular desde `toRef`/`fromRef`. */
     accessibleRoute?: boolean;
+    /**
+     * Varios lugares (`?places=`), cada uno como `tipo:uuid` o con la letra del
+     * tipo (`l:`, `s:`, `z:`): se marcan con números y se encuadran, sin trazar
+     * ninguna ruta. Para "dónde están los baños", no "cómo llego".
+     */
+    placeRefs?: string[] | null;
     strings?: ViewerStrings;
     locale?: string;
     /** Altura del contenedor (por defecto 100vh). */
@@ -45,7 +51,7 @@ export interface InamapViewerProps {
 
 const isNarrow = () => typeof window !== 'undefined' && window.innerWidth < 760;
 
-export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh', embedded = false, toRef = null, fromRef = null, accessibleRoute = false }: InamapViewerProps) {
+export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocationId, strings = viewerStringsEs, locale, height = '100vh', embedded = false, toRef = null, fromRef = null, accessibleRoute = false, placeRefs = null }: InamapViewerProps) {
     const token = useMemo(() => tokenProp ?? readTokenFromHash(), [tokenProp]);
     const client = useMemo(() => createPublicClient({ apiUrl, token, locale }), [apiUrl, token, locale]);
     const canvasRef = useRef<MapCanvasHandle>(null);
@@ -166,6 +172,28 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data, toRef, fromRef, accessibleRoute]);
 
+    // Los lugares pedidos con ?places=, numerados en el orden en que llegaron.
+    const markers = useMemo(() => {
+        if (!data || !placeRefs?.length) return [];
+        const types: Record<string, 'location' | 'structure' | 'zone'> = { l: 'location', s: 'structure', z: 'zone', location: 'location', structure: 'structure', zone: 'zone' };
+
+        return placeRefs.slice(0, 12).flatMap((raw, i) => {
+            const [t, id] = raw.split(':');
+            const type = types[t];
+            if (!type || !id) return [];
+            const item = (type === 'location' ? data.locations : type === 'structure' ? data.structures : data.zones).find((x) => x.id === id);
+            if (!item) return [];
+            const point: Point | null = type === 'location' ? [(item as Location).x, (item as Location).y] : centroid((item as { polygon: Point[] }).polygon);
+
+            return point ? [{ n: i + 1, type, id, label: item.label, layout_id: item.layout_id, point }] : [];
+        });
+    }, [data, placeRefs]);
+
+    // Abrir en el piso del primer lugar pedido.
+    useEffect(() => {
+        if (markers[0]) setLayoutId(markers[0].layout_id);
+    }, [markers]);
+
     const layout = data?.layouts.find((l) => l.id === layoutId) ?? data?.layouts[0] ?? null;
     const layoutNames = useMemo(() => Object.fromEntries((data?.layouts ?? []).map((l) => [l.id, l.name])), [data]);
 
@@ -276,6 +304,7 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
     const tokenRequired = data.settings?.access_mode === 'token_required';
     const phoneUrl = (() => {
         const query = new URLSearchParams();
+        if (placeRefs?.length) query.set('places', placeRefs.join(','));
         if (to) query.set('to', `${to.type}:${to.id}`);
         if (to && from) {
             query.set('from', `${from.type}:${from.id}`);
@@ -289,6 +318,7 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
     const qrValue = tokenRequired ? session?.view_url ?? null : phoneUrl;
     // En un celular el QR no sirve (ya se está en él), salvo dentro de una tarjeta.
     const showQr = !narrow || embedded;
+    const visibleMarkers = markers.filter((m) => m.layout_id === layout.id);
     // Big enough to scan from a kiosk screen: ~7% of the viewport height, 120-176 px.
     const QR_SIZE = Math.max(120, Math.min(176, Math.round(viewportH * 0.07)));
     // Room the overlay takes at the bottom-right of the map (plate padding + caption).
@@ -490,7 +520,17 @@ export function InamapViewer({ apiUrl, inamapId, token: tokenProp, focusLocation
                         selection={selected ? { type: 'location', id: selected.id } : null}
                         onElementClick={onElementClick}
                         // Abierta desde un QR en un celular, lo primero que se ve es el camino.
-                        fitTo={routeHere}
+                        fitTo={routeHere ?? (visibleMarkers.length > 1 ? visibleMarkers.map((m) => m.point) : null)}
+                        renderOverlay={({ px }) =>
+                            visibleMarkers.map((m) => (
+                                <g key={`${m.type}:${m.id}`} transform={`translate(${m.point[0]},${m.point[1]}) scale(${px(1)})`} style={{ pointerEvents: 'none' }}>
+                                    <circle r={15} fill="#E1251B" stroke="#ffffff" strokeWidth={3} />
+                                    <text y={5} textAnchor="middle" fontSize={15} fontWeight={800} fontFamily="Inter, system-ui, sans-serif" fill="#ffffff">
+                                        {m.n}
+                                    </text>
+                                </g>
+                            ))
+                        }
                         labels={{ zoomIn: strings.zoomIn, zoomOut: strings.zoomOut, fit: strings.fit }}
                         controlsBottom={showQr ? QR_BLOCK + 24 : 14}
                         height="100%"
