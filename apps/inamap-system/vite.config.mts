@@ -331,6 +331,11 @@ export default ({ mode }) => {
   console.log("ENV Vars:", ENV_VARS);
 
   const currentPath = path.resolve(__dirname);
+  // Packages publish compiled output only: dash-styles keeps its .less in dist/, not src/.
+  const dashStylesDir = path.resolve(
+    currentPath,
+    fs.existsSync(path.resolve(currentPath, "../../node_modules/dash-styles/src")) ? "../../node_modules/dash-styles/src" : "../../node_modules/dash-styles/dist",
+  );
 
   const dashCoreSrc = getDashCoreSrcAliases(currentPath, isDevelopment);
   const localPackageSrc = getLocalPackageSrcAliases(WORKSPACE_ROOT, isDevelopment);
@@ -628,7 +633,7 @@ export default ({ mode }) => {
         { find: "@emotion/react", replacement: path.resolve(currentPath, "../../node_modules/@emotion/react") },
         { find: "@emotion/styled", replacement: path.resolve(currentPath, "../../node_modules/@emotion/styled") },
         { find: "@app", replacement: path.resolve(currentPath, "./src") },
-        { find: "@dash-styles-src", replacement: path.resolve(currentPath, "../../node_modules/dash-styles/src") },
+        { find: "@dash-styles-src", replacement: dashStylesDir },
         // react-beautiful-dnd is unmaintained on React 18/19; map to the @hello-pangea/dnd drop-in.
         { find: "react-beautiful-dnd", replacement: "@hello-pangea/dnd" },
         // kt-* are workspace turbo packages developed in THIS repo: consume their SOURCE
@@ -708,7 +713,7 @@ export default ({ mode }) => {
       // var() fallbacks at dev-serve/build time — see the plugin file for why.
       injectCriticalThemeVars({
         appVariablesPath: path.resolve(currentPath, "src/dash-variables.less"),
-        coreTransformerPath: path.resolve(currentPath, "../../node_modules/dash-styles/src/dash-css-transformer.less"),
+        coreTransformerPath: path.join(dashStylesDir, "dash-css-transformer.less"),
         keys: ["primary-contrast", "bodybg-secondary"],
       }),
 
